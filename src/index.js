@@ -6,7 +6,7 @@ import NavBar from './components/NavBar.jsx'
 import stateFile from './components/stateFile'
 
 
-class Main extends Component {
+class Index extends Component {
   constructor(props) {
     super(props);
     this.state = stateFile;
@@ -26,4 +26,4 @@ class Main extends Component {
   }
 }
 
-ReactDOM.render(<Main />, document.getElementById('root'));
+ReactDOM.render(<Index />, document.getElementById('root'));
