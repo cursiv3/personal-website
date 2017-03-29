@@ -1,0 +1,83 @@
+html, body, #root {
+  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  background: url('../../public/coreyBackground.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  overflow: hidden;
+}
+
+.mainHeader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid white;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  font-family: 'Josefin Sans';
+  transition: opacity 2s linear;
+  opacity: 1;
+  width: 350px;
+}
+
+.navAfter {
+  margin: auto auto 25vh auto;
+}
+
+.navBarLanding {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -220%);
+  display: inline-block;
+}
+
+.navBtn {
+  border: 3px solid white;
+  color: white;
+  font-family: 'Josefin Sans';
+  font-size: 22px;
+  text-align: center;
+  padding: 0 -10px 0 10px;
+  margin: 0 5px 0 5px;
+  width: 80px;
+}
+
+.navHov:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    color: #fc2f2f;
+    animation: btnHover 0.25s;
+    animation-fill-mode:both;
+}
+
+.sectionContainer {
+  top: 50%;
+  left: 50%;
+  height: 75%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 0 20px 0 20px;
+  border: 3px solid white;
+  text-align: center;
+  color: white;
+  font-size: 29px;
+  font-family: 'Josefin Sans';
+  overflow: auto;
+}
+
+/* ======    Animation items, alphabetised    ====== */
+
+
+@keyframes btnHover {
+  100% {
+    transform: translate(0, -0.1em);
+  }
+}
