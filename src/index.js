@@ -11,8 +11,22 @@ class Index extends Component {
     super(props);
     this.state = stateFile;
 
-    this.updateState = (newState) => {
-            this.setState(newState);
+    this.navClick = (key) => {
+
+            switch (key) {
+                case 1:
+                    this.setState({ currentDisplay: 'About', navBar: 'navAfter' });
+                    break
+                case 2:
+                    this.setState({ currentDisplay: 'Portfolio', navBar: 'navAfter'});
+                    break
+                case 3:
+                    this.setState({ currentDisplay: 'Music', navBar: 'navAfter'});
+                    break
+                case 4:
+                    this.setState({ currentDisplay: 'Contact', navBar: 'navAfter'});
+                    break
+            }
         }
   }
 
@@ -20,7 +34,7 @@ class Index extends Component {
     return (
       <div>
         <CurrentSection data={this.state} />
-        <NavBar stateFile={this.state} updateState={this.updateState} />
+        <NavBar data={this.state} navClick={this.navClick} />
       </div>
     )
   }

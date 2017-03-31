@@ -7,12 +7,12 @@ class Landing extends Component {
 
     componentWillEnter (callback) {
       const box = this.section;
-      TweenMax.fromTo(box, 0.5, {left: 0, opacity: 0}, {left: '50%', opacity: 1, onComplete: callback});
+      TweenMax.fromTo(box, 0.5, {bottom: 0, opacity: 0}, {bottom: '50%', opacity: 1, onComplete: callback});
     }
 
     componentWillLeave (callback) {
       const box = this.section;
-      TweenMax.fromTo(box, 0.5, {left: '50%', opacity: 1}, {left: '100%', opacity: 0, onComplete: callback});
+      TweenMax.fromTo(box, 0.5, {bottom: '50%', opacity: 1}, {bottom: 0, opacity: 0, onComplete: callback});
     }
 
 
