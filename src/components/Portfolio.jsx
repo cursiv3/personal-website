@@ -19,14 +19,17 @@ class Portfolio extends Component {
     render() {
         return (
             <div className="sectionContainer row" ref={s => this.section = s}>
-                <h1 className="col-sm-12 sectionHead">Portfolio</h1>
+                <h1 className="col-sm-12 sectionHead">Some things I've done</h1>
+                <Col sm={12}>
+                    <p>{this.props.data.portfolioIntro}</p>
+                </Col>
                 {this.props.data.portfolio.map( data => 
                 <Col sm={6}>
-                    <a href={data.link}>
-                    <div className="folioImg" style={{backgroundImage: 'url(' + data.img + ')'}}></div>
+                    <a href={data.link} target="_blank">
+                        <div className="folioImg" style={{backgroundImage: 'url(' + data.img + ')'}}></div>
                     </a>
                     <p>{data.text}</p>
-                </Col> 
+                </Col>
                 )}
             </div>
             )
