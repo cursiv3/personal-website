@@ -4,21 +4,27 @@ import TweenMax from 'gsap'
 
 
 class Contact extends Component {
+    
     componentWillEnter (callback) {
-      const box = this.section;
-      TweenMax.fromTo(box, 0.5, {left: 0, opacity: 0}, {left: '50%', opacity: 1, onComplete: callback});
+        const box = this.section;
+        TweenMax.fromTo(box, 1.5, { opacity: 0 }, { delay: 1.5, opacity: 1, onComplete: callback })
     }
 
     componentWillLeave (callback) {
-      const box = this.section;
-      TweenMax.fromTo(box, 0.5, {left: '50%', opacity: 1}, {left: '100%', opacity: 0, onComplete: callback});
+        const box = this.section;
+        TweenMax.fromTo(box, 1, { opacity: 1 }, { opacity: 0, onComplete: callback });
     }
 
     render() {
         return (
             <div className="sectionContainer" ref={s => this.section = s}>
-                <h1>Contact</h1>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <h1 className="sectionHead">Contact</h1>
+                <h2 className="row">
+                    <a href="https://www.facebook.com/cslewis503" target="_blank"><i className="fa fa-facebook-square col-sm-3"></i></a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lewisc503@gmail.com" target="_blank"><i className="fa fa-envelope col-sm-3"></i></a>
+                    <a href="http://www.linkedin.com/in/lewisc503" target="_blank"><i className="fa fa-linkedin-square col-sm-3"></i></a>
+                    <a href="https://github.com/cursiv3" target="_blank"><i className="fa fa-github-square col-sm-3"></i></a>
+                </h2>
             </div>
             )
     }

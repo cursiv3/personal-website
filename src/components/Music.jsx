@@ -1,24 +1,32 @@
 import React, {Component} from 'react'
 import '../styles/main.css'
 import TweenMax from 'gsap'
+import {Col} from 'react-bootstrap'
 
 
 class Music extends Component {
+
     componentWillEnter (callback) {
-      const box = this.section;
-      TweenMax.fromTo(box, 0.5, {left: 0, opacity: 0}, {left: '50%', opacity: 1, onComplete: callback});
+        const box = this.section;
+        TweenMax.fromTo(box, 1.5, { opacity: 0 }, { delay: 1.5, opacity: 1, onComplete: callback })
     }
 
     componentWillLeave (callback) {
-      const box = this.section;
-      TweenMax.fromTo(box, 0.5, {left: '50%', opacity: 1}, {left: '100%', opacity: 0, onComplete: callback});
+        const box = this.section;
+        TweenMax.fromTo(box, 1, { opacity: 1 }, { opacity: 0, onComplete: callback });
     }
 
     render() {
         return (
             <div className="sectionContainer" ref={s => this.section = s}>
-                <h1>Music</h1>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporodo consequat. Duis aute irure dolorcillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <h1 className="sectionHead">Some acoustic guitar</h1>
+                <Col sm={3} />
+                <iframe className="col-sm-6" width="560" height="315" src="https://www.youtube.com/embed/qqytoS_1OLo" frameborder="0" allowfullscreen></iframe>
+                <Col sm={3} />
+                <iframe className="col-sm-6" width="560" height="315" src="https://www.youtube.com/embed/UKYtxamVuic" frameborder="0" allowfullscreen></iframe>
+                <Col sm={3} />
+                <iframe className="col-sm-6" width="560" height="315" src="https://www.youtube.com/embed/Oda9Qoh7-4Y" frameborder="0" allowfullscreen></iframe>
+                <Col sm={3} />
             </div>
             )
     }
