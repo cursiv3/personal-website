@@ -26,6 +26,8 @@ class Index extends Component {
                 case 4:
                     this.setState({ currentDisplay: 'Contact', navBar: 'navAfter'});
                     break
+                default:
+                    break
             }
         }
   }

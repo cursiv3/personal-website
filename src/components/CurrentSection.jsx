@@ -5,7 +5,6 @@ import Portfolio from './Portfolio.jsx'
 import Music from './Music.jsx'
 import Contact from './Contact.jsx'
 import TransitionGroup from 'react-addons-transition-group'
-import TweenMax from 'gsap'
 
 class CurrentSection extends Component {
 

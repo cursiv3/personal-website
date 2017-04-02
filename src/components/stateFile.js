@@ -21,7 +21,8 @@ module.exports = {
 
     },
     portfolio: [
-            { 
+            {
+                id: 1, 
                 link: 'http://codepen.io/cursiv3/pen/qqMMpv/',
                 img: require('../../public/twitch.png'),
                 text: `In this challenge I learned to query the Twitch.tv 
@@ -30,6 +31,7 @@ module.exports = {
                 account or it doesn't exist.`,
             },
             { 
+                id: 2,
                 link: 'http://codepen.io/cursiv3/pen/PbKPEv',
                 img: require('../../public/wiki.png'),
                 text: `In this challenge  with this I simply needed to query 
@@ -38,24 +40,28 @@ module.exports = {
                 very intuitive.`,
             },
             { 
+                id: 3,
                 link: 'http://codepen.io/cursiv3/pen/ozdrzG',
                 img: require('../../public/weather.png'),
                 text: `In this challenge I learned how to grab geolocation data
                 using an IP address, then get weather data from a weather API.`,
             },
             { 
+                id: 4,
                 link: 'http://codepen.io/cursiv3/pen/qaVQqv',
                 img: require('../../public/quote.png'),
                 text: `This was my first time working with an API. It's a simple 
                 random quote generator with a button to share the quote to twitter.`,
             },
             { 
+                id: 5,
                 link: 'http://codepen.io/cursiv3/pen/NRGZPV',
                 img: require('../../public/personalsite.png'),
                 text: `This was my first time working with bootstrap. The 
                 challenge was to build a very simple personal website.`,
             },
             { 
+                id: 6,
                 link: 'http://codepen.io/cursiv3/pen/pEJmL',
                 img: require('../../public/curie.png'),
                 text: `This was the first front end challege presented by 

@@ -24,7 +24,7 @@ class Portfolio extends Component {
                     <p>{this.props.data.portfolioIntro}</p>
                 </Col>
                 {this.props.data.portfolio.map( data => 
-                <Col sm={6}>
+                <Col sm={6} key={data.id}>
                     <a href={data.link} target="_blank">
                         <div className="folioImg" style={{backgroundImage: 'url(' + data.img + ')'}}></div>
                     </a>
