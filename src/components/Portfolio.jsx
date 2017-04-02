@@ -18,7 +18,7 @@ class Portfolio extends Component {
 
     render() {
         return (
-            <div className="sectionContainer row" ref={s => this.section = s}>
+            <div className="sectionContainer" ref={s => this.section = s}>
                 <h1 className="col-sm-12 sectionHead">Some things I've done</h1>
                 <Col sm={12}>
                     <p>{this.props.data.portfolioIntro}</p>

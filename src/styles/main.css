@@ -23,6 +23,23 @@ html, body, #root {
 
 .fa {
   font-size: 55px;
+  color: silver;
+}
+
+.fa-facebook-square {
+  color: #3b5998;
+}
+
+.fa-envelope-square {
+  color: white;
+}
+
+.fa-linkedin-square {
+  color: #0077B5;
+}
+
+.fa-github-square {
+  color: gray;
 }
 
 .folioImg {
@@ -109,11 +126,10 @@ html, body, #root {
   background-color: #12161e;
   top: 50%;
   left: 50%;
-  max-height: 75%;
-  max-width: 80%;
+  max-height: 80%;
   position: absolute;
   transform: translate(-50%, -50%);
-  padding: 0 20px 0 20px;
+  padding: 0 10px 0 10px;
   border: 3px solid white;
   text-align: left;
   color: white;
@@ -124,10 +140,10 @@ html, body, #root {
 
 .sectionContainerMusic {
   background-color: #12161e;
-  top: 50%;
+  top: 55%;
   left: 50%;
-  max-height: 75%;
-  width: 60%;
+  max-height: 85%;
+  width: 75%;
   position: absolute;
   transform: translate(-50%, -50%);
   padding: 0 20px 0 20px;

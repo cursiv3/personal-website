@@ -17,11 +17,11 @@ class Contact extends Component {
 
     render() {
         return (
-            <div className="sectionContainer" ref={s => this.section = s}>
+            <div className="sectionContainer" style={{overflow: 'hidden'}} ref={s => this.section = s}>
                 <h1 className="sectionHead">Contact</h1>
-                <h2 className="row">
+                <h2 className="row text-center">
                     <a href="https://www.facebook.com/cslewis503" target="_blank"><i className="fa fa-facebook-square col-sm-3"></i></a>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@coreyslewis.com" target="_blank"><i className="fa fa-envelope col-sm-3"></i></a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@coreyslewis.com" target="_blank"><i className="fa fa-envelope-square col-sm-3"></i></a>
                     <a href="http://www.linkedin.com/in/lewisc503" target="_blank"><i className="fa fa-linkedin-square col-sm-3"></i></a>
                     <a href="https://github.com/cursiv3" target="_blank"><i className="fa fa-github-square col-sm-3"></i></a>
                 </h2>
