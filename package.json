@@ -1,5 +1,6 @@
 {
   "name": "coreysite",
+  "homepage": "https://cursiv3.github.io/coreysite"
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
