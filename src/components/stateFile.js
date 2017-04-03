@@ -62,7 +62,7 @@ module.exports = {
             },
             { 
                 id: 6,
-                link: 'http://codepen.io/cursiv3/pen/pEJmL',
+                link: 'http://codepen.io/cursiv3/pen/pEJmLK',
                 img: require('../../public/curie.png'),
                 text: `This was the first front end challege presented by 
                 freecodecamp.com.  This was also the first front end page I ever
