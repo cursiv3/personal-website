@@ -3,6 +3,9 @@ module.exports = {
     navBar: 'navEntry',
     about: {
         media: require('../../public/coreyPort.jpg'),
+        media2: require('../../public/coreysoccer.jpg'),
+        media3: require('../../public/coreychewie.jpg'),
+        media4: require('../../public/corey2.jpg'),
     },
     portfolio: [
             {

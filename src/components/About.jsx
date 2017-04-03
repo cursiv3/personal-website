@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import '../styles/main.css'
+import {Row, Col} from 'react-bootstrap'
 import TweenMax from 'gsap'
 
 
@@ -18,7 +19,7 @@ class About extends Component {
     render() {
         return (
             <div className="sectionContainer" ref={s => this.section = s}>
-                <h1 className="sectionHead">Who I am</h1>
+                <h1 className="sectionHead">Allow me to introduce myself</h1>
                 <div className="portraitBackground">
                     <img src={this.props.data.about.media} alt={'me'} className="aboutPortrait" />
                 </div>
@@ -42,6 +43,17 @@ class About extends Component {
                 <p className="pageText">
                     I am also a soccer coach, a certified USSF Soccer referee, guitarist of 17 years and counting, and a video game enthusiast.
                 </p>
+                <Row>
+                    <Col sm={4}>
+                        <img src={this.props.data.about.media2} alt={'me'} className="aboutImg" />
+                    </Col>
+                    <Col sm={4}>
+                        <img src={this.props.data.about.media3} alt={'me'} className="aboutImg" />
+                    </Col>
+                    <Col sm={4}>
+                        <img src={this.props.data.about.media4} alt={'me'} className="aboutImg" />
+                    </Col>
+                </Row>
             </div>
             )
     }

@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import '../styles/main.css'
-import {Col} from 'react-bootstrap'
 import TweenMax from 'gsap'
 
 
@@ -18,8 +17,8 @@ class Contact extends Component {
 
     render() {
         return (
-            <div className="sectionContainer" style={{overflow: 'hidden', width: '40vmin'}} ref={s => this.section = s}>
-                <h1 className="sectionHead">Contact</h1>
+            <div className="sectionContainerContact" ref={s => this.section = s}>
+                <h1 className="text-center">Contact</h1>
                 <h2 className="row text-center">
                         <a href="https://www.facebook.com/cslewis503" target="_blank"><i className="fa fa-facebook-square"></i></a>
                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@coreyslewis.com" target="_blank"><i className="fa fa-envelope-square"></i></a>

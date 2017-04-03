@@ -18,7 +18,7 @@ class Music extends Component {
     render() {
         return (
             <div className="sectionContainerMusic" ref={s => this.section = s}>
-                <h1 className="sectionHead">Some acoustic guitar</h1>
+                <h1 className="sectionHead">Poor sound quality youtube videos!</h1>
                     <div  className="videoWrapper">
                         <iframe src="https://www.youtube.com/embed/qqytoS_1OLo" allowFullScreen></iframe>
                     </div>

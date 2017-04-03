@@ -12,18 +12,28 @@ html, body, #root {
 }
 
 .aboutPortrait {
-  height: 275px;
+  height: 250px;
+  padding: 10px;
   max-height: 80%;
-  border-radius: 100%;
   position: relative;
+  border-radius: 1%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+.aboutImg {
+  height: 275px;
+  max-height: 80%;
+  position: relative;
+  border-radius: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 .fa {
-  font-size: 55px;
+  font-size: 75px;
   margin: 10px;
   padding: 0;
 }
@@ -57,6 +67,7 @@ html, body, #root {
   background-repeat: no-repeat;
 }
 
+
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
@@ -69,16 +80,6 @@ html, body, #root {
 	left: 0;
 	width: 100%;
 	height: 100%;
-}
-
-.portraitBackground {
-  background: url('../../public/portBack.jpg'); 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  border-radius: 5px;
-  height: 300px;
 }
 
 .mainHeader {
@@ -128,8 +129,17 @@ html, body, #root {
     animation-fill-mode:both;
 }
 
+.portraitBackground {
+  background: url('../../public/portBack.jpg'); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 5px;
+  height: 300px;
+}
+
 .sectionContainer {
-  background-color: #12161e;
   top: 53%;
   left: 50%;
   max-height: 80%;
@@ -137,16 +147,15 @@ html, body, #root {
   position: absolute;
   transform: translate(-50%, -50%);
   padding: 0 10px 0 10px;
-  border: 3px solid white;
   text-align: left;
   color: white;
   font-size: 24px;
   font-family: 'Ubuntu';
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .sectionContainerMusic {
-  background-color: #12161e;
   top: 55%;
   left: 50%;
   max-height: 85%;
@@ -154,12 +163,25 @@ html, body, #root {
   position: absolute;
   transform: translate(-50%, -50%);
   padding: 0 20px 0 20px;
-  border: 3px solid white;
   text-align: left;
   color: white;
   font-size: 24px;
   font-family: 'Ubuntu';
   overflow: auto;
+}
+
+.sectionContainerContact {
+  top: 53%;
+  left: 50%;
+  max-height: 80%;
+  width: 55vmax;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-family: 'Ubuntu';
+  overflow: 'hidden';
+  width: '70vmin';
 }
 
 .sectionHead {
@@ -197,15 +219,15 @@ html, body, #root {
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 8px;
 }
  
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 5px white; 
+    box-shadow: inset 0 0 5px white; 
     border-radius: 10px;
 }
  
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 4px 2px 25px rgba(252, 252, 252, 0.3); 
+    box-shadow: inset 4px 2px 25px rgba(252, 252, 252, 0.3); 
 }
