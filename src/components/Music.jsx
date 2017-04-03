@@ -7,12 +7,12 @@ class Music extends Component {
 
     componentWillEnter (callback) {
         const box = this.section;
-        TweenMax.fromTo(box, 1.5, { opacity: 0 }, { delay: 1.5, opacity: 1, onComplete: callback })
+        TweenMax.fromTo(box, 0.5, { opacity: 0 }, { delay: 0.5, opacity: 1, onComplete: callback })
     }
 
     componentWillLeave (callback) {
         const box = this.section;
-        TweenMax.fromTo(box, 1, { opacity: 1 }, { opacity: 0, onComplete: callback });
+        TweenMax.fromTo(box, 0.5, { opacity: 1 }, { opacity: 0, onComplete: callback });
     }
 
     render() {

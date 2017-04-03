@@ -7,12 +7,12 @@ class About extends Component {
     
     componentWillEnter (callback) {
         const box = this.section;
-        TweenMax.fromTo(box, 1.5, { opacity: 0 }, { delay: 1.5, opacity: 1, onComplete: callback })
+        TweenMax.fromTo(box, 0.5, { opacity: 0 }, { delay: 0.5, opacity: 1, onComplete: callback })
     }
 
     componentWillLeave (callback) {
         const box = this.section;
-        TweenMax.fromTo(box, 1, { opacity: 1 }, { opacity: 0, onComplete: callback });
+        TweenMax.fromTo(box, 0.5, { opacity: 1 }, { opacity: 0, onComplete: callback });
     }
 
     render() {
@@ -22,11 +22,13 @@ class About extends Component {
                 <div className="portraitBackground">
                     <img src={this.props.data.about.media} alt={'me'} className="aboutPortrait" />
                 </div>
+                <p className="pageText">My name is Corey Lewis,  I graduated from Portland State University in 2014 with a B.S. in Biological Science.</p>
+                <p className="pageText">I spent the past six months completing an internship with <a href="https://www.transflection.com" target="_blank">Transflection</a>, a Portland, 
+                    OR based digital marketing start up.  This was an amazing experience for two reasons: I worked directly under their lead engineer, and this was the first time I'd 
+                    worked on a real project.  We used JavaScript, jQuery, bootstrap, node, express/koa, mongoDB, and most recently we began using ReactJS with Redux.
+                </p>
                 <p className="pageText">
-                    My name is Corey Lewis.  I graduated from Portland State University in 2014 with a B.S. in Biological Science. I have spent the past six months completing an
-                    internship with a Portland, OR start-up.  This was an amazing experience (up to this point I had only worked solo self-study, not an actual project).  Technologies 
-                    utilized were JavaScript, jQuery, bootstrap, node, express/koa, mongoDB, and most recently we began using ReactJS, which I have been enjoying (and I used to build 
-                    this site).
+                    I have been enjoying using React and built this site with the library (<a href="https://github.com/cursiv3/personal-website" target="_blank">code here</a>)
                 </p>
                 <p className="pageText">
                     I started learning programming in January of 2016 as my search for employment in the field of Biology was not yielding results. A friend recommended "Learn Python 
