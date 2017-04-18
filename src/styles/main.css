@@ -8,7 +8,12 @@ html, body, #root {
   -o-background-size: cover;
   background-size: cover;
   text-align: center;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none !important;
+  color: #96beff !important;
 }
 
 .aboutPortrait {
@@ -16,19 +21,14 @@ html, body, #root {
   padding: 10px;
   max-height: 80%;
   position: relative;
-  border-radius: 1%;
+  border-radius: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .aboutImg {
-  height: 275px;
-  max-height: 80%;
-  position: relative;
   border-radius: 1%;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 
@@ -67,19 +67,17 @@ html, body, #root {
   background-repeat: no-repeat;
 }
 
-
-.videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
-}
-.videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+.landingHeader {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  font-family: 'Josefin Sans';
+  transition: opacity 2s linear;
+  opacity: 1;
 }
 
 .mainHeader {
@@ -87,7 +85,7 @@ html, body, #root {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 3px solid white;
+  border-top: 1px solid white;
   text-align: center;
   color: white;
   font-size: 45px;
@@ -111,7 +109,7 @@ html, body, #root {
 }
 
 .navBtn {
-  border: 3px solid white;
+  /*border: 3px solid white;*/
   color: white;
   font-family: 'Josefin Sans';
   font-size: 22px;
@@ -121,9 +119,21 @@ html, body, #root {
   width: 80px;
 }
 
+.navActive {
+  color: #3284ff;
+  border-bottom: 1px solid #3284ff;
+  font-family: 'Josefin Sans';
+  font-size: 22px;
+  text-align: center;
+  padding: 0 -10px 0 10px;
+  margin: 0 5px 0 5px;
+  width: 80px;
+  animation: btnHover 0.25s;
+  animation-fill-mode:both;
+}
+
 .navHov:hover {
     cursor: pointer;
-    border: 2px solid white;
     color: #3284ff;
     animation: btnHover 0.25s;
     animation-fill-mode:both;
@@ -140,34 +150,16 @@ html, body, #root {
 }
 
 .sectionContainer {
-  top: 53%;
+  margin-top: 50px;
   left: 50%;
-  max-height: 80%;
   width: 55vmax;
   position: absolute;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   padding: 0 10px 0 10px;
   text-align: left;
   color: white;
-  font-size: 24px;
+  font-size: 18px;
   font-family: 'Ubuntu';
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-.sectionContainerMusic {
-  top: 55%;
-  left: 50%;
-  max-height: 85%;
-  width: 60vmax;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  padding: 0 20px 0 20px;
-  text-align: left;
-  color: white;
-  font-size: 24px;
-  font-family: 'Ubuntu';
-  overflow: auto;
 }
 
 .sectionContainerContact {
@@ -180,8 +172,16 @@ html, body, #root {
   color: white;
   font-size: 24px;
   font-family: 'Ubuntu';
-  overflow: 'hidden';
-  width: '70vmin';
+  overflow: hidden;
+  width: 90vmin;
+}
+
+.sectionContainerResume {
+  margin: 80px 25px 0 25px;
+  left: 50%;
+  width: 70vmax;
+  position: absolute;
+  transform: translateX(-50%);
 }
 
 .sectionHead {
@@ -193,9 +193,23 @@ html, body, #root {
   clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
 }
 
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 @keyframes btnHover {
   100% {
-    transform: translate(0, -0.1em);
+    transform: translate(0, -0.2em);
   }
 }
 
@@ -219,15 +233,6 @@ html, body, #root {
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 0;
 }
  
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px white; 
-    border-radius: 10px;
-}
- 
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    box-shadow: inset 4px 2px 25px rgba(252, 252, 252, 0.3); 
-}

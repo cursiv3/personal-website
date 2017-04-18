@@ -1,5 +1,5 @@
 module.exports = {
-    currentDisplay: 'Landing',
+    currentDisplay: 'landing',
     navBar: 'navEntry',
     about: {
         media: require('../../public/coreyPort.jpg'),
@@ -7,6 +7,13 @@ module.exports = {
         media3: require('../../public/coreychewie.jpg'),
         media4: require('../../public/corey2.jpg'),
     },
+    navBtn: [
+        'navBtn navHov',
+        'navBtn navHov',
+        'navBtn navHov',
+        'navBtn navHov',
+        'navBtn navHov',
+    ],
     portfolio: [
             {
                 id: 1, 
@@ -61,10 +68,11 @@ module.exports = {
                 to get you thinking about complex tasks using the different tools available 
                 in JavaScript. These challenges were the culmination of each section.  I've 
                 linked these to show more where I came from rather than what I can do. The
-                code for this site is on my github (linked in my contact page).`,
+                code for this site is `,
     music: [],
     contact: {
         media: '',
         text: [],
-    }
+    },
+    resume: '../../public/coreyResumeIcons.jpg',
 }

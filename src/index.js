@@ -11,26 +11,18 @@ class Index extends Component {
     super(props);
     this.state = stateFile;
 
-    this.navClick = (key) => {
-
-            switch (key) {
-                case 1:
-                    this.setState({ currentDisplay: 'About', navBar: 'navAfter' });
-                    break
-                case 2:
-                    this.setState({ currentDisplay: 'Portfolio', navBar: 'navAfter'});
-                    break
-                case 3:
-                    this.setState({ currentDisplay: 'Music', navBar: 'navAfter'});
-                    break
-                case 4:
-                    this.setState({ currentDisplay: 'Contact', navBar: 'navAfter'});
-                    break
-                default:
-                    break
-            }
+    this.navClick = (page, key) => {
+        this.setState(
+            {
+                currentDisplay: page, 
+                navBar: 'navAfter',
+                navBtn: this.state.navBtn.map((val, idx) => {
+                    if (idx === key) return 'navActive'
+                    return 'navBtn navHov'
+                })
+            })
         }
-  }
+    }
 
   render() {
     return (
@@ -42,4 +34,4 @@ class Index extends Component {
   }
 }
 
-ReactDOM.render(<Index />, document.getElementById('root'));
+ReactDOM.render(<Index />, document.getElementById('root'))

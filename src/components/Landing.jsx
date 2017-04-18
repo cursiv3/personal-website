@@ -19,8 +19,9 @@ class Landing extends Component {
     render() {
         return (
                 <div ref={s => this.section = s}>
+                    <h1 className="landingHeader">corey lewis</h1>
                     <div className="mainHeader">
-                        <h1>Aspiring developer.</h1>
+                        <h3>developer</h3>
                     </div>
                 </div>
         )

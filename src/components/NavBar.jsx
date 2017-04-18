@@ -11,16 +11,19 @@ class NavBar extends Component {
                         <tbody>  
                             <tr>
                                 <td>
-                                    <div className="navBtn navHov" onClick={evt => this.props.navClick(1)}>About</div>
+                                    <div className={this.props.data.navBtn[0]} onClick={evt => this.props.navClick('about', 0)}>about</div>
                                 </td>
                                 <td>
-                                    <div className="navBtn navHov" onClick={evt => this.props.navClick(2)}>Portfolio</div>
+                                    <div className={this.props.data.navBtn[1]} onClick={evt => this.props.navClick('portfolio', 1)}>portfolio</div>
                                 </td>
                                 <td>
-                                    <div className="navBtn navHov" onClick={evt => this.props.navClick(3)}>Music</div>
+                                    <div className={this.props.data.navBtn[2]} onClick={evt => this.props.navClick('music', 2)}>music</div>
                                 </td>
                                 <td>
-                                    <div className="navBtn navHov" onClick={evt => this.props.navClick(4)}>Contact</div>
+                                    <div className={this.props.data.navBtn[3]} onClick={evt => this.props.navClick('contact', 3)}>contact</div>
+                                </td>
+                                <td>
+                                    <div className={this.props.data.navBtn[4]} onClick={evt => this.props.navClick('resume', 4)}>resume</div>
                                 </td>
                             </tr>   
                         </tbody>                

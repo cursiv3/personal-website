@@ -19,9 +19,9 @@ class Portfolio extends Component {
     render() {
         return (
             <div className="sectionContainer" ref={s => this.section = s}>
-                <h1 className="col-sm-12 sectionHead">Some things I've done</h1>
+                <h1 className="col-sm-12 sectionHead">a few things I've made</h1>
                 <Col sm={12}>
-                    <p>{this.props.data.portfolioIntro}</p>
+                    <p>{this.props.data.portfolioIntro}<a href="https://github.com/cursiv3/personal-website">on my github.</a></p>
                 </Col>
                 {this.props.data.portfolio.map( data => 
                 <Col sm={6} key={data.id}>
