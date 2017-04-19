@@ -25,7 +25,7 @@ class Resume extends Component {
                             <img src={require("../../public/coreyResumeIcons.jpg")} className="img-responsive" alt="coreyVisualResume" />
                         </a>
                         <a download="coreyResumeIcons.jpg" href="/static/media/coreyResumeIcons.018e4bb8.jpg">
-                            <h5>download</h5>
+                            <h5 className="text-center">download</h5>
                         </a>
                     </Col>
                     <Col sm={6}>
@@ -33,7 +33,7 @@ class Resume extends Component {
                             <img src={require("../../public/Resume_Typed.jpg")} className="img-responsive" alt="coreyTypedResume" />
                         </a>
                         <a download href="Resume_Typed.pdf">
-                            <h5>download</h5>
+                            <h5 className="text-center">download</h5>
                         </a>
                     </Col>
                 </Row>

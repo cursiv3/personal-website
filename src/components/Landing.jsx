@@ -21,7 +21,7 @@ class Landing extends Component {
                 <div ref={s => this.section = s}>
                     <h1 className="landingHeader">corey lewis</h1>
                     <div className="mainHeader">
-                        <h3>developer</h3>
+                        <h2>developer</h2>
                     </div>
                 </div>
         )
