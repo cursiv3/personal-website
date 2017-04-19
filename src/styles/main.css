@@ -33,7 +33,7 @@ a {
 
 
 .fa {
-  font-size: 75px;
+  font-size: 10vh;
   margin: 10px;
   padding: 0;
 }
@@ -69,12 +69,12 @@ a {
 
 .landingHeader {
   position: absolute;
-  top: 80px;
+  top: 110px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
   color: white;
-  font-size: 45px;
+  font-size: 6.5vh;
   font-family: 'Josefin Sans';
   transition: opacity 2s linear;
   opacity: 1;
@@ -86,9 +86,9 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   border-top: 1px solid white;
+  padding-top: 15px;
   text-align: center;
   color: white;
-  font-size: 45px;
   font-family: 'Josefin Sans';
   transition: opacity 2s linear;
   opacity: 1;
@@ -100,9 +100,9 @@ a {
   animation-fill-mode: forwards;
 }
 
+
 .navEntry {
   position: absolute;
-  text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -220%);
@@ -112,27 +112,27 @@ a {
 .navBtn {
   color: white;
   font-family: 'Josefin Sans';
-  font-size: 28px;
+  font-size: 3vh;
   text-align: center;
-  width: 80px;
-  margin: 0 10px 0 10px;
+  margin: 0 1vmin 0 1vmin;
+  padding: 5px;
 }
 
 .navActive {
-  color: #3284ff;
-  border-bottom: 1px solid #3284ff;
+  color: #6da7ff;
+  border-bottom: 2px solid #6da7ff;
   font-family: 'Josefin Sans';
-  font-size: 28px;
+  font-size: 3vh;
   text-align: center;
-  margin: 0 10px 0 10px;
-  width: 80px;
   animation: btnHover 0.25s;
   animation-fill-mode:both;
+  margin: 0 1vmin 0 1vmin;
+  padding: 5px;
 }
 
 .navHov:hover {
     cursor: pointer;
-    color: #3284ff;
+    color: gray;
     animation: btnHover 0.25s;
     animation-fill-mode:both;
 }
@@ -147,42 +147,65 @@ a {
   height: 300px;
 }
 
+.resumeVisualDiv {
+  margin-top: 100px;
+}
+
+.resumeVisualImg {
+  background: url('../../public/CoreyLewisResumeVisual.jpg') no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  height: 60vh;
+
+}
+
+.resumeTypedDiv {
+  margin-top: 100px;
+}
+
+.resumeTypedImg {
+  background: url('../../public/Resume_Typed.jpg') no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  height: 60vh;
+
+}
+
 .sectionContainer {
-  margin-top: 50px;
+  margin-top: 80px;
   left: 50%;
-  width: 60vmax;
-  position: absolute;
   transform: translateX(-50%);
+  width: 50vmax;
+  position: absolute;
   text-align: left;
   color: white;
-  font-size: 18px;
+  font-size: 22px;
   font-family: 'Ubuntu';
 }
 
 .sectionContainerContact {
   top: 53%;
   left: 50%;
-  max-height: 80%;
-  width: 55vmax;
   position: absolute;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 24px;
-  font-family: 'Ubuntu';
+  font-size: 10px;
   overflow: hidden;
-  width: 90vmin;
+  width: 50vmax;
 }
 
 .sectionContainerResume {
-  margin-top: 120px;
-  left: 50%;
-  width: 60vmax;
-  position: absolute;
-  transform: translateX(-50%);
-  text-align: left;
   color: white;
   font-size: 18px;
   font-family: 'Ubuntu';
+  width: 45vh;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .sectionHead {
@@ -225,11 +248,13 @@ a {
   }
   100% {
     opacity: 1;
-    position: absolute;
+    position: fixed;
     top: 15px;
     left: 50%;
     transform: translateX(-50%);
     display: inline-block;
+    background-color: #4f4f4f;
+    border-radius: 5px;
   }
 }
 

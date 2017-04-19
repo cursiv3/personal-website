@@ -5,6 +5,10 @@ import TweenMax from 'gsap'
 
 
 class About extends Component {
+
+    componentWillMount () {
+        setTimeout(() => {window.scrollTo(0, 0)}, 500);
+    }
     
     componentWillEnter (callback) {
         const box = this.section;
@@ -19,7 +23,7 @@ class About extends Component {
     render() {
         return (
             <div className="sectionContainer" ref={s => this.section = s}>
-                <h1 className="sectionHead">allow me to introduce myself</h1>
+                <h1 className="sectionHead">allow myself to introduce.... myself</h1>
                 <div className="portraitBackground">
                     <img src={this.props.data.about.media} alt={'me'} className="aboutPortrait" />
                 </div>

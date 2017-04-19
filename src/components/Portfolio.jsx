@@ -6,6 +6,10 @@ import TweenMax from 'gsap'
 
 class Portfolio extends Component {
 
+    componentWillMount () {
+        setTimeout(() => {window.scrollTo(0, 0)}, 500);
+    }
+
     componentWillEnter (callback) {
         const box = this.section;
         TweenMax.fromTo(box, 0.5, { opacity: 0 }, { delay: 0.5, opacity: 1, onComplete: callback })

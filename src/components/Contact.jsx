@@ -4,6 +4,10 @@ import TweenMax from 'gsap'
 
 
 class Contact extends Component {
+
+    componentWillMount () {
+        setTimeout(() => {window.scrollTo(0, 0)}, 500);
+    }
     
     componentWillEnter (callback) {
         const box = this.section;
