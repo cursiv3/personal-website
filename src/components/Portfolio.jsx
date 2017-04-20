@@ -28,7 +28,7 @@ class Portfolio extends Component {
                     <p>{this.props.data.portfolioIntro}<a href="https://github.com/cursiv3/personal-website">on my github.</a></p>
                 </Col>
                 {this.props.data.portfolio.map( data => 
-                <Col sm={6} key={data.id}>
+                <Col sm={6} key={data.id} className="folioText">
                     <a href={data.link} target="_blank">
                         <div className="folioImg" style={{backgroundImage: 'url(' + data.img + ')'}}></div>
                     </a>

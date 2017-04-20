@@ -15,8 +15,16 @@ module.exports = {
         'navBtn navHov',
     ],
     portfolio: [
+        {
+                id: 7, 
+                link: 'https://codepen.io/cursiv3/pen/dWGqYE',
+                img: require('../../public/locationPage.png'),
+                text: `This was a solo project I was given at the end of my
+                internship with Transflection. It was a mock up for a detail
+                view that could be used for the different client locations.`,
+            },
             {
-                id: 1, 
+                id: 6, 
                 link: 'http://codepen.io/cursiv3/pen/qqMMpv/',
                 img: require('../../public/twitch.png'),
                 text: `In this challenge I learned to query the Twitch.tv 
@@ -25,37 +33,37 @@ module.exports = {
                 account or it doesn't exist.`,
             },
             { 
-                id: 2,
+                id: 5,
                 link: 'http://codepen.io/cursiv3/pen/PbKPEv',
                 img: require('../../public/wiki.png'),
-                text: `In this challenge  with this I simply needed to query 
+                text: `In this challenge I simply needed to query 
                 the wikipedia API based on the string typed into the search 
-                bar and display matches. I say "simply" but their API is not 
+                bar and display matches. Their API is not 
                 very intuitive.`,
             },
             { 
-                id: 3,
+                id: 4,
                 link: 'http://codepen.io/cursiv3/pen/ozdrzG',
                 img: require('../../public/weather.png'),
                 text: `In this challenge I learned how to grab geolocation data
                 using an IP address, then get weather data from a weather API.`,
             },
             { 
-                id: 4,
+                id: 3,
                 link: 'http://codepen.io/cursiv3/pen/qaVQqv',
                 img: require('../../public/quote.png'),
                 text: `This was my first time working with an API. It's a simple 
                 random quote generator with a button to share the quote to twitter.`,
             },
             { 
-                id: 5,
+                id: 2,
                 link: 'http://codepen.io/cursiv3/pen/NRGZPV',
                 img: require('../../public/personalsite.png'),
                 text: `This was my first time working with bootstrap. The 
                 challenge was to build a very simple personal website.`,
             },
             { 
-                id: 6,
+                id: 1,
                 link: 'http://codepen.io/cursiv3/pen/pEJmLK',
                 img: require('../../public/curie.png'),
                 text: `This was the first front end challege presented by 

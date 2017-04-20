@@ -22,27 +22,21 @@ class Resume extends Component {
 
     render() {
         return (
-            <div ref={s => this.section = s}>
-                <div className="sectionContainerResume">
-                    <div className="resumeVisualDiv">
-                        <h3>visual resume</h3>
-                        <a href="/static/media/CoreyLewisResumeVisual.018e4bb8.jpg" target="_blank">    
-                            <div className="resumeVisualImg"></div>
-                        </a>
-                        <a download="coreyResumeIcons.jpg" href="/static/media/coreyResumeIcons.018e4bb8.jpg">
-                            <h5 className="text-center">download</h5>
-                        </a>
-                    </div>
-                    <div className="resumeTypedDiv">
-                        <h3>text resume</h3>
-                        <a href="/static/media/Resume_Typed.1cb08635.jpg" target="_blank">
-                            <div className="resumeTypedImg" />
-                        </a>
-                        <a download href="CoreyLewisResumeTyped.pdf">
-                            <h5 className="text-center">download</h5>
-                        </a>
-                    </div>
-                </div>
+            <div ref={s => this.section = s} className="sectionContainerResume">
+                    <h3>visual resume</h3>
+                    <a href="/static/media/CoreyLewisResumeVisual.018e4bb8.jpg" target="_blank">    
+                        <img src={require("../../public/CoreyLewisResumeVisual.jpg")} alt="Corey Lewis Visual Resume" className="resumeImg" />
+                    </a>
+                    <a download href="/static/media/CoreyLewisResumeVisual.018e4bb8.jpg">
+                        <h5 className="text-center">download</h5>
+                    </a>
+                    <h3>text resume</h3>
+                    <a href="https://drive.google.com/open?id=0Bw92SM4ozWAJbUZmT2E2dUM3SmM" target="_blank">
+                        <img src={require("../../public/Resume_Typed.jpg")} alt="Corey Lewis Typed Resume" className="resumeImg" />
+                    </a>
+                    <a href="https://drive.google.com/uc?export=download&id=0Bw92SM4ozWAJbUZmT2E2dUM3SmM">
+                        <h5 className="text-center">download</h5>
+                    </a>
             </div>
         )
     }

@@ -26,7 +26,7 @@ class Index extends Component {
 
   render() {
     return (
-      <div>
+      <div className="backgroundImg">
         <CurrentSection data={this.state} />
         <NavBar data={this.state} navClick={this.navClick} />
       </div>
@@ -34,4 +34,4 @@ class Index extends Component {
   }
 }
 
-ReactDOM.render(<Index />, document.getElementById('root'))
+ReactDOM.render(<Index />, document.getElementById('app'))
