@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import '../styles/main.css'
-import {Row, Col} from 'react-bootstrap'
+import 'react-bootstrap'
 import TweenMax from 'gsap'
 
 

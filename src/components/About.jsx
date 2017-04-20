@@ -28,9 +28,9 @@ class About extends Component {
                     <img src={this.props.data.about.media} alt={'me'} className="aboutPortrait" />
                 </div>
                 <p className="pageText">My name is Corey Lewis,  I graduated from Portland State University in 2014 with a B.S. in Biological Science.</p>
-                <p className="pageText">I am a self taught programmer, and spent the past six months completing an internship with <a href="https://www.transflection.com" target="_blank">Transflection</a>, a Portland, 
-                    OR based digital marketing start up.  This was an amazing experience for two reasons: I worked directly under their lead engineer, and this was the first time I'd 
-                    worked on a real project.  We used JavaScript, jQuery, Bootstrap, Node, Express/Koa, MongoDB. I finished the internship using ReactJS with Redux.
+                <p className="pageText">I am a self taught programmer. I spent the past six months completing an internship with <a href="https://www.transflection.com" target="_blank">Transflection</a>, a Portland, 
+                    OR based digital marketing startup.  This was an amazing experience for two reasons: I worked directly under their lead engineer, and this was the first time I'd 
+                    worked on a real project.  We worked with JavaScript, jQuery, Bootstrap, Node, Express/Koa, MongoDB. I finished the internship using ReactJS with Redux.
                 </p>
                 <p className="pageText">
                     I have been enjoying using React. I built this site with the library and the repo with the code <a href="https://github.com/cursiv3/personal-website" target="_blank">can be found here</a>.
