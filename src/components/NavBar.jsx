@@ -20,7 +20,7 @@ class NavBar extends Component {
                                 <div className={this.props.data.navBtn[2]} onClick={evt => this.props.navClick('music', 2)}>music</div>
                             </td>
                             <td>
-                                <div className={this.props.data.navBtn[3]} onClick={evt => this.props.navClick('resume', 3)}>resume</div>
+                                <div className={this.props.data.navBtn[3]} onClick={evt => this.props.navClick('resumepage', 3)}>resume</div>
                             </td>
                             <td>
                                 <div className={this.props.data.navBtn[4]} onClick={evt => this.props.navClick('contact', 4)}>contact</div>

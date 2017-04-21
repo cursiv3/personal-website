@@ -26,7 +26,7 @@ class Index extends Component {
 
   render() {
     return (
-      <div className="backgroundImg">
+      <div className="scrollBox">
         <CurrentSection data={this.state} />
         <NavBar data={this.state} navClick={this.navClick} />
       </div>
