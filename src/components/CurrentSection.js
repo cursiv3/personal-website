@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
-import Landing from './Landing.jsx'
-import About from './About.jsx'
-import Portfolio from './Portfolio.jsx'
-import Music from './Music.jsx'
-import Contact from './Contact.jsx'
-import ResumePage from './ResumePage.jsx'
+import Landing from './Landing.js'
+import About from './About.js'
+import Portfolio from './Portfolio.js'
+import Music from './Music.js'
+import Contact from './Contact.js'
+import ResumePage from './ResumePage.js'
 import TransitionGroup from 'react-addons-transition-group'
 
 class CurrentSection extends Component {

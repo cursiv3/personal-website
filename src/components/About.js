@@ -28,12 +28,16 @@ class About extends Component {
                     <img src={this.props.data.about.media} alt={'me'} className="aboutPortrait" />
                 </div>
                 <p className="pageText">My name is Corey Lewis,  I graduated from Portland State University in 2014 with a B.S. in Biological Science.</p>
-                <p className="pageText">I am a self taught programmer. I spent the past six months completing an internship with <a href="https://www.transflection.com" target="_blank">Transflection</a>, a Portland, 
+                <p className="pageText">I am a self taught programmer currently working as a Junior Web App Developer with <a href="https://www.skillsai.com/" target="_blank">SkillsAI</a>. 
+                    I spent the past six months completing an internship with <a href="https://www.transflection.com" target="_blank">Transflection</a>, a Portland, 
                     OR based digital marketing startup.  This was an amazing experience for two reasons: I worked directly under their lead engineer, and this was the first time I'd 
                     worked on a real project.  We worked with JavaScript, jQuery, Bootstrap, Node, Express/Koa, MongoDB. I finished the internship using ReactJS with Redux.
                 </p>
                 <p className="pageText">
-                    I have been enjoying using React. I built this site with the library and the repo with the code <a href="https://github.com/cursiv3/personal-website" target="_blank">can be found here</a>.
+                    I have been enjoying using React. I built this site with the library and the repo with the code 
+                    <a href="https://github.com/cursiv3/personal-website" target="_blank">
+                    can be found here
+                    </a>.
                 </p>
                 <p className="pageText">
                     I started learning programming in January of 2016 as my search for employment in the field of Biology was not yielding results. A friend recommended "Learn Python 

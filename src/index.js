@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom';
 import './styles/main.css'
-import CurrentSection from './components/CurrentSection.jsx'
-import NavBar from './components/NavBar.jsx'
+import CurrentSection from './components/CurrentSection.js'
+import NavBar from './components/NavBar.js'
 import stateFile from './components/stateFile'
 
 

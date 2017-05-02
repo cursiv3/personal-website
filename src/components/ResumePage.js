@@ -24,10 +24,10 @@ class ResumePage extends Component {
                 <Row>
                     <Col sm={6}>
                         <h3 className="text-center">Visual Resume</h3>
-                        <a href="/static/media/CoreyLewisResumeVisual.5f7c2f42.jpg" target="_blank" classID>
-                            <img src={require("../../public/CoreyLewisResumeVisual.jpg")} alt="Corey Lewis Visual Resume" className="img-responsive resumeImg" />
+                        <a href="/static/media/CoreyLewisResumeVisual.c027a96c.png" target="_blank" classID>
+                            <img src={require("../../public/CoreyLewisResumeVisual.png")} alt="Corey Lewis Visual Resume" className="img-responsive resumeImg" />
                         </a>
-                        <a download="CoreyLewisResumeVisual.5f7c2f42.jpg" href="/static/media/CoreyLewisResumeVisual.5f7c2f42.jpg">
+                        <a download="CoreyLewisResumeVisual.c027a96c.png" href="/static/media/CoreyLewisResumeVisual.c027a96c.png">
                             <button className="resumeBtn">download</button>
                         </a>
                     </Col>
