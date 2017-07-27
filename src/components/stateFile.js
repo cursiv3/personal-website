@@ -17,20 +17,25 @@ module.exports = {
   portfolio: [
     {
       id: 8,
+      link: "https://codepen.io/cursiv3/pen/xLKJje",
+      img: require("../../public/modernPage.jpg"),
+      text: `I built this in a few hours as a simple portfolio addition.`
+    },
+    {
+      id: 7,
       link: "https://codepen.io/cursiv3/pen/GERqGP",
       img: require("../../public/calc.png"),
       text: `This was a freecodecamp.com front end challenge.`
     },
     {
-      id: 7,
+      id: 6,
       link: "https://codepen.io/cursiv3/pen/dWGqYE",
       img: require("../../public/locationPage.jpg"),
       text: `This was a solo project I was given at the end of my
-                internship with Transflection. It was a mock up for a detail
-                view that could be used for the different client locations.`
+                internship with Transflection.`
     },
     {
-      id: 6,
+      id: 5,
       link: "http://codepen.io/cursiv3/pen/qqMMpv/",
       img: require("../../public/twitch.jpg"),
       text: `In this challenge I learned to query the Twitch.tv 
@@ -38,20 +43,13 @@ module.exports = {
                 streaming.`
     },
     {
-      id: 5,
+      id: 4,
       link: "http://codepen.io/cursiv3/pen/PbKPEv",
       img: require("../../public/wiki.jpg"),
       text: `In this challenge I simply needed to query 
                 the wikipedia API based on the string typed into the search 
                 bar and display matches. Their API is not 
                 very intuitive.`
-    },
-    {
-      id: 4,
-      link: "http://codepen.io/cursiv3/pen/ozdrzG",
-      img: require("../../public/weather.jpg"),
-      text: `In this challenge I learned how to grab geolocation data
-                using an IP address, then get weather data from a weather API.`
     },
     {
       id: 3,
