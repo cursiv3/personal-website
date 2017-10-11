@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../../styles/main.css";
+import "./contact.css";
 import TweenMax from "gsap";
 
 class Contact extends Component {

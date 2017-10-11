@@ -1,0 +1,24 @@
+.aboutPortrait {
+  height: 250px;
+  padding: 10px;
+  max-height: 80%;
+  position: relative;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.aboutImg {
+  border-radius: 1%;
+}
+
+.portraitBackground {
+  background: url("../../../public/portBack.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 5px;
+  height: 300px;
+}

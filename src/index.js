@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import "./styles/main.css";
+import "./components/main.css";
 import CurrentSection from "./components/CurrentSection/CurrentSection.js";
 import NavBar from "./components/NavBar/NavBar.js";
 import stateFile from "./components/stateFile";

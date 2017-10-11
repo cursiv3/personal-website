@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import TweenMax from "gsap";
+import "./landing.css";
 
 class Landing extends Component {
   componentWillEnter(callback) {

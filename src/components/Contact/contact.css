@@ -1,0 +1,35 @@
+.fa {
+  font-size: 10vh;
+  margin: 10px;
+  padding: 0;
+}
+
+.fa:hover {
+  color: white;
+}
+
+.fa-facebook-square {
+  color: #3b5998;
+}
+
+.fa-envelope-square {
+  color: #f91616;
+}
+
+.fa-linkedin-square {
+  color: #0077b5;
+}
+
+.fa-github-square {
+  color: gray;
+}
+
+.sectionContainerContact {
+  top: 53%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 10px;
+  width: 50vmax;
+}

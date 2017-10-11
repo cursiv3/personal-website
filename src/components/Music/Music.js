@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../../styles/main.css";
+import "./music.css";
 import TweenMax from "gsap";
 
 class Music extends Component {

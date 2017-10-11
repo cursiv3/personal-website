@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Col } from "react-bootstrap";
-import "../../styles/main.css";
+import "./portfolio.css";
 import TweenMax from "gsap";
 
 class Portfolio extends Component {
