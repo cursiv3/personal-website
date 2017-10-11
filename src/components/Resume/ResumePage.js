@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../styles/main.css";
+import "../../styles/main.css";
 import { Row, Col } from "react-bootstrap";
 import TweenMax from "gsap";
 
@@ -42,7 +42,7 @@ class ResumePage extends Component {
               classID
             >
               <img
-                src={require("../../public/CoreyLewisResumeVisual.png")}
+                src={require("../../../public/CoreyLewisResumeVisual.png")}
                 alt="Corey Lewis Visual Resume"
                 className="img-responsive resumeImg"
               />
@@ -61,7 +61,7 @@ class ResumePage extends Component {
               target="_blank"
             >
               <img
-                src={require("../../public/CoreyLewisResumeTyped.jpg")}
+                src={require("../../../public/CoreyLewisResumeTyped.jpg")}
                 className="img-responsive resumeImg"
               />
             </a>
