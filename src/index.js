@@ -16,7 +16,7 @@ class Index extends Component {
         navBar: "navAfter noinline",
         navBtn: this.state.navBtn.map((val, idx) => {
           if (idx === key) return "navActive";
-          return "navBtn navHov noinline";
+          return "navBtn navHov";
         })
       });
     };
