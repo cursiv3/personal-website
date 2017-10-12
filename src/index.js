@@ -4,7 +4,15 @@ import "./components/main.css";
 import CurrentSection from "./components/CurrentSection/CurrentSection.js";
 import NavBar from "./components/NavBar/NavBar.js";
 import stateFile from "./components/stateFile";
+import App from "./components/App";
 
+import { Provider } from "react-redux";
+import { createStore } from "redux";
+import { BrowserRouter } from "react-router-dom";
+import injectTapEventPlugin from "react-tap-event-plugin";
+import getMuiTheme from "material-ui/styles/getMuiTheme";
+import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
+/*
 class Index extends Component {
   constructor(props) {
     super(props);
@@ -24,12 +32,21 @@ class Index extends Component {
 
   render() {
     return (
-      <div className="scrollBox">
-        <CurrentSection data={this.state} />
-        <NavBar data={this.state} navClick={this.navClick} />
-      </div>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     );
   }
 }
+*/
 
-ReactDOM.render(<Index />, document.getElementById("app"));
+injectTapEventPlugin();
+
+ReactDOM.render(
+  <MuiThemeProvider muiTheme={getMuiTheme()}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </MuiThemeProvider>,
+  document.getElementById("app")
+);

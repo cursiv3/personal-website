@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./about.css";
 import { Row, Col } from "react-bootstrap";
 import TweenMax from "gsap";
+import stateFile from "../stateFile";
 
 class About extends Component {
   componentWillMount() {
@@ -36,7 +37,7 @@ class About extends Component {
         <h1 className="sectionHead">allow myself to introduce.... myself</h1>
         <div className="portraitBackground">
           <img
-            src={this.props.data.about.media}
+            src={stateFile.about.media}
             alt={"me"}
             className="aboutPortrait"
           />
@@ -87,21 +88,21 @@ class About extends Component {
         <Row>
           <Col sm={4}>
             <img
-              src={this.props.data.about.media2}
+              src={stateFile.about.media2}
               alt={"me"}
               className="aboutImg img-responsive"
             />
           </Col>
           <Col sm={4}>
             <img
-              src={this.props.data.about.media3}
+              src={stateFile.about.media3}
               alt={"me"}
               className="aboutImg img-responsive"
             />
           </Col>
           <Col sm={4}>
             <img
-              src={this.props.data.about.media4}
+              src={stateFile.about.media4}
               alt={"me"}
               className="aboutImg img-responsive"
             />
