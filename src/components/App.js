@@ -24,11 +24,14 @@ class App extends React.Component {
       <div>
         <NavBar />
         <Route exact path="/" component={Landing} />
-        <Route path="/about" component={About} />
+        <Route path="/about" render={props => <About db={this.props.db} />} />
         <Route path="/contact" component={Contact} />
         <Route path="/music" component={Music} />
-        <Route path="/portfolio" component={Portfolio} />
-        <Route path="/resume" component={Resume} />
+        <Route
+          path="/portfolio"
+          render={props => <Portfolio db={this.props.db} />}
+        />
+        <Route path="/resume" render={props => <Resume db={this.props.db} />} />
       </div>
     );
   }

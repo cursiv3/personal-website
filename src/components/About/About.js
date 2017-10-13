@@ -4,6 +4,9 @@ import TweenMax from "gsap";
 import stateFile from "../stateFile";
 
 class About extends Component {
+  constructor(props) {
+    super(props);
+  }
   componentWillMount() {
     setTimeout(() => {
       window.scrollTo(0, 0);
@@ -31,15 +34,13 @@ class About extends Component {
   }
 
   render() {
+    const data = this.props.db.about;
+
     return (
       <div className="sectionContainer" ref={s => (this.section = s)}>
         <h1 className="sectionHead">allow myself to introduce.... myself</h1>
         <div className="portraitBackground">
-          <img
-            src={stateFile.about.media}
-            alt={"me"}
-            className="aboutPortrait"
-          />
+          <img src={data.coreyPortrait} alt={"me"} className="aboutPortrait" />
         </div>
         <p className="pageText">
           My name is Corey Lewis, I graduated from Portland State University in
@@ -85,23 +86,23 @@ class About extends Component {
           of 17 years and counting, and a video game enthusiast.
         </p>
         <div>
-          <div sm={4}>
+          <div>
             <img
-              src={stateFile.about.media2}
+              src={data.coreySoccerImg}
               alt={"me"}
               className="aboutImg img-responsive"
             />
           </div>
-          <div sm={4}>
+          <div>
             <img
-              src={stateFile.about.media3}
+              src={data.coreyChewieImg}
               alt={"me"}
               className="aboutImg img-responsive"
             />
           </div>
-          <div sm={4}>
+          <div>
             <img
-              src={stateFile.about.media4}
+              src={data.coreyMascotImg}
               alt={"me"}
               className="aboutImg img-responsive"
             />

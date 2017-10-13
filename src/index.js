@@ -11,6 +11,9 @@ import { createStore } from "redux";
 import { BrowserRouter } from "react-router-dom";
 import getMuiTheme from "material-ui/styles/getMuiTheme";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
+
+const db = require("../mockDB/database");
+
 /*
 class Index extends Component {
   constructor(props) {
@@ -38,11 +41,10 @@ class Index extends Component {
   }
 }
 */
-
 ReactDOM.render(
   <MuiThemeProvider muiTheme={getMuiTheme()}>
     <BrowserRouter>
-      <App />
+      <App db={db} />
     </BrowserRouter>
   </MuiThemeProvider>,
   document.getElementById("app")
