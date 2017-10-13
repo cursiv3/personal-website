@@ -9,7 +9,6 @@ import App from "./components/App";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 import { BrowserRouter } from "react-router-dom";
-import injectTapEventPlugin from "react-tap-event-plugin";
 import getMuiTheme from "material-ui/styles/getMuiTheme";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 /*
@@ -39,8 +38,6 @@ class Index extends Component {
   }
 }
 */
-
-injectTapEventPlugin();
 
 ReactDOM.render(
   <MuiThemeProvider muiTheme={getMuiTheme()}>

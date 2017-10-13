@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./resume.css";
-import { Row, Col } from "react-bootstrap";
 import TweenMax from "gsap";
 
 class ResumePage extends Component {
@@ -33,8 +32,8 @@ class ResumePage extends Component {
   render() {
     return (
       <div ref={s => (this.section = s)} className="sectionContainer">
-        <Row>
-          <Col sm={6}>
+        <div>
+          <div sm={6}>
             <h3 className="text-center">Visual Resume</h3>
             <a
               href="/static/media/CoreyLewisResumeVisual.e1e7d5a4.png"
@@ -53,8 +52,8 @@ class ResumePage extends Component {
             >
               <button className="resumeBtn">download</button>
             </a>
-          </Col>
-          <Col sm={6}>
+          </div>
+          <div sm={6}>
             <h3 className="text-center">Text Resume</h3>
             <a
               href="https://drive.google.com/file/d/0Bw92SM4ozWAJLTRDeGJyX1ZQcjQ/view?usp=sharing"
@@ -68,8 +67,8 @@ class ResumePage extends Component {
             <a href="https://drive.google.com/uc?export=download&id=0Bw92SM4ozWAJLTRDeGJyX1ZQcjQ">
               <button className="resumeBtn">download</button>
             </a>
-          </Col>
-        </Row>
+          </div>
+        </div>
       </div>
     );
   }
