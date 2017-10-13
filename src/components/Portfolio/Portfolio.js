@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Col } from "react-bootstrap";
 import "./portfolio.css";
 import TweenMax from "gsap";
 
@@ -34,16 +33,16 @@ class Portfolio extends Component {
     return (
       <div className="sectionContainer" ref={s => (this.section = s)}>
         <h1 className="col-sm-12 sectionHead">a few things I've made</h1>
-        <Col sm={12}>
+        <div sm={12}>
           <p>
             {this.props.data.portfolioIntro}
             <a href="https://github.com/cursiv3/personal-website">
               on my github.
             </a>
           </p>
-        </Col>
+        </div>
         {this.props.data.portfolio.map(data => (
-          <Col sm={6} key={data.id} className="folioText">
+          <div sm={6} key={data.id} className="folioText">
             <a href={data.link} target="_blank">
               <div
                 className="folioImg"
@@ -51,7 +50,7 @@ class Portfolio extends Component {
               />
             </a>
             <p>{data.text}</p>
-          </Col>
+          </div>
         ))}
       </div>
     );

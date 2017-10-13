@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./about.css";
-import { Row, Col } from "react-bootstrap";
 import TweenMax from "gsap";
 import stateFile from "../stateFile";
 
@@ -85,29 +84,29 @@ class About extends Component {
           I am also a soccer coach, a certified USSF Soccer referee, guitarist
           of 17 years and counting, and a video game enthusiast.
         </p>
-        <Row>
-          <Col sm={4}>
+        <div>
+          <div sm={4}>
             <img
               src={stateFile.about.media2}
               alt={"me"}
               className="aboutImg img-responsive"
             />
-          </Col>
-          <Col sm={4}>
+          </div>
+          <div sm={4}>
             <img
               src={stateFile.about.media3}
               alt={"me"}
               className="aboutImg img-responsive"
             />
-          </Col>
-          <Col sm={4}>
+          </div>
+          <div sm={4}>
             <img
               src={stateFile.about.media4}
               alt={"me"}
               className="aboutImg img-responsive"
             />
-          </Col>
-        </Row>
+          </div>
+        </div>
       </div>
     );
   }
