@@ -5,6 +5,12 @@ module.exports = {
     coreyChewieImg: require("../public/coreychewie.jpg"),
     coreyMascotImg: require("../public/corey2.jpg")
   },
+  portfolioIntro: `I began to work through the curriculum at freecodecamp.com 
+  in July of 2016. Each section was instruction and algorithm challenges 
+  to get you thinking about complex tasks using the different tools available 
+  in JavaScript. These challenges were the culmination of each section.  I've 
+  linked these to show more where I came from rather than what I can do. The
+  code for this site is `,
   portfolio: [
     {
       id: 8,
