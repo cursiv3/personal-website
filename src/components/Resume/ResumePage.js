@@ -30,10 +30,11 @@ class ResumePage extends Component {
   }
 
   render() {
+    const data = this.props.db.resume;
     return (
       <div ref={s => (this.section = s)} className="sectionContainer">
         <div>
-          <div sm={6}>
+          <div>
             <h3 className="text-center">Visual Resume</h3>
             <a
               href="/static/media/CoreyLewisResumeVisual.e1e7d5a4.png"
@@ -41,7 +42,7 @@ class ResumePage extends Component {
               classID
             >
               <img
-                src={require("../../../public/CoreyLewisResumeVisual.png")}
+                src={data.visResume}
                 alt="Corey Lewis Visual Resume"
                 className="img-responsive resumeImg"
               />
@@ -53,16 +54,13 @@ class ResumePage extends Component {
               <button className="resumeBtn">download</button>
             </a>
           </div>
-          <div sm={6}>
+          <div>
             <h3 className="text-center">Text Resume</h3>
             <a
               href="https://drive.google.com/file/d/0Bw92SM4ozWAJLTRDeGJyX1ZQcjQ/view?usp=sharing"
               target="_blank"
             >
-              <img
-                src={require("../../../public/CoreyLewisResumeTyped.jpg")}
-                className="img-responsive resumeImg"
-              />
+              <img src={data.typeResume} className="img-responsive resumeImg" />
             </a>
             <a href="https://drive.google.com/uc?export=download&id=0Bw92SM4ozWAJLTRDeGJyX1ZQcjQ">
               <button className="resumeBtn">download</button>
