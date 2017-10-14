@@ -1,45 +1,24 @@
 import React, { Component } from "react";
 import "./navbar.css";
-import stateFile from "../stateFile";
 import { Link } from "react-router-dom";
 
 class NavBar extends Component {
   render() {
     return (
       <div>
-        <Link
-          to="/about"
-          className={stateFile.navBtn[0]}
-          onClick={evt => this.props.navClick("about", 0)}
-        >
+        <Link to="/about" className="navBtn">
           about
         </Link>
-        <Link
-          to="/portfolio"
-          className={stateFile.navBtn[1]}
-          onClick={evt => this.props.navClick("portfolio", 1)}
-        >
+        <Link to="/portfolio" className="navBtn">
           portfolio
         </Link>
-        <Link
-          to="/music"
-          className={stateFile.navBtn[2]}
-          onClick={evt => this.props.navClick("music", 2)}
-        >
+        <Link to="/music" className="navBtn">
           music
         </Link>
-        <Link
-          to="resume"
-          className={stateFile.navBtn[3]}
-          onClick={evt => this.props.navClick("resumepage", 3)}
-        >
+        <Link to="resume" className="navBtn">
           resume
         </Link>
-        <Link
-          to="contact"
-          className={stateFile.navBtn[4]}
-          onClick={evt => this.props.navClick("contact", 4)}
-        >
+        <Link to="contact" className="navBtn">
           contact
         </Link>
       </div>

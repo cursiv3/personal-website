@@ -1,3 +1,0 @@
-export const CHANGE_PAGE = `CHANGE_PAGE`;
-export const SLIDE_NAVBAR = `SLIDE_NAVBAR`;
-export const ACTIVATE_NAV_BTN = `ACTIVATE_NAV_BTN`;

@@ -1,38 +1,7 @@
 import React, { Component } from "react";
 import "./about.css";
-import TweenMax from "gsap";
-import stateFile from "../stateFile";
 
 class About extends Component {
-  constructor(props) {
-    super(props);
-  }
-  componentWillMount() {
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 500);
-  }
-
-  componentWillEnter(callback) {
-    const box = this.section;
-    TweenMax.fromTo(
-      box,
-      0.5,
-      { opacity: 0 },
-      { delay: 0.5, opacity: 1, onComplete: callback }
-    );
-  }
-
-  componentWillLeave(callback) {
-    const box = this.section;
-    TweenMax.fromTo(
-      box,
-      0.5,
-      { opacity: 1 },
-      { opacity: 0, onComplete: callback }
-    );
-  }
-
   render() {
     const data = this.props.db.about;
 
