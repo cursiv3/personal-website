@@ -36,7 +36,7 @@ class Portfolio extends Component {
         <h1 className="sectionHead">a few things I've made</h1>
         <div>
           <p>
-            {data.portfolioIntro}
+            {this.props.db.portfolioIntro}
             <a href="https://github.com/cursiv3/personal-website">
               on my github.
             </a>

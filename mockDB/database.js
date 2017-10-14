@@ -9,7 +9,7 @@ module.exports = {
   in July of 2016. Each section was instruction and algorithm challenges 
   to get you thinking about complex tasks using the different tools available 
   in JavaScript. These challenges were the culmination of each section.  I've 
-  linked these to show more where I came from rather than what I can do. The
+  linked these to show more where I came from. The
   code for this site is `,
   portfolio: [
     {
