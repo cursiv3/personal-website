@@ -33,7 +33,7 @@
   padding: 5px;
 }
 
-.navHov:hover {
+.navBtn:hover {
   cursor: pointer;
   color: gray;
   animation: btnHover 0.25s;

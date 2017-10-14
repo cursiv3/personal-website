@@ -8,17 +8,12 @@
     "react-scripts": "0.9.5"
   },
   "dependencies": {
-    "classnames": "^2.2.5",
-    "gsap": "^1.20.3",
     "material-ui": "^0.19.4",
     "react": "^15.6.2",
-    "react-addons-transition-group": "^15.6.2",
     "react-dom": "^15.4.2",
-    "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
-    "react-tap-event-plugin": "^3.0.2",
-    "redux": "^3.7.2"
+    "react-tap-event-plugin": "^3.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
