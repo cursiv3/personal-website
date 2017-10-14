@@ -4,12 +4,11 @@
 }
 
 .navEntry {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -220%);
-  display: inline-block;
+  position: fixed;
+  top: 40%;
+  transform: translateY(-50%);
   border-bottom: 1px solid white;
+  border-top: 1px solid white;
 }
 
 .navBtn {
@@ -19,6 +18,13 @@
   text-align: center;
   margin: 0 1vmin 0 1vmin;
   padding: 5px;
+}
+
+.navBtn:hover {
+  cursor: pointer;
+  color: gray;
+  animation: btnHover 0.25s;
+  animation-fill-mode: both;
 }
 
 .navActive {
@@ -33,11 +39,11 @@
   padding: 5px;
 }
 
-.navBtn:hover {
-  cursor: pointer;
-  color: gray;
-  animation: btnHover 0.25s;
-  animation-fill-mode: both;
+.mobileBarDiv {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @keyframes btnHover {
