@@ -11,10 +11,6 @@ import Resume from "./Resume/ResumePage";
 import NavBar from "./NavBar/NavBar";
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   componentDidMount() {
     injectTapEventPlugin();
   }
@@ -22,7 +18,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <NavBar />
+        <NavBar className="navEntry" />
         <Route exact path="/" component={Landing} />
         <Route path="/about" render={props => <About db={this.props.db} />} />
         <Route path="/contact" component={Contact} />

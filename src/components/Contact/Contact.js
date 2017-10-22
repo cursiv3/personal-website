@@ -4,8 +4,9 @@ import "./contact.css";
 class Contact extends Component {
   render() {
     return (
-      <div className="sectionContainerContact" ref={s => (this.section = s)}>
+      <div className="sectionContainerContact">
         <h2 className="text-center">
+          <p>contact@coreyslewis.com</p>
           <a href="https://www.facebook.com/cslewis503" target="_blank">
             <i className="fa fa-facebook-square" />
           </a>

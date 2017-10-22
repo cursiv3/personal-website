@@ -1,48 +1,37 @@
-.navAfter {
-  animation: navSlide 0.6s;
-  animation-fill-mode: forwards;
-}
-
-.navEntry {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -220%);
-  display: inline-block;
-  border-bottom: 1px solid white;
-}
-
 .navBtn {
-  color: white;
-  font-family: "Josefin Sans";
-  font-size: 3vh;
-  text-align: center;
-  margin: 0 1vmin 0 1vmin;
-  padding: 5px;
+  color: white !important;
+  font-family: "Josefin Sans" !important;
+  font-size: 3vh !important;
+  text-align: center !important;
+  margin: 0 1vmin 0 1vmin !important;
+  padding: 5px !important;
 }
 
 .navActive {
-  color: #6da7ff;
-  border-bottom: 2px solid #6da7ff;
-  font-family: "Josefin Sans";
-  font-size: 3vh;
-  text-align: center;
-  animation: btnHover 0.25s;
-  animation-fill-mode: both;
-  margin: 0 1vmin 0 1vmin;
-  padding: 5px;
+  color: #6da7ff !important;
+  border-bottom: 2px solid #6da7ff !important;
+  font-family: "Josefin Sans" !important;
+  font-size: 3vh !important;
+  text-align: center !important;
+  animation: btnHover 0.25s !important;
+  animation-fill-mode: both !important;
+  margin: 0 1vmin 0 1vmin !important;
+  padding: 5px !important;
 }
 
 .navBtn:hover {
-  cursor: pointer;
-  color: gray;
-  animation: btnHover 0.25s;
-  animation-fill-mode: both;
+  cursor: pointer !important;
+  color: gray !important;
+}
+
+.navBtn p:hover {
+  animation: btnHover 0.25s !important;
+  animation-fill-mode: both !important;
 }
 
 @keyframes btnHover {
   100% {
-    transform: translate(0, -0.2em);
+    transform: translate(0, -0.2em) !important;
   }
 }
 

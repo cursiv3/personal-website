@@ -1,5 +1,5 @@
 .fa {
-  font-size: 10vh;
+  font-size: 5em;
   margin: 10px;
   padding: 0;
 }
@@ -31,5 +31,4 @@
   transform: translate(-50%, -50%);
   color: white;
   font-size: 10px;
-  width: 50vmax;
 }

@@ -6,9 +6,10 @@ class About extends Component {
     const data = this.props.db.about;
 
     return (
-      <div className="sectionContainer" ref={s => (this.section = s)}>
+      <div className="sectionContainer">
         <h1 className="sectionHead">allow myself to introduce.... myself</h1>
         <div className="portraitBackground">
+          <div className="circleBacking" />
           <img src={data.coreyPortrait} alt={"me"} className="aboutPortrait" />
         </div>
         <p className="pageText">
@@ -54,28 +55,10 @@ class About extends Component {
           I am also a soccer coach, a certified USSF Soccer referee, guitarist
           of 17 years and counting, and a video game enthusiast.
         </p>
-        <div>
-          <div>
-            <img
-              src={data.coreySoccerImg}
-              alt={"me"}
-              className="aboutImg img-responsive"
-            />
-          </div>
-          <div>
-            <img
-              src={data.coreyChewieImg}
-              alt={"me"}
-              className="aboutImg img-responsive"
-            />
-          </div>
-          <div>
-            <img
-              src={data.coreyMascotImg}
-              alt={"me"}
-              className="aboutImg img-responsive"
-            />
-          </div>
+        <div className="aboutImg">
+          <img src={data.coreySoccerImg} alt={"me"} />
+          <img src={data.coreyChewieImg} alt={"me"} />
+          <img src={data.coreyMascotImg} alt={"me"} />
         </div>
       </div>
     );

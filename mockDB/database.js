@@ -1,6 +1,6 @@
 module.exports = {
   about: {
-    coreyPortrait: require("../public/coreyPort.jpg"),
+    coreyPortrait: require("../public/coreyTransparent.png"),
     coreySoccerImg: require("../public/coreysoccer.jpg"),
     coreyChewieImg: require("../public/coreychewie.jpg"),
     coreyMascotImg: require("../public/corey2.jpg")

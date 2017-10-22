@@ -1,11 +1,13 @@
 import React, { Component } from "react";
+import NavBar from "../NavBar/NavBar";
 import "./landing.css";
 
 class Landing extends Component {
   render() {
     return (
-      <div ref={s => (this.section = s)}>
+      <div>
         <p className="landingHeader">corey lewis</p>
+        <NavBar className="navEntry" />
         <div className="mainHeader">
           <h1>developer</h1>
         </div>
