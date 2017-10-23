@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
 import "./components/main.css";
-
 import { withRouter } from "react-router";
 import { BrowserRouter } from "react-router-dom";
 import getMuiTheme from "material-ui/styles/getMuiTheme";
