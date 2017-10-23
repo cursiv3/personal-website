@@ -75,9 +75,7 @@ module.exports = {
     }
   ],
   resume: {
-    visResume: require("../public/CoreyLewisResumeVisual.png"),
-    typeResume: require("../public/CoreyLewisResumeTyped.jpg"),
-    visResumeLink: "#",
-    typeResumeLink: "#"
+    resume: require("../public/coreyResume.jpg"),
+    resumeLink: "https://drive.google.com/open?id=0Bw92SM4ozWAJbWxzcHFVZ0JvVFE"
   }
 };
