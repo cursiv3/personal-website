@@ -1,5 +1,5 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import injectTapEventPlugin from "react-tap-event-plugin";
 
 import About from "./About/About";
@@ -9,6 +9,7 @@ import Music from "./Music/Music";
 import Portfolio from "./Portfolio/Portfolio";
 import Resume from "./Resume/ResumePage";
 import NavBar from "./NavBar/NavBar";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 class App extends React.Component {
   componentDidMount() {
@@ -16,18 +17,37 @@ class App extends React.Component {
   }
 
   render() {
+    const currentKey = location.pathname.split("/")[1] || "/";
+    const timeout = { enter: 300, exit: 200 };
     return (
       <div>
         <NavBar />
-        <Route exact path="/" component={Landing} />
-        <Route path="/about" render={props => <About db={this.props.db} />} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/music" component={Music} />
-        <Route
-          path="/portfolio"
-          render={props => <Portfolio db={this.props.db} />}
-        />
-        <Route path="/resume" render={props => <Resume db={this.props.db} />} />
+        <TransitionGroup component="main">
+          <CSSTransition
+            key={currentKey}
+            timeout={timeout}
+            classNames="fade"
+            appear
+          >
+            <Switch location={location}>
+              <Route exact path="/" component={Landing} />
+              <Route
+                path="/about"
+                render={props => <About db={this.props.db} />}
+              />
+              <Route path="/contact" component={Contact} />
+              <Route path="/music" component={Music} />
+              <Route
+                path="/portfolio"
+                render={props => <Portfolio db={this.props.db} />}
+              />
+              <Route
+                path="/resume"
+                render={props => <Resume db={this.props.db} />}
+              />
+            </Switch>
+          </CSSTransition>
+        </TransitionGroup>
       </div>
     );
   }
