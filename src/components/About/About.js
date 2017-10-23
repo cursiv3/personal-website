@@ -9,7 +9,6 @@ class About extends Component {
       <div className="sectionContainer">
         <h1 className="sectionHead">allow myself to introduce.... myself</h1>
         <div className="portraitBackground">
-          <div className="circleBacking" />
           <img src={data.coreyPortrait} alt={"me"} className="aboutPortrait" />
         </div>
         <p className="pageText">

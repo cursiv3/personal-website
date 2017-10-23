@@ -1,58 +1,56 @@
-.navBtn {
-  color: white !important;
-  font-family: "Josefin Sans" !important;
-  font-size: 3vh !important;
-  text-align: center !important;
-  margin: 0 1vmin 0 1vmin !important;
-  padding: 5px !important;
+.menuCloseBtn {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  left: 75%;
+  padding: 0;
+  margin: 10px 0 -10px 0;
 }
 
-.navActive {
-  color: #6da7ff !important;
-  border-bottom: 2px solid #6da7ff !important;
-  font-family: "Josefin Sans" !important;
-  font-size: 3vh !important;
-  text-align: center !important;
-  animation: btnHover 0.25s !important;
-  animation-fill-mode: both !important;
-  margin: 0 1vmin 0 1vmin !important;
-  padding: 5px !important;
+.menuCloseBtn:after {
+  content: "";
+  height: 35px;
+  border-left: 2px solid rgb(29, 29, 48);
+  position: absolute;
+  transform: rotate(45deg);
+  left: 15px;
 }
 
-.navBtn:hover {
+.menuCloseBtn:before {
+  content: "";
+  height: 35px;
+  border-left: 2px solid rgb(29, 29, 48);
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 15px;
+}
+
+.menuButton {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.menuClicker {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px;
+}
+
+.navDiv {
+  padding: 10px;
+}
+
+.navButton {
+  color: rgb(29, 29, 48) !important;
+  font-family: "Josefin Sans" !important;
+  display: list-item !important;
+  font-size: 3em;
+  margin: 20px auto;
+}
+
+.navButton:hover {
   cursor: pointer !important;
   color: gray !important;
-}
-
-.navBtn p:hover {
-  animation: btnHover 0.25s !important;
-  animation-fill-mode: both !important;
-}
-
-@keyframes btnHover {
-  100% {
-    transform: translate(0, -0.2em) !important;
-  }
-}
-
-@keyframes navSlide {
-  0% {
-    opacity: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -220%);
-    display: inline-block;
-  }
-  100% {
-    opacity: 1;
-    position: fixed;
-    top: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: inline-block;
-    background-color: #3d3d3d;
-    border-radius: 5px;
-    box-shadow: 0 2px 7px black;
-  }
 }

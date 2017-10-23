@@ -18,7 +18,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <NavBar className="navEntry" />
+        <NavBar />
         <Route exact path="/" component={Landing} />
         <Route path="/about" render={props => <About db={this.props.db} />} />
         <Route path="/contact" component={Contact} />
