@@ -27,6 +27,7 @@ class NavBar extends Component {
           width={175}
           open={this.state.open}
           onRequestChange={open => this.setState({ open })}
+          openSecondary={true}
         >
           <div className="menuCloseBtn" onClick={this.handleClose} />
           <div className="navDiv">

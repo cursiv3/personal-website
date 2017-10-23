@@ -28,7 +28,10 @@
 .menuButton {
   position: relative;
   top: 10px;
-  left: 10px;
+  right: 10px;
+  z-index: 100;
+  position: fixed;
+  border: 2px solid white;
 }
 
 .menuClicker {

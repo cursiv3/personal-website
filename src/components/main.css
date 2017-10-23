@@ -27,8 +27,8 @@ a {
 
 .sectionContainer {
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 50px;
+  margin: auto;
   width: 55%;
   height: 100%;
   color: white;
