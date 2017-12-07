@@ -9,6 +9,7 @@ import Music from "./Music/Music";
 import Portfolio from "./Portfolio/Portfolio";
 import Resume from "./Resume/ResumePage";
 import NavBar from "./NavBar/NavBar";
+import NavMobile from "./NavBar/NavMobile";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 class App extends React.Component {
@@ -16,12 +17,26 @@ class App extends React.Component {
     injectTapEventPlugin();
   }
 
+  navUpdate = () => {
+    this.forceUpdate();
+  };
+
+  componentDidMount() {
+    this.navUpdate();
+    window.addEventListener("resize", this.navUpdate.bind(this));
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.navUpdate.bind(this));
+  }
+
   render() {
     const currentKey = location.pathname.split("/")[1] || "/";
     const timeout = { enter: 300, exit: 200 };
     return (
       <div>
-        <NavBar />
+        {window.innerWidth > 785 && <NavBar />}
+        {window.innerWidth < 785 && <NavMobile />}
         <TransitionGroup component="main">
           <CSSTransition
             key={currentKey}

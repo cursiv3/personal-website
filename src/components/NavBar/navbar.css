@@ -31,7 +31,7 @@
   right: 10px;
   z-index: 100;
   position: fixed;
-  border: 2px solid white;
+  background-color: #202833;
 }
 
 .menuClicker {
@@ -45,7 +45,24 @@
   padding: 10px;
 }
 
+.navDivMobile {
+  padding: 10px;
+}
+
 .navButton {
+  color: white !important;
+  font-family: "Josefin Sans" !important;
+  display: inline-table;
+  font-size: 2.5em;
+  margin: 20px 20px auto 20px;
+}
+
+.navButton:hover {
+  cursor: pointer !important;
+  color: skyblue !important;
+}
+
+.navButtonMobile {
   color: rgb(29, 29, 48) !important;
   font-family: "Josefin Sans" !important;
   display: list-item !important;
@@ -53,7 +70,7 @@
   margin: 20px auto;
 }
 
-.navButton:hover {
+.navButtonMobile:hover {
   cursor: pointer !important;
   color: gray !important;
 }

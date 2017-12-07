@@ -10,12 +10,6 @@ class Contact extends Component {
           <a href="https://www.facebook.com/cslewis503" target="_blank">
             <i className="fa fa-facebook-square" />
           </a>
-          <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@coreyslewis.com"
-            target="_blank"
-          >
-            <i className="fa fa-envelope-square" />
-          </a>
           <a href="http://www.linkedin.com/in/lewisc503" target="_blank">
             <i className="fa fa-linkedin-square" />
           </a>

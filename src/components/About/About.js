@@ -7,10 +7,11 @@ class About extends Component {
 
     return (
       <div className="sectionContainer">
-        <h1 className="sectionHead">allow myself to introduce.... myself</h1>
-        <div className="portraitBackground">
+        <div className="portraitDiv">
+          <div className="aboutPortraitBacking" />
           <img src={data.coreyPortrait} alt={"me"} className="aboutPortrait" />
         </div>
+        <h1 className="sectionHead">allow myself to introduce.... myself</h1>
         <p className="pageText">
           My name is Corey Lewis, I graduated from Portland State University in
           2014 with a B.S. in Biological Science.
@@ -33,6 +34,7 @@ class About extends Component {
           I have been enjoying using React. I built this site with the library
           and the repo with the code
           <a href="https://github.com/cursiv3/personal-website" target="_blank">
+            {" "}
             can be found here
           </a>.
         </p>

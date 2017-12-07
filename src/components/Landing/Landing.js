@@ -6,9 +6,7 @@ class Landing extends Component {
     return (
       <div>
         <p className="landingHeader">corey lewis</p>
-        <div className="mainHeader">
-          <h1>developer</h1>
-        </div>
+        <div className="mainHeader">developer</div>
       </div>
     );
   }
