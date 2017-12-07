@@ -20,7 +20,7 @@ class ScrollToTop extends Component {
 }
 
 const TopScroll = withRouter(ScrollToTop);
-const db = require("../mockDB/database");
+const db = require("./mockDB/database");
 
 ReactDOM.render(
   <MuiThemeProvider muiTheme={getMuiTheme()}>
