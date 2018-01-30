@@ -34,36 +34,34 @@ class App extends React.Component {
     const currentKey = location.pathname.split("/")[1] || "/";
     const timeout = { enter: 300, exit: 200 };
     return (
-      <div>
+      <TransitionGroup component="main">
         {window.innerWidth > 785 && <NavBar />}
         {window.innerWidth < 785 && <NavMobile />}
-        <TransitionGroup component="main">
-          <CSSTransition
-            key={currentKey}
-            timeout={timeout}
-            classNames="fade"
-            appear
-          >
-            <Switch location={location}>
-              <Route exact path="/" component={Landing} />
-              <Route
-                path="/about"
-                render={props => <About db={this.props.db} />}
-              />
-              <Route path="/contact" component={Contact} />
-              <Route path="/music" component={Music} />
-              <Route
-                path="/portfolio"
-                render={props => <Portfolio db={this.props.db} />}
-              />
-              <Route
-                path="/resume"
-                render={props => <Resume db={this.props.db} />}
-              />
-            </Switch>
-          </CSSTransition>
-        </TransitionGroup>
-      </div>
+        <CSSTransition
+          key={currentKey}
+          timeout={timeout}
+          classNames="fade"
+          appear
+        >
+          <Switch location={location}>
+            <Route exact path="/" component={Landing} />
+            <Route
+              path="/about"
+              render={props => <About db={this.props.db} />}
+            />
+            <Route path="/contact" component={Contact} />
+            <Route path="/music" component={Music} />
+            <Route
+              path="/portfolio"
+              render={props => <Portfolio db={this.props.db} />}
+            />
+            <Route
+              path="/resume"
+              render={props => <Resume db={this.props.db} />}
+            />
+          </Switch>
+        </CSSTransition>
+      </TransitionGroup>
     );
   }
 }

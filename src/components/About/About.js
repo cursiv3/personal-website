@@ -31,8 +31,9 @@ class About extends Component {
           I finished the internship using ReactJS with Redux.
         </p>
         <p className="pageText">
-          I have been enjoying using React. I built this site with the library
-          and the repo with the code
+          I have really been enjoying using React and am starting to also work
+          with Angular 5. I built this site with the React library and the repo
+          with the code
           <a href="https://github.com/cursiv3/personal-website" target="_blank">
             {" "}
             can be found here
@@ -45,12 +46,6 @@ class About extends Component {
           complete coding challenges on sites like HackerRank.com to gain
           experience using Python, and I ended up dipping my toes in the waters
           of C++, C#, Java, SQL.
-        </p>
-        <p className="pageText">
-          I didn't believe I could actually get work as a programmer without a
-          C.S. degree, but I enjoyed working with the languages so much that I
-          simply kept at it, and in October of 2016 I landed a web dev
-          internship with only a few months exposure to JavaScript.
         </p>
         <p className="pageText">
           I am also a soccer coach, a certified USSF Soccer referee, guitarist

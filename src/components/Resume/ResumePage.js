@@ -7,10 +7,7 @@ class ResumePage extends Component {
     return (
       <div className="sectionContainer">
         <div className="resumeImgDiv">
-          <a
-            href="https://drive.google.com/open?id=0Bw92SM4ozWAJbWxzcHFVZ0JvVFE"
-            target="_blank"
-          >
+          <a href={data.resumeLink} target="_blank">
             <img
               src={data.resume}
               alt="Corey Lewis Resume"

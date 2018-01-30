@@ -15,7 +15,8 @@
 
 .resumeImgDiv {
   width: 60%;
-  margin: 30px auto;
+  margin: auto;
+  padding: 0 0 30px 0;
 }
 
 .resumeImgDiv img:hover {
