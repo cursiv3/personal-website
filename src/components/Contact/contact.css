@@ -1,7 +1,19 @@
-.fa {
-  font-size: 5em;
-  margin: 10px;
+.contactRow {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0;
+  margin: 0;
   padding: 0;
+}
+
+.contactIconWrapper {
+  font-size: 16px;
+  display: inline-table;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .fa:hover {
@@ -24,11 +36,21 @@
   color: gray;
 }
 
+.icon {
+  font-size: 10em;
+}
+
 .sectionContainerContact {
-  top: 53%;
+  width: 100%;
+  height: 50%;
+  top: 50%;
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 10px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }

@@ -3,7 +3,7 @@ import "./about.css";
 
 class About extends Component {
   render() {
-    const data = this.props.db.about;
+    const data = this.props.state.about;
 
     return (
       <div className="sectionContainer">

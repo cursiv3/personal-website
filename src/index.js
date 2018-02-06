@@ -20,13 +20,13 @@ class ScrollToTop extends Component {
 }
 
 const TopScroll = withRouter(ScrollToTop);
-const db = require("./mockDB/database");
+const state = require("./stateFile/stateFile");
 
 ReactDOM.render(
   <MuiThemeProvider muiTheme={getMuiTheme()}>
     <BrowserRouter>
       <TopScroll>
-        <App db={db} />
+        <App state={state} />
       </TopScroll>
     </BrowserRouter>
   </MuiThemeProvider>,

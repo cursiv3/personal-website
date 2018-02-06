@@ -12,7 +12,12 @@ class NavMobile extends Component {
 
   handleToggle = () => this.setState({ open: !this.state.open });
 
-  handleClose = () => this.setState({ open: false });
+  handleClose = evt => {
+    evt.target.matches(".navButtonMobile") ||
+    evt.target.matches(".menuCloseBtn")
+      ? this.setState({ open: false })
+      : null;
+  };
 
   render() {
     return (
@@ -25,45 +30,31 @@ class NavMobile extends Component {
         <Drawer
           docked={false}
           width={175}
+          containerStyle={{
+            height: "75%"
+          }}
           open={this.state.open}
           onRequestChange={open => this.setState({ open })}
           openSecondary={true}
         >
-          <div className="menuCloseBtn" onClick={this.handleClose} />
-          <div className="navDivMobile">
-            <Link
-              to="/about"
-              className="navButtonMobile"
-              onClick={this.handleClose}
-            >
+          <div
+            className="menuCloseBtn"
+            onClick={evt => this.handleClose(evt)}
+          />
+          <div className="navDivMobile" onClick={evt => this.handleClose(evt)}>
+            <Link to="/about" className="navButtonMobile">
               about
             </Link>
-            <Link
-              to="/portfolio"
-              className="navButtonMobile"
-              onClick={this.handleClose}
-            >
+            <Link to="/portfolio" className="navButtonMobile">
               portfolio
             </Link>
-            <Link
-              to="/music"
-              className="navButtonMobile"
-              onClick={this.handleClose}
-            >
+            <Link to="/music" className="navButtonMobile">
               music
             </Link>
-            <Link
-              to="/resume"
-              className="navButtonMobile"
-              onClick={this.handleClose}
-            >
+            <Link to="/resume" className="navButtonMobile">
               resume
             </Link>
-            <Link
-              to="/contact"
-              className="navButtonMobile"
-              onClick={this.handleClose}
-            >
+            <Link to="/contact" className="navButtonMobile">
               contact
             </Link>
           </div>

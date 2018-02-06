@@ -5,18 +5,44 @@ class Contact extends Component {
   render() {
     return (
       <div className="sectionContainerContact">
-        <h2 className="text-center">
-          <p>contact@coreyslewis.com</p>
-          <a href="https://www.facebook.com/cslewis503" target="_blank">
-            <i className="fa fa-facebook-square" />
-          </a>
-          <a href="http://www.linkedin.com/in/lewisc503" target="_blank">
-            <i className="fa fa-linkedin-square" />
-          </a>
-          <a href="https://github.com/cursiv3" target="_blank">
-            <i className="fa fa-github-square" />
-          </a>
-        </h2>
+        <div className="contactRow">
+          <div className="contactIconWrapper">
+            <a
+              href="mailto:contact@coreyslewis.com?subject=Inquiry"
+              target="_blank"
+              className="contactIcon"
+            >
+              <i className="icon fa fa-envelope-square" />
+            </a>
+          </div>
+          <div className="contactIconWrapper">
+            <a
+              href="https://www.facebook.com/cslewis503"
+              target="_blank"
+              className="contactIcon"
+            >
+              <i className="icon fa fa-facebook-square" />
+            </a>
+          </div>
+          <div className="contactIconWrapper">
+            <a
+              href="http://www.linkedin.com/in/lewisc503"
+              target="_blank"
+              className="contactIcon"
+            >
+              <i className="icon fa fa-linkedin-square" />
+            </a>
+          </div>
+          <div className="contactIconWrapper">
+            <a
+              href="https://github.com/cursiv3"
+              target="_blank"
+              className="contactIcon"
+            >
+              <i className="icon fa fa-github-square" />
+            </a>
+          </div>
+        </div>
       </div>
     );
   }
