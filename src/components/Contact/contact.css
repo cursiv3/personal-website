@@ -1,8 +1,28 @@
+.contactContainer {
+  width: 100%;
+  margin: -20px 0 0 0;
+  padding: 20px 0 20px 0;
+  background-color: #012C36;
+}
+
+.contactSectionWrap {
+  width: 60%;
+  height: 40%;
+  left: 50%;
+  top: 10%;
+  position: relative;
+  transform: translateX(-50%);
+  color: white;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
 .contactRow {
   position: relative;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   font-size: 0;
   margin: 0;
   padding: 0;
@@ -11,7 +31,7 @@
 .contactIconWrapper {
   font-size: 16px;
   display: inline-table;
-  margin: 0;
+  margin: 0 20px 0 20px;
   padding: 0;
   text-align: center;
 }
@@ -38,19 +58,4 @@
 
 .icon {
   font-size: 10em;
-}
-
-.sectionContainerContact {
-  width: 100%;
-  height: 50%;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  color: white;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  text-align: center;
 }

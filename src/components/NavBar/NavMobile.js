@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./navbar.css";
-import { Link } from "react-router-dom";
 import Drawer from "material-ui/Drawer";
 
 class NavMobile extends Component {
@@ -14,7 +13,7 @@ class NavMobile extends Component {
 
   handleClose = evt => {
     evt.target.matches(".navButtonMobile") ||
-    evt.target.matches(".menuCloseBtn")
+      evt.target.matches(".menuCloseBtn")
       ? this.setState({ open: false })
       : null;
   };
@@ -42,21 +41,21 @@ class NavMobile extends Component {
             onClick={evt => this.handleClose(evt)}
           />
           <div className="navDivMobile" onClick={evt => this.handleClose(evt)}>
-            <Link to="/about" className="navButtonMobile">
+            <div className="navButtonMobile">
               about
-            </Link>
-            <Link to="/portfolio" className="navButtonMobile">
+            </div>
+            <div className="navButtonMobile">
               portfolio
-            </Link>
-            <Link to="/music" className="navButtonMobile">
+            </div>
+            <div className="navButtonMobile">
               music
-            </Link>
-            <Link to="/resume" className="navButtonMobile">
+            </div>
+            <div className="navButtonMobile">
               resume
-            </Link>
-            <Link to="/contact" className="navButtonMobile">
+            </div>
+            <div className="navButtonMobile">
               contact
-            </Link>
+            </div>
           </div>
         </Drawer>
       </div>

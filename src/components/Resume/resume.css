@@ -1,31 +1,31 @@
-.resumeBtn {
-  background-color: #6da7ff;
+.resumeContainer {
   width: 100%;
+  height: 100%;
+  background-color: #717FA9;
+  padding: 0;
+  margin: -20px 0 0 0;
+}
+
+.resumePageDiv {
+  width: 90%;
+  padding: 30px 0 30px 0;
   margin: auto;
-  border-radius: 5px;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
+  max-height: 100%;
 }
 
-.resumeImg {
-  width: 100%;
+.resumeExperience {
+  width: 50%;
+}
+.resumeExperience h1 {
+  padding: 0;
+  margin: 0;
 }
 
-.resumeImgDiv {
-  width: 60%;
-  margin: auto;
-  padding: 0 0 30px 0;
+.resumeExperienceDate {
+  float: right;
 }
 
-.resumeImgDiv img:hover {
-  box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.3);
+.resumeImage {
+  width: 250px;
 }
 
-@media screen and (max-device-width: 785px) {
-  .resumeImgDiv {
-    width: 90%;
-    margin: 10px auto;
-  }
-}
