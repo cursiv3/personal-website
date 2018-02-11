@@ -13,7 +13,7 @@ class NavMobile extends Component {
 
   handleClose = evt => {
     evt.target.matches(".navButtonMobile") ||
-      evt.target.matches(".menuCloseBtn")
+    evt.target.matches(".menuCloseBtn")
       ? this.setState({ open: false })
       : null;
   };
@@ -40,20 +40,26 @@ class NavMobile extends Component {
             className="menuCloseBtn"
             onClick={evt => this.handleClose(evt)}
           />
-          <div className="navDivMobile" onClick={evt => this.handleClose(evt)}>
-            <div className="navButtonMobile">
-              about
-            </div>
-            <div className="navButtonMobile">
-              portfolio
-            </div>
-            <div className="navButtonMobile">
-              music
-            </div>
-            <div className="navButtonMobile">
+          <div
+            className="navDivMobile"
+            onClick={evt => {
+              this.handleClose(evt);
+              this.props.navHandler(evt);
+            }}
+          >
+            <div data-id="resume" className="navButtonMobile">
               resume
             </div>
-            <div className="navButtonMobile">
+            <div data-id="portfolio" className="navButtonMobile">
+              portfolio
+            </div>
+            <div data-id="about" className="navButtonMobile">
+              about
+            </div>
+            <div data-id="music" className="navButtonMobile">
+              music
+            </div>
+            <div data-id="contact" className="navButtonMobile">
               contact
             </div>
           </div>

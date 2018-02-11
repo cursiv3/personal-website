@@ -25,6 +25,7 @@ class App extends React.Component {
 
     this.updateDimensions = this.updateDimensions.bind(this);
     this.navSticky = this.navSticky.bind(this);
+    this.navClick = this.navClick.bind(this);
   }
 
   navSticky() {
@@ -34,6 +35,29 @@ class App extends React.Component {
     } else {
       this.setState({ navStick: "navDivEntry", navStickSpacer: "0" });
     }
+  }
+
+  navClick(evt) {
+    var node;
+    switch (evt.target.dataset.id) {
+      case "resume":
+        node = this.refs.resume;
+        break;
+      case "portfolio":
+        node = this.refs.portfolio;
+        break;
+      case "about":
+        node = this.refs.about;
+        break;
+      case "music":
+        node = this.refs.music;
+        break;
+      case "contact":
+        node = this.refs.contact;
+        break;
+    }
+    var section = ReactDOM.findDOMNode(node).offsetTop;
+    window.scrollTo(0, section);
   }
 
   updateDimensions() {
@@ -64,9 +88,9 @@ class App extends React.Component {
       <div className="appContainer">
         <Landing state={state} size={this.state.size} />
         {this.state.size === 60 ? (
-          <NavBar navMode={this.state.navStick} />
+          <NavBar navHandler={this.navClick} navMode={this.state.navStick} />
         ) : (
-          <NavMobile />
+          <NavMobile navHandler={this.navClick} />
         )}
         <div
           style={{
@@ -76,11 +100,11 @@ class App extends React.Component {
             padding: "0"
           }}
         />
-        <ResumePage state={state} />
-        <Portfolio state={state} />
-        <About state={state} />
-        <Music state={state} />
-        <Contact state={state} />
+        <ResumePage ref="resume" state={state} />
+        <Portfolio ref="portfolio" state={state} />
+        <About ref="about" state={state} />
+        <Music ref="music" state={state} />
+        <Contact ref="contact" state={state} />
       </div>
     );
   }
