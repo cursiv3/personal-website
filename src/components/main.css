@@ -21,7 +21,11 @@ body {
 
 a {
   text-decoration: none !important;
-  color: #96beff !important;
+  color: #3D56A1 !important;
+}
+
+a:hover {
+  color: #7ABFC9 !important;
 }
 
 .appContainer {

@@ -3,11 +3,11 @@
   padding: 0;
   margin: -20px 0 0 0;
   padding: 20px 0 20px 0;
-  background-color: #3C7481;
+  background-color: gray;
+  color: white;
 }
 
 .folioSectionWrap {
-  color: white;
   font-size: 22px;
   font-family: "Ubuntu";
   width: 70%;

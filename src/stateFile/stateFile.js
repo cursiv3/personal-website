@@ -51,6 +51,7 @@ module.exports = {
   ],
   resume: {
     resume: require("../../public/coreyResume.jpg"),
+    transflection: require("../../public/transflection.png"),
     resumeLink:
       "https://drive.google.com/open?id=13pGe8wGrzIeLA2xtgD3K85Bvjs3AMJtq"
   }

@@ -1,0 +1,30 @@
+.resumeEducation {
+    width: 40%;
+    padding: 1%;
+}
+
+  .educationItemWrap {
+      margin: 0 0 50px 0;
+      position: relative;
+  }
+
+  .educationEntryContent {
+    display: inline-block;
+  }
+
+  .resumeEducation h1 {
+    font-weight: bold;
+    padding: 0;
+    margin: 0 0 20px 0;
+    border-bottom: 2px solid #301575;
+  }
+
+  .educationText {
+      width: 20%;
+  }
+
+  .educationDate {
+      float: right;
+      padding: 0;
+      margin: 0;
+  }

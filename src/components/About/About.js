@@ -14,10 +14,9 @@ class About extends Component {
           </div>
           <h1 className="sectionHead">allow myself to introduce.... myself</h1>
           <p className="pageText">
-            Hello! I am Corey, I graduated from Portland State University in
-          2014 with a B.S. in Biological Science.
-            I am a self taught programmer currently working as a Junior Web App
-          Developer with{" "}
+            Hello! My name is Corey, I graduated from Portland State University in
+          2014 with a B.S. in Biological Science. I am a self taught programmer
+          currently working as a Junior Web App Developer with{" "}
             <a href="https://www.skillsai.com/" target="_blank">
               SkillsAI
           </a>. I spent the past six months completing an internship with{" "}
