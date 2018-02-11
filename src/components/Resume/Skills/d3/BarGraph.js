@@ -10,6 +10,8 @@ import {
   LabelList,
   ResponsiveContainer
 } from "recharts";
+import "../skills.css";
+
 const data = [
   {
     name: "JavaScript",
@@ -83,17 +85,17 @@ const data = [
 
 class LogoDisplay extends React.Component {
   render() {
-    const { x, y, value, width } = this.props;
+    const { x, y, value, width, height } = this.props;
     return (
       <image
         style={{
-          width: width + "px",
-          height: width + "px"
+          width: height + "px",
+          height: height + "px"
         }}
         fill="white"
         href={value}
-        x={x}
-        y={y - width}
+        x={x + width}
+        y={y}
       />
     );
   }
@@ -103,45 +105,53 @@ class BarGraph extends React.Component {
   render() {
     return (
       <div className="barChartWrap">
-        <p
-          style={{
-            position: "relative",
-            left: "3%",
-            padding: "0",
-            margin: "0",
-            width: "5%"
-          }}
-        >
-          Expert
-        </p>
-        <ResponsiveContainer width={"100%"} height={500}>
+        <ResponsiveContainer width={"100%"} height={610}>
           <BarChart
             data={data}
-            margin={{ top: 5, right: 30, left: 20, bottom: -20 }}
+            margin={{ top: 5, right: 5, bottom: -20 }}
+            layout="vertical"
           >
-            <XAxis dataKey="name" ticks={[""]} />
-            <YAxis domain={[0, 20]} ticks={[""]} tickLine={false} width={10} />
+            <YAxis type="category" dataKey="name" ticks={[""]} width={10} />
+
+            <XAxis
+              type="number"
+              domain={[0, 20]}
+              ticks={[""]}
+              tickLine={false}
+            />
             <CartesianGrid />
             <Tooltip />
             <Bar dataKey="level" fill="#301575">
-              <LabelList
-                dataKey="url"
-                content={<LogoDisplay />}
-                position="top"
-              />
+              {
+                <LabelList
+                  dataKey="url"
+                  content={<LogoDisplay />}
+                  position="insideTopRight"
+                />
+              }
             </Bar>
           </BarChart>
         </ResponsiveContainer>
         <p
           style={{
-            position: "relative",
-            left: "3%",
             padding: "0",
-            margin: "0",
-            width: "5%"
+            margin: "0 0 0 3%",
+            width: "47%",
+            display: "inline-block"
           }}
         >
           Beginner
+        </p>
+        <p
+          style={{
+            padding: "0",
+            margin: "0",
+            width: "49%",
+            display: "inline-block",
+            textAlign: "right"
+          }}
+        >
+          Expert
         </p>
       </div>
     );
