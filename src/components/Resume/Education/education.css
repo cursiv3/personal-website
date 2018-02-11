@@ -1,30 +1,44 @@
-.resumeEducation {
-    width: 40%;
-    padding: 1%;
+.resumeEducationContainer {
+  width: 40%;
+  padding: 1%;
 }
 
-  .educationItemWrap {
-      margin: 0 0 50px 0;
-      position: relative;
-  }
+.resumeEducationHeader {
+  font-weight: bold;
+  padding: 0;
+  margin: 0 0 20px 0;
+  border-bottom: 2px solid #301575;
+}
 
-  .educationEntryContent {
-    display: inline-block;
-  }
+.educationItemWrap {
+  margin: 0 0 50px 0;
+  position: relative;
+}
 
-  .resumeEducation h1 {
-    font-weight: bold;
-    padding: 0;
-    margin: 0 0 20px 0;
-    border-bottom: 2px solid #301575;
-  }
+.educationEntryContent {
+  display: inline-block;
+}
 
-  .educationText {
-      width: 20%;
-  }
+.resumeEducation h1 {
+  font-weight: bold;
+  padding: 0;
+  margin: 0 0 20px 0;
+  border-bottom: 2px solid #301575;
+}
 
-  .educationDate {
-      float: right;
-      padding: 0;
-      margin: 0;
+.educationText {
+  width: 20%;
+}
+
+.educationDate {
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 1375px) {
+  .resumeEducationContainer {
+    width: 80%;
+    margin: auto;
   }
+}

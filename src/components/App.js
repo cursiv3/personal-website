@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from 'react-dom';
+import ReactDOM from "react-dom";
 import { Route, Switch } from "react-router-dom";
 import injectTapEventPlugin from "react-tap-event-plugin";
 
@@ -19,20 +19,20 @@ class App extends React.Component {
 
     this.state = {
       size: 60,
-      navStick: 'navDivEntry',
-      navStickSpacer: '0'
-    }
+      navStick: "navDivEntry",
+      navStickSpacer: "0"
+    };
 
     this.updateDimensions = this.updateDimensions.bind(this);
     this.navSticky = this.navSticky.bind(this);
   }
 
   navSticky() {
-    var stop = (window.innerHeight - 60);
+    var stop = window.innerHeight - 60;
     if (window.pageYOffset >= stop) {
-      this.setState({ navStick: 'navStickTop', navStickSpacer: '60px' });
+      this.setState({ navStick: "navStickTop", navStickSpacer: "60px" });
     } else {
-      this.setState({ navStick: 'navDivEntry', navStickSpacer: '0' });
+      this.setState({ navStick: "navDivEntry", navStickSpacer: "0" });
     }
   }
 
@@ -58,18 +58,29 @@ class App extends React.Component {
     window.removeEventListener("scroll", this.navSticky);
   }
 
-
   render() {
+    var state = this.props.state;
     return (
       <div className="appContainer">
-        <Landing state={this.props.state} size={this.state.size} />
-        {this.state.size === 60 ? <NavBar navMode={this.state.navStick} /> : <NavMobile />};
-        <div style={{ width: "100%", height: this.state.navStickSpacer }} />
-        <ResumePage state={this.props.state} />
-        <Portfolio state={this.props.state} />
-        <About state={this.props.state} />
-        <Music state={this.props.state} />
-        <Contact state={this.props.state} />
+        <Landing state={state} size={this.state.size} />
+        {this.state.size === 60 ? (
+          <NavBar navMode={this.state.navStick} />
+        ) : (
+          <NavMobile />
+        )}
+        <div
+          style={{
+            width: "100%",
+            height: this.state.navStickSpacer,
+            margin: "0",
+            padding: "0"
+          }}
+        />
+        <ResumePage state={state} />
+        <Portfolio state={state} />
+        <About state={state} />
+        <Music state={state} />
+        <Contact state={state} />
       </div>
     );
   }

@@ -1,0 +1,35 @@
+@media screen and (max-width: 1375px) {
+  .resumeExperienceContainer {
+    width: 80%;
+    margin: auto;
+  }
+
+  .resumeEducationContainer {
+    width: 80%;
+    margin: auto;
+  }
+
+  .skillsContainer {
+    float: none;
+    width: 80%;
+    margin: 15px auto 30px auto;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .resumeExperienceContainer {
+    width: 100%;
+    margin: auto;
+  }
+
+  .resumeEducationContainer {
+    width: 100%;
+    margin: auto;
+  }
+
+  .skillsContainer {
+    float: none;
+    width: 100%;
+    margin: 15px auto 30px auto;
+  }
+}

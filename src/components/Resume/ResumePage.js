@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import Experience from "./Experience/Experience"
+import Experience from "./Experience/Experience";
 import Education from "./Education/Education";
 import Skills from "./Skills/Skills";
 import "./resume.css";
+import "./resumeMediaQueries.css";
 
 class ResumePage extends Component {
   render() {
@@ -11,9 +12,9 @@ class ResumePage extends Component {
       <div className="resumeContainer">
         <Skills />
         <Experience />
-        <div className='verticalStyleLine' />
+        <div className="verticalStyleLine" />
         <Education />
-        <div className="resumeOther"></div>
+        <div className="resumeOther" />
       </div>
     );
   }
