@@ -121,15 +121,17 @@ class BarGraph extends React.Component {
             />
             <CartesianGrid />
             <Tooltip />
-            <Bar dataKey="level" fill="#301575">
-              {
-                <LabelList
-                  dataKey="url"
-                  content={<LogoDisplay />}
-                  position="insideTopRight"
-                />
-              }
-            </Bar>
+            {this.props.animationState ? (
+              <Bar dataKey="level" fill="#301575" animationDuration={1700}>
+                {
+                  <LabelList
+                    dataKey="url"
+                    content={<LogoDisplay />}
+                    position="insideTopRight"
+                  />
+                }
+              </Bar>
+            ) : null}
           </BarChart>
         </ResponsiveContainer>
         <p className="axisLabelLeft">Beginner</p>
