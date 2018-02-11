@@ -11,8 +11,8 @@ const Experience = () => (
         alt="skillsai logo"
       />
       <div className="positionDateWrap">
-        <h3 className="resumeExperienceText">April 2017 - Present</h3>
-        <h3 className="resumeExperienceText">Web Application Developer</h3>
+        <h3 className="resumeExperienceDate">April 2017 - Present</h3>
+        <h3 className="resumeExperienceText">Jr. Web Application Developer</h3>
       </div>
     </div>
     <div className="experienceItemWrap">
@@ -22,7 +22,7 @@ const Experience = () => (
         alt="skillsai logo"
       />
       <div className="positionDateWrap">
-        <h3>October 2016 - March 2017</h3>
+        <h3 className="resumeExperienceDate">October 2016 - March 2017</h3>
         <h3 className="resumeExperienceText">Intern Web Developer</h3>
       </div>
     </div>

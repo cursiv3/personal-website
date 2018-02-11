@@ -1,7 +1,7 @@
 .barChartWrap {
-  width: 100%;
+  width: 95%;
   padding: 0;
-  margin: 0;
+  margin: auto;
 }
 
 .axisLabelRight {
@@ -21,15 +21,16 @@
 .skillsContainer {
   float: right;
   width: 60%;
-  margin: 19px 0 20px 0;
+  margin: 19px 0 0 0;
   padding: 0;
 }
 
 .skillsHeader {
   padding: 0;
-  margin: 0;
-  border-bottom: 2px solid #301575;
+  margin: auto;
+  border-bottom: 2px solid silver;
   font-weight: bold;
+  width: 98%;
 }
 
 .skillsImgRow {

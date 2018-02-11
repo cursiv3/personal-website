@@ -29,7 +29,7 @@ class App extends React.Component {
 
   navSticky() {
     var stop = window.innerHeight - 60;
-    if (window.pageYOffset >= stop) {
+    if (window.pageYOffset >= stop && window.innerWidth > 845) {
       this.setState({ navStick: "navStickTop", navStickSpacer: "60px" });
     } else {
       this.setState({ navStick: "navDivEntry", navStickSpacer: "0" });

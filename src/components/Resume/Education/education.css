@@ -7,7 +7,7 @@
   font-weight: bold;
   padding: 0;
   margin: 0 0 20px 0;
-  border-bottom: 2px solid #301575;
+  border-bottom: 2px solid silver;
 }
 
 .educationItemWrap {
@@ -17,13 +17,6 @@
 
 .educationEntryContent {
   display: inline-block;
-}
-
-.resumeEducation h1 {
-  font-weight: bold;
-  padding: 0;
-  margin: 0 0 20px 0;
-  border-bottom: 2px solid #301575;
 }
 
 .educationText {
