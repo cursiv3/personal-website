@@ -135,7 +135,7 @@ class BarGraph extends React.Component {
         <p
           style={{
             padding: "0",
-            margin: "0 0 0 3%",
+            margin: "0 0 0 1%",
             width: "47%",
             display: "inline-block"
           }}
