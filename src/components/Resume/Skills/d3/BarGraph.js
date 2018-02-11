@@ -132,27 +132,8 @@ class BarGraph extends React.Component {
             </Bar>
           </BarChart>
         </ResponsiveContainer>
-        <p
-          style={{
-            padding: "0",
-            margin: "0 0 0 1%",
-            width: "47%",
-            display: "inline-block"
-          }}
-        >
-          Beginner
-        </p>
-        <p
-          style={{
-            padding: "0",
-            margin: "0",
-            width: "49%",
-            display: "inline-block",
-            textAlign: "right"
-          }}
-        >
-          Expert
-        </p>
+        <p className="axisLabelLeft">Beginner</p>
+        <p className="axisLabelRight">Expert</p>
       </div>
     );
   }
