@@ -34,9 +34,7 @@ a:hover {
   color: White;
   font-family: "Josefin sans";
   font-size: 30px;
-  border-bottom: 3px solid #3284ff;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+  border-bottom: 2px solid silver;
 }
 
 ::-webkit-scrollbar-track {

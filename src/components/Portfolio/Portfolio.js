@@ -7,21 +7,20 @@ class Portfolio extends React.Component {
     return (
       <div className="folioContainer">
         <div className="folioSectionWrap">
-          <h1 className="sectionHead">a few things I've made</h1>
-          <p>
-            {this.props.state.portfolioIntro}
-            <a href="https://github.com/cursiv3/personal-website">
-              on my github.
-          </a>
-          </p>
-          {data.map((d, i) => {
-            let align;
-            (i + 2) % 2 === 0 ? align = 'right' : align = 'left';
+          <div className="folioIntroWrap">
+            <h1 className="folioSectionHead">A few things I've made</h1>
+            <p>
+              {this.props.state.portfolioIntro}
+              <a href="https://github.com/cursiv3/personal-website">
+                on my github.
+              </a>
+            </p>
+          </div>
+          {data.map(d => {
             return (
               <iframe
                 key={d.id}
-                align={align}
-                height='512'
+                height="512"
                 width="50%"
                 scrolling="no"
                 title={d.title}
@@ -29,10 +28,11 @@ class Portfolio extends React.Component {
                 frameBorder="no"
                 allowTransparency="true"
                 allowFullScreen="true"
-                style={{ padding: '10px' }}
-              />)
+                className="folioIframe"
+              />
+            );
           })}
-          <div style={{ clear: 'both' }} />
+          <div style={{ clear: "both" }} />
         </div>
       </div>
     );
