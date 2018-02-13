@@ -13,7 +13,7 @@ class NavMobile extends Component {
 
   handleClose = evt => {
     evt.target.matches(".navButtonMobile") ||
-    evt.target.matches(".menuCloseBtn")
+      evt.target.matches(".menuCloseBtn")
       ? this.setState({ open: false })
       : null;
   };
@@ -21,17 +21,18 @@ class NavMobile extends Component {
   render() {
     return (
       <div>
-        <div className="menuButton" onClick={this.handleToggle}>
-          <div className="menuClicker" />
-          <div className="menuClicker" />
-          <div className="menuClicker" />
+        <div className="mobileNavBar" onClick={this.handleToggle}>
+          <img className="mobileNavIcon" src={require('../../../public/cslLogoNew.ico')} />
+          <p className="mobileIconName">corey s lewis</p>
+          <div className="mobileMenuButton">
+            <div className="menuClicker" />
+            <div className="menuClicker" />
+            <div className="menuClicker" />
+          </div>
         </div>
         <Drawer
           docked={false}
           width={175}
-          containerStyle={{
-            height: "75%"
-          }}
           open={this.state.open}
           onRequestChange={open => this.setState({ open })}
           openSecondary={true}

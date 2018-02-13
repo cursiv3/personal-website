@@ -53,7 +53,7 @@ const data = [
     url: "https://www.brainvire.com/wp-content/uploads/2017/12/nodejs.png"
   },
   {
-    name: "P.G.SQL",
+    name: "PostgreSQL",
     level: 9,
     url:
       "https://i.pinimg.com/originals/01/1d/b5/011db55ecc6a52a484a4f9be63158259.png"
@@ -105,33 +105,29 @@ class BarGraph extends React.Component {
   render() {
     return (
       <div className="barChartWrap">
-        <ResponsiveContainer width={"100%"} height={610}>
+        <ResponsiveContainer width={"100%"} height={550}>
           <BarChart
             data={data}
-            margin={{ top: 5, right: 5, bottom: -20 }}
+            margin={{ top: 5, bottom: -20 }}
             layout="vertical"
           >
-            <YAxis type="category" dataKey="name" ticks={[""]} width={10} />
-
+            <YAxis type="category" dataKey="name" width={1} />
             <XAxis
               type="number"
               domain={[0, 20]}
               ticks={[""]}
               tickLine={false}
             />
-            <CartesianGrid />
+            <CartesianGrid strokeDasharray="3 3" />
             <Tooltip />
-            {this.props.animationState ? (
-              <Bar dataKey="level" fill="#301575" animationDuration={1700}>
-                {
-                  <LabelList
-                    dataKey="url"
-                    content={<LogoDisplay />}
-                    position="insideTopRight"
-                  />
-                }
-              </Bar>
-            ) : null}
+            <Bar dataKey="level" fill="red" animationDuration={1700}>
+              <LabelList
+                dataKey="url"
+                content={<LogoDisplay />}
+                position="insideTopRight"
+              />
+              <LabelList dataKey="name" fill="white" />
+            </Bar>
           </BarChart>
         </ResponsiveContainer>
         <p className="axisLabelLeft">Beginner</p>

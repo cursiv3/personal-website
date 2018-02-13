@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Ubuntu');
+
 .menuCloseBtn {
   width: 35px;
   height: 35px;
@@ -25,13 +27,12 @@
   left: 15px;
 }
 
-.menuButton {
-  position: relative;
-  top: 10px;
-  right: 10px;
-  z-index: 100;
+.mobileNavBar{
   position: fixed;
-  background-color: #1a2850;
+  top: 0;
+  z-index: 100;
+  background-color: #161616;
+  width: 100%;
 }
 
 .menuClicker {
@@ -43,7 +44,7 @@
 
 .navDivEntry {
   height: 60px;
-  background-color: #5a3da4;
+  background-color: #161616;
   padding: 0;
   margin: 0;
 }
@@ -51,7 +52,7 @@
 .navStickTop {
   height: 60px;
   width: 100%;
-  background-color: #5a3da4;
+  background-color: #161616;
   padding: 0;
   margin: 0;
   position: fixed;
@@ -66,13 +67,13 @@
 .navButton {
   color: white;
   font-family: "Josefin Sans" !important;
-  display: inline-block;
   font-size: 2.5em;
   margin: 0 20px 0 20px;
   padding: 0;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  float: right;
 }
 
 .navButton:hover {
@@ -91,4 +92,43 @@
 .navButtonMobile:hover {
   cursor: pointer !important;
   color: gray !important;
+}
+
+.mobileMenuButton{
+  margin: 3px 0 0 0;
+  float: right
+}
+
+.navIcon {
+  height: 60px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+}
+
+.navIconName {
+  color: white;
+  font-size: 25px;
+  font-family: 'Quicksand';
+  display: inline-block;
+  position: relative;
+  position: relative;
+  top: 90%;
+  transform: translateY(-100%);
+}
+
+.mobileNavIcon {
+  height: 46px;
+  position: relative;
+  display: inline-block;
+}
+
+.mobileIconName {
+  color: white;
+  font-size: 25px;
+  font-family: 'Quicksand';
+  display: inline-block;
+  position: relative;
+  transform: translateY(30%)
 }

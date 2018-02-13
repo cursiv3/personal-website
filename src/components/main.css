@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Ubuntu');
+
 html,
 body {
   width: 100%;
@@ -5,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Ubuntu";
+  color: #161616
 }
 
 #app {
@@ -30,12 +33,6 @@ a:hover {
   padding: 0;
 }
 
-.sectionHead {
-  color: White;
-  font-family: "Josefin sans";
-  font-size: 30px;
-  border-bottom: 2px solid silver;
-}
 
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);

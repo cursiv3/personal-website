@@ -17,16 +17,11 @@ const logos = [
   "https://www.dataapplab.com/wp-content/uploads/2016/10/python.png"
 ];
 
-const graphRender = () => {
-  if (window.pageYOffset > 600) {
-    return true;
-  }
-};
 
 const Skills = () => (
   <div className="skillsContainer">
-    <h1 className="skillsHeader">Skills</h1>
-    <BarGraph animationState={graphRender()} />
+    <h1 className="resumeHeader">skills</h1>
+    <BarGraph />
   </div>
 );
 

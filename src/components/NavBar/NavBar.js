@@ -8,6 +8,8 @@ class NavBar extends React.Component {
         className={this.props.navMode}
         onClick={evt => this.props.navHandler(evt)}
       >
+        <img className="navIcon" src={require('../../../public/cslLogoNew.ico')} />
+        <p className="navIconName">corey s lewis</p>
         <div data-id="resume" className="navButton">
           resume
         </div>
@@ -23,7 +25,7 @@ class NavBar extends React.Component {
         <div data-id="contact" className="navButton">
           contact
         </div>
-      </div>
+      </div >
     );
   }
 }

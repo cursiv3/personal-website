@@ -1,7 +1,7 @@
 .barChartWrap {
-  width: 95%;
+  width: 100%;
   padding: 0;
-  margin: auto;
+  margin: 0;
 }
 
 .axisLabelRight {
@@ -20,17 +20,11 @@
 }
 .skillsContainer {
   float: right;
-  width: 60%;
+  position: relative;
+  right: 7%;
+  width: 50%;
   margin: 19px 0 0 0;
   padding: 0;
-}
-
-.skillsHeader {
-  padding: 0;
-  margin: auto;
-  border-bottom: 2px solid silver;
-  font-weight: bold;
-  width: 98%;
 }
 
 .skillsImgRow {
@@ -48,12 +42,4 @@
 
 .logoWrap {
   width: 100%;
-}
-
-@media screen and (max-width: 1375px) {
-  .skillsContainer {
-    float: none;
-    width: 80%;
-    margin: 15px auto 30px auto;
-  }
 }

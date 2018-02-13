@@ -3,24 +3,24 @@ import "./education.css";
 
 const Education = () => (
   <div className="resumeEducationContainer">
-    <h1 className="resumeEducationHeader">Education</h1>
+    <h1 className="resumeHeader">education</h1>
     <div className="educationItemWrap">
-      <h3 className="educationDate">June 2014</h3>
-      <h3>
-        <b>Portland State University</b>
-      </h3>
-      <h3>
-        <i>Bachelor of Science, Organismal Biology</i>
-      </h3>
+      <p className="educationTextRight">june 2014</p>
+      <p className="educationTextLeft">
+        <b>portland state university</b>
+      </p>
+      <p className="educationTextLeft">
+        bachelor of science, organismal biology
+      </p>
     </div>
     <div className="educationItemWrap">
-      <h3 className="educationDate">Februrary 2018</h3>
-      <h3>
-        <b>FreeCodeCamp</b>
-      </h3>
-      <h3>
-        <i>Front-End Developer Certificate</i>
-      </h3>
+      <p className="educationTextRight">february 2018</p>
+      <p className="educationTextLeft">
+        <b>freecodecamp</b>
+      </p>
+      <p className="educationTextLeft">
+        front-end developer certificate
+      </p>
     </div>
   </div>
 );
