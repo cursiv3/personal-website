@@ -39,13 +39,13 @@ const data = [
   {
     name: "Redux",
     level: 11,
-    url: "http://blog.js-republic.com/wp-content/uploads/2016/11/logo-redux.png"
+    url: "https://s3-us-west-2.amazonaws.com/cslwebsite/reduxLightened.png"
   },
   {
     name: "Express",
     level: 8,
     url:
-      "https://camo.githubusercontent.com/647e291a5fd52d50e01deb82f9392c462df148a6/687474703a2f2f617070732e6f63746f636f6e73756c74696e672e636f6d2f696d616765732f6578707265737349636f6e2e706e67"
+      "https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/359/landscape/expressjslogo.png"
   },
   {
     name: "Node",
@@ -56,25 +56,25 @@ const data = [
     name: "PostgreSQL",
     level: 9,
     url:
-      "https://i.pinimg.com/originals/01/1d/b5/011db55ecc6a52a484a4f9be63158259.png"
+      "https://cdn.iconscout.com/public/images/icon/free/png-512/postgresql-logo-3116369c4fbec49e-512x512.png"
   },
   {
     name: "Git",
     level: 12,
     url:
-      "https://res.cloudinary.com/duo41k2sh/image/upload/v1454254508/git-logo_bv0ydu.jpg"
+      "http://hamwaves.com/cli/images/git.svg"
   },
   {
     name: "MongoDB",
     level: 8,
     url:
-      "https://www.worksonarm.com/wp-content/uploads/2017/08/MongoDB-logo.png"
+      "https://static1.squarespace.com/static/513914cde4b0f86e34bbb954/t/58d2c758725e25221a20ed53/1490208601230/mongodb-logo.png"
   },
   {
     name: "AWS",
     level: 8,
     url:
-      "https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/102017/logo_0.png?17TK91b1B6OvV2MFrCLfukw1c8oEaNr6&itok=vsanFiUj"
+      "https://s3-us-west-2.amazonaws.com/cslwebsite/awsLighten.png"
   },
   {
     name: "Python",
@@ -90,7 +90,7 @@ class LogoDisplay extends React.Component {
       <image
         style={{
           width: height + "px",
-          height: height + "px"
+          height: height + "px",
         }}
         fill="white"
         href={value}

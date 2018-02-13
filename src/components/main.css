@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand|Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Ubuntu|Cedarville+Cursive|Dawning+of+a+New+Day');
 
 html,
 body {
@@ -6,7 +6,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Ubuntu";
+  font-family: "Quicksand";
   color: #161616
 }
 
@@ -19,7 +19,7 @@ body {
 
 a {
   text-decoration: none !important;
-  color: #3d56a1 !important;
+  color: #7093fa !important;
 }
 
 a:hover {

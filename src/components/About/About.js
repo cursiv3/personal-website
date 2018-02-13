@@ -7,62 +7,50 @@ class About extends Component {
 
     return (
       <div className="aboutSectionContainer">
+        <p className="aboutQuote">I hope to fail often, for that is where growth begins.</p>
         <div className="aboutSectionWrap">
           <div className="portraitDiv">
-            <div className="aboutPortraitBacking" />
             <img
-              src={data.coreyPortrait}
+              src={data.coreyMascotImg}
               alt={"me"}
               className="aboutPortrait"
             />
           </div>
-          <h1 className="aboutSectionHead">
-            allow myself to introduce.... myself
-          </h1>
           <p className="pageText">
-            Hello! My name is Corey, I graduated from Portland State University
+            Hello! My name is Corey. I graduated from Portland State University
             in 2014 with a B.S. in Biological Science. I am a self taught
             programmer currently working as a Junior Web App Developer with{" "}
             <a href="https://www.skillsai.com/" target="_blank">
               SkillsAI
-            </a>. I spent the past six months completing an internship with{" "}
+            </a>. Before that I completed a six month internship with{" "}
             <a href="https://www.transflection.com" target="_blank">
               Transflection
-            </a>, a Portland, OR based digital marketing startup. This was an
-            amazing experience for two reasons: I worked directly under their
-            lead engineer, and this was the first time I'd worked on a real
-            project. We worked with JavaScript, jQuery, Bootstrap, Node,
-            Express/Koa, MongoDB. I finished the internship using ReactJS with
-            Redux.
-          </p>
-          <p className="pageText">
-            I have really been enjoying using React and am starting to also work
-            with Angular 5. I built this site with the React library and the
-            repo with the code
+            </a>, a Portland, OR based digital marketing startup.  In my internship
+            I worked directly under their lead engineer. We worked with JavaScript,
+            jQuery, Bootstrap, Node, Express/Koa, MongoDB. I finished the internship
+            migrating pages to React JS. I built this site with the React library and
+            the repo with the code can be found
             <a
               href="https://github.com/cursiv3/personal-website"
               target="_blank"
             >
-              {" "}
-              can be found here
+              {" "}here
             </a>.
           </p>
           <p className="pageText">
-            I started learning programming in January of 2016 as my search for
-            employment in the field of Biology was not yielding results. A
-            friend recommended "Learn Python the Hard Way" by Zed. A. Shaw. I
-            began to complete coding challenges on sites like HackerRank.com to
-            gain experience using Python, and I ended up dipping my toes in the
-            waters of C++, C#, Java, SQL.
+            I started learning programming in January of 2016 after becoming
+            unhappy in Biology field. A friend working as a Senior Developer gave
+            me some resources to learn programming, and I began to complete coding
+            challenges on sites like HackerRank to gain experience using Python, and
+            ended up learning syntax of C++, C#, and Java as well.
           </p>
           <p className="pageText">
-            I am also a soccer coach, a certified USSF Soccer referee, guitarist
-            of 17 years and counting, and a video game enthusiast.
+            Outside of code I coach and play soccer, I'm certified USSF Soccer referee,
+            guitarist of 18 years, a snowboard, dog lover, and PC gaming enthusiast.
           </p>
           <div className="aboutImg">
             <img src={data.coreySoccerImg} alt={"me"} />
             <img src={data.coreyChewieImg} alt={"me"} />
-            <img src={data.coreyMascotImg} alt={"me"} />
           </div>
         </div>
       </div>

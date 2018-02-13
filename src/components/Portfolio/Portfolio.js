@@ -8,12 +8,12 @@ class Portfolio extends React.Component {
       <div className="folioContainer">
         <div className="folioSectionWrap">
           <div className="folioIntroWrap">
-            <h1 className="folioSectionHead">A few things I've made</h1>
+            <h1 className="folioSectionHead">portfolio</h1>
             <p>
-              {this.props.state.portfolioIntro}
               <a href="https://github.com/cursiv3/personal-website">
-                on my github.
+                Click here{" "}
               </a>
+              for this sites GitHub repo.
             </p>
           </div>
           {data.map(d => {

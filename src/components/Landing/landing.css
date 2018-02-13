@@ -17,19 +17,11 @@
   width: 100%;
 }
 
-.landingName {
-  color: white;
-  float: left;
-  font-size: 2em;
-  margin: 0;
-  padding: 0;
-  font-family: 'Quicksand';
-}
 
 .mainHeader {
   font-size: 10em;
   color: white;
-  font-family: "Ubuntu";
+  font-family: "Quicksand";
   margin: 0;
   padding: 0;
   float: right;

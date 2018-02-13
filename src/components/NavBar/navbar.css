@@ -66,7 +66,7 @@
 
 .navButton {
   color: white;
-  font-family: "Josefin Sans" !important;
+  font-family: "Quicksand" !important;
   font-size: 2.5em;
   margin: 0 20px 0 20px;
   padding: 0;
@@ -83,7 +83,7 @@
 
 .navButtonMobile {
   color: rgb(29, 29, 48) !important;
-  font-family: "Josefin Sans" !important;
+  font-family: "Quicksand" !important;
   display: list-item !important;
   font-size: 2.5em;
   margin: 20px auto;
@@ -110,11 +110,11 @@
 .navIconName {
   color: white;
   font-size: 25px;
-  font-family: 'Quicksand';
+  font-family: 'Cedarville Cursive';
   display: inline-block;
   position: relative;
   position: relative;
-  top: 90%;
+  top: 80%;
   transform: translateY(-100%);
 }
 
@@ -127,7 +127,7 @@
 .mobileIconName {
   color: white;
   font-size: 25px;
-  font-family: 'Quicksand';
+  font-family: 'Cedarville Cursive';
   display: inline-block;
   position: relative;
   transform: translateY(30%)
