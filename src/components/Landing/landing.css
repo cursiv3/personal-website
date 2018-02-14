@@ -1,37 +1,50 @@
 
-.landingContainer {
+.landingBackground {
+  width: 100%;
+  height: calc(105%);
   padding: 0;
-  margin: 0;
-  background: url("../../../public/rivermist2.jpg") no-repeat center center;
+  margin: -5% 0 0 0;
+  position: absolute;
+  background: url("../../../public/rivermist2.jpg") no-repeat bottom center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
-  background-color: #272733;
+  background-color: #161616;
 }
 
 .landingTextRow {
   position: relative;
-  top: 70%;
   width: 100%;
+  
 }
 
 
 .mainHeader {
   font-size: 10em;
   color: white;
-  font-family: "Quicksand";
+  font-family: "Dawning of a New Day";
   margin: 0;
-  padding: 0;
+  padding: 0 25px 0 0;
+  float: right;
+  clear: right;
+  z-index: 1;
+}
+
+.headerName {
+  font-size: 8em;
+  color: white;
+  font-family: "Quicksand";
+  margin: 0; 
+  padding: 0 25px 0 0;
   float: right;
 }
 
-@media screen and (max-device-width: 785px) {
+@media screen and (max-width: 785px) {
   .landingTextRow {
     top: 80%;
     left: 100%;
     transform: translate(-100%, -70%);
-    font-size: 0.4em;
+    font-size: 0.6em;
   }
 }

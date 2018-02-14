@@ -126,7 +126,7 @@ class BarGraph extends React.Component {
                 content={<LogoDisplay />}
                 position="insideTopRight"
               />
-              <LabelList dataKey="name" fill="white" />
+              <LabelList dataKey="name" fill="white" fontSize="22" style={{ fontWeight: 'bold' }} />
             </Bar>
           </BarChart>
         </ResponsiveContainer>

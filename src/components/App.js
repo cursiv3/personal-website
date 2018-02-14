@@ -20,20 +20,60 @@ class App extends React.Component {
     this.state = {
       size: 60,
       navStick: "navDivEntry",
-      navStickSpacer: "0"
+      navNameDisplay: "none",
+      navFadeIn: '',
+      navStickSpacer: "0",
+      scrollDownOffset: 0,
+      lastScroll: 0
     };
 
     this.updateDimensions = this.updateDimensions.bind(this);
     this.navSticky = this.navSticky.bind(this);
     this.navClick = this.navClick.bind(this);
+    this.backgroundScroller = this.backgroundScroller.bind(this);
+    this.navFadeHandler = this.navFadeHandler.bind(this);
+  }
+
+  navFadeHandler() {
+    var stop = window.innerHeight - 200;
+    if (window.pageYOffset >= stop && window.innerWidth > 845) {
+      this.setState(Object.assign({}, this.state, {
+        navFadeIn: 'navNameFadeIn'
+      }));
+    } else {
+      this.setState(Object.assign({}, this.state, {
+        navFadeIn: 'navNameFadeOut'
+      }));
+    }
   }
 
   navSticky() {
     var stop = window.innerHeight - 60;
     if (window.pageYOffset >= stop && window.innerWidth > 845) {
-      this.setState({ navStick: "navStickTop", navStickSpacer: "60px" });
+      this.setState(Object.assign({}, this.state, {
+        navStick: "navStickTop",
+        navStickSpacer: "60px",
+      }));
     } else {
-      this.setState({ navStick: "navDivEntry", navStickSpacer: "0" });
+      this.setState(Object.assign({}, this.state, {
+        navStick: "navDivEntry",
+        navStickSpacer: "0",
+      }))
+    }
+  }
+
+  backgroundScroller() {
+    var yPos = window.pageYOffset / 5;
+    if (this.state.lastScroll > yPos) {
+      this.setState(Object.assign({}, this.state, {
+        scrollDownOffset: this.state.scrollDownOffset * 0 + yPos,
+        lastScroll: yPos
+      }))
+    } else {
+      this.setState(Object.assign({}, this.state, {
+        scrollDownOffset: this.state.scrollDownOffset * 0 + yPos,
+        lastScroll: yPos
+      }))
     }
   }
 
@@ -62,9 +102,9 @@ class App extends React.Component {
 
   updateDimensions() {
     if (window.innerWidth < 845) {
-      this.setState({ size: 0 });
+      this.setState(Object.assign({}, this.state, { size: 0 }));
     } else if (window.innerWidth > 845) {
-      this.setState({ size: 60 });
+      this.setState(Object.assign({}, this.state, { size: 60 }));
     }
     this.forceUpdate();
   }
@@ -72,26 +112,32 @@ class App extends React.Component {
   componentWillMount() {
     this.updateDimensions();
     this.navSticky();
+    this.backgroundScroller();
+    this.navFadeHandler();
   }
   componentDidMount() {
+    window.addEventListener("scroll", this.backgroundScroller);
     window.addEventListener("resize", this.updateDimensions);
     window.addEventListener("scroll", this.navSticky);
+    window.addEventListener("scroll", this.navFadeHandler);
   }
   componentWillUnmount() {
+    window.removeEventListener("scroll", this.backgroundScroller);
     window.removeEventListener("resize", this.updateDimensions);
     window.removeEventListener("scroll", this.navSticky);
+    window.removeEventListener("scroll", this.navFadeHandler);
   }
 
   render() {
     var state = this.props.state;
     return (
       <div className="appContainer">
-        <Landing state={state} size={this.state.size} />
+        <Landing state={state} data={this.state} />
         {this.state.size === 60 ? (
-          <NavBar navHandler={this.navClick} navMode={this.state.navStick} />
+          <NavBar data={this.state} navHandler={this.navClick} />
         ) : (
-          <NavMobile navHandler={this.navClick} />
-        )}
+            <NavMobile navHandler={this.navClick} />
+          )}
         <div
           style={{
             width: "100%",

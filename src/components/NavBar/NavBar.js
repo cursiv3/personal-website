@@ -5,11 +5,11 @@ class NavBar extends React.Component {
   render() {
     return (
       <div
-        className={this.props.navMode}
+        className={this.props.data.navStick}
         onClick={evt => this.props.navHandler(evt)}
       >
         <img className="navIcon" src={require('../../../public/cslLogoNew.ico')} />
-        <p className="navIconName">corey s lewis</p>
+        <p className={"navIconName " + this.props.data.navFadeIn}>corey lewis</p>
         <div data-id="resume" className="navButton">
           resume
         </div>

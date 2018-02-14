@@ -5,6 +5,8 @@
   margin: 0;
   color: white;
   height: 800px;
+  z-index: 10;
+  position: relative;
 }
 
 .verticalStyleLine {

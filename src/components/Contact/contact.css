@@ -1,6 +1,6 @@
 .contactContainer {
   width: 100%;
-  height: 100%;
+  height: calc(100% - 60px);
   margin: 0 0 0 0;
   padding: 20px 0 20px 0;
   background-color: #161616;
@@ -59,4 +59,13 @@
 
 .icon {
   font-size: 10em;
+}
+
+@media screen and (max-width: 785px) {
+  .contactContainer {
+    height: calc(100% - 40px);
+  }
+  .contactSectionWrap {
+    top: 30%;
+  }
 }
