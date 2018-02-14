@@ -1,14 +1,14 @@
 .folioContainer {
   width: 100%;
   padding: 0;
-  margin: 0 0 0 0;
+  margin: 0;
   padding: 60px 0 20px 0;
-  background-color: silver;
+  background-color: #252525;
+  color: white;
 }
 
 .folioSectionWrap {
   font-size: 22px;
-  font-family: "Ubuntu";
   width: 70%;
   position: relative;
   left: 50%;
@@ -20,9 +20,6 @@
   display: inline-block;
   margin: 0;
   padding: 0;
-}
-.folioImg:hover {
-  box-shadow: 0px 0px 5px 2px silver;
 }
 
 .folioText {
@@ -39,7 +36,8 @@
 }
 
 .folioSectionHead {
-  border-bottom: 2px solid #092372;
+  border-bottom: 2px solid white;
+  font-family: 'Cedarville Cursive';
 }
 
 @media screen and (max-width: 785px) {

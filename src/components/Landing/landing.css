@@ -1,3 +1,4 @@
+
 .landingContainer {
   padding: 0;
   margin: 0;
@@ -10,35 +11,27 @@
   background-color: #272733;
 }
 
-.landingHeader {
-  position: absolute;
-  top: 65%;
-  left: 2%;
-  text-align: center;
-  color: white;
-  font-size: 2em;
-  margin: 0;
-  padding: 0;
+.landingTextRow {
+  position: relative;
+  top: 70%;
+  width: 100%;
 }
 
+
 .mainHeader {
-  position: absolute;
-  top: 81%;
-  left: 75%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 10vw;
+  font-size: 10em;
   color: white;
-  font-family: "Ubuntu";
+  font-family: "Quicksand";
   margin: 0;
   padding: 0;
+  float: right;
 }
 
 @media screen and (max-device-width: 785px) {
-  .mainHeader {
-    top: 90%;
+  .landingTextRow {
+    top: 80%;
     left: 100%;
     transform: translate(-100%, -70%);
-    font-size: 10vh;
+    font-size: 0.4em;
   }
 }

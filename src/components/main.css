@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Ubuntu|Cedarville+Cursive|Dawning+of+a+New+Day');
+
 html,
 body {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Ubuntu";
+  font-family: "Quicksand";
+  color: #161616
 }
 
 #app {
@@ -16,7 +19,7 @@ body {
 
 a {
   text-decoration: none !important;
-  color: #3d56a1 !important;
+  color: #7093fa !important;
 }
 
 a:hover {
@@ -30,12 +33,6 @@ a:hover {
   padding: 0;
 }
 
-.sectionHead {
-  color: White;
-  font-family: "Josefin sans";
-  font-size: 30px;
-  border-bottom: 2px solid silver;
-}
 
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);

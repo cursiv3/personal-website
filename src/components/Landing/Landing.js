@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./landing.css";
 
 class Landing extends Component {
+
   render() {
     return (
       <div
@@ -11,8 +12,9 @@ class Landing extends Component {
           height: "calc(100% - " + this.props.size + "px)"
         }}
       >
-        <p className="landingHeader">corey lewis</p>
-        <div className="mainHeader">developer</div>
+        <div className="landingTextRow">
+          <p className="mainHeader">developer</p>
+        </div>
       </div>
     );
   }

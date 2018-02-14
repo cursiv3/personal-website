@@ -10,8 +10,8 @@ class ResumePage extends Component {
     const data = this.props.state.resume;
     return (
       <div className="resumeContainer">
-        <Skills />
         <Experience />
+        <Skills />
         <div className="verticalStyleLine" />
         <Education />
         <div className="resumeOther" />

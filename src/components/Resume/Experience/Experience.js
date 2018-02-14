@@ -3,16 +3,16 @@ import "./experience.css";
 
 const Experience = () => (
   <div className="resumeExperienceContainer">
-    <h1 className="resumeExperienceHeader">Experience</h1>
+    <h1 className="resumeHeader">experience</h1>
     <div className="experienceItemWrap">
       <img
         className="companyLogo"
-        src="https://s3-us-west-2.amazonaws.com/cslwebsite/skillsaiLogo.png"
+        src={require("../../../../public/sailight.png")}
         alt="skillsai logo"
       />
       <div className="positionDateWrap">
-        <h3 className="resumeExperienceDate">April 2017 - Present</h3>
-        <h3 className="resumeExperienceText">Jr. Web Application Developer</h3>
+        <p className="resumeExperienceDate">april 2017 - present</p>
+        <p className="resumeExperienceText">jr web application developer</p>
       </div>
     </div>
     <div className="experienceItemWrap">
@@ -22,8 +22,8 @@ const Experience = () => (
         alt="skillsai logo"
       />
       <div className="positionDateWrap">
-        <h3 className="resumeExperienceDate">October 2016 - March 2017</h3>
-        <h3 className="resumeExperienceText">Intern Web Developer</h3>
+        <p className="resumeExperienceDate">october 2016 - march 2017</p>
+        <p className="resumeExperienceText">intern web developer</p>
       </div>
     </div>
   </div>
