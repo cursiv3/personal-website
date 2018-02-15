@@ -1,11 +1,8 @@
 .resumeEducationContainer {
-  width: 30%;
+  width: 50%;
   padding: 1%;
-  float: left;
-  clear: left;
   position: relative;
-  left: 20%;
-  transform: translateX(-50%);
+  margin: auto;
 }
 
 .educationItemWrap {

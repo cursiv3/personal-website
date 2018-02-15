@@ -21,11 +21,9 @@
   font-size: 20px;
 }
 .skillsContainer {
-  float: right;
   position: relative;
-  right: 7%;
   width: 50%;
-  margin: 19px 0 0 0;
+  margin: 19px auto;
   padding: 0;
 }
 

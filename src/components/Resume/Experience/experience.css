@@ -1,17 +1,14 @@
 .resumeExperienceContainer {
   padding: 1%;
-  margin: 0 0 3% 0;
-  width: 30%;
-  float: left;
+  margin: auto auto 3% auto;
+  width: 50%;
   position: relative;
-  left: 20%;
-  transform: translateX(-50%);
 }
 
 .experienceItemWrap {
-  margin: 0 0 0 0;
+  margin: 40px 0 40px 0;
   width: 100%;
-  height: 110px;
+  height: 130px;
 }
 
 .resumeExperienceText {

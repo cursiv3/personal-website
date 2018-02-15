@@ -48,8 +48,10 @@ class About extends Component {
             Outside of code I coach and play soccer, I'm certified USSF Soccer referee,
             guitarist of 18 years, a snowboard, dog lover, and PC gaming enthusiast.
           </p>
-          <div className="aboutImg">
+          <div>
             <img src={data.coreySoccerImg} alt={"me"} />
+          </div>
+          <div>
             <img src={data.coreyChewieImg} alt={"me"} />
           </div>
         </div>

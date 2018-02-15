@@ -10,22 +10,22 @@ class NavBar extends React.Component {
       >
         <img className="navIcon" src={require('../../../public/cslLogoNew.ico')} />
         <p className={"navIconName " + this.props.data.navFadeIn}>corey lewis</p>
-        <div data-id="resume" className="navButton">
-          resume
-        </div>
-        <div data-id="portfolio" className="navButton">
-          portfolio
-        </div>
-        <div data-id="about" className="navButton">
-          about
+        <div data-id="contact" className="navButton">
+          contact
         </div>
         <div data-id="music" className="navButton">
           music
         </div>
-        <div data-id="contact" className="navButton">
-          contact
+        <div data-id="about" className="navButton">
+          about
         </div>
-      </div >
+        <div data-id="portfolio" className="navButton">
+          portfolio
+        </div>
+        <div data-id="resume" className="navButton">
+          resume
+        </div>
+      </div>
     );
   }
 }

@@ -5,11 +5,12 @@
   padding: 60px 0 20px 0;
   background-color: #252525;
   color: white;
+  position: relative;
 }
 
 .folioSectionWrap {
   font-size: 22px;
-  width: 70%;
+  width: 50%;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
