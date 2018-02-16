@@ -20,7 +20,7 @@ const PictureFrame = props => {
         alt="carousel exiting"
       />
 
-      {data.imageList.map((val) => <img src={val} style={{ display: 'none' }} />)}
+
 
       <Dots data={data} />
 

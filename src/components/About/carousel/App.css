@@ -30,6 +30,7 @@ body,
   overflow: hidden;
   margin: 100px auto;
   background-color: #161616;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.6);
 }
 
 .left {
@@ -47,15 +48,16 @@ body,
   background-color: black;
   z-index: 100;
   opacity: .2;
-  transition: opacity .5s ease-out;
-  -moz-transition: opacity .5s ease-out;
-  -webkit-transition: opacity .5s ease-out;
-  -o-transition: opacity .5s ease-out;
+  transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
 }
 
 .right:hover,
 .left:hover {
   opacity: 0.6;
+  cursor: pointer;
 }
 
 
@@ -113,11 +115,11 @@ body,
 
 .enterFromLeft {
   display: initial;
-  animation: enterLeft 1s forwards;
-  -webkit-animation: enterLeft 1s forwards;
-  -moz-animation: enterLeft 1s forwards;
-  -ms-animation: enterLeft 1s forwards;
-  -o-animation: enterLeft 1s forwards;
+  animation: enterLeft 0.7s forwards;
+  -webkit-animation: enterLeft 0.7s forwards;
+  -moz-animation: enterLeft 0.7s forwards;
+  -ms-animation: enterLeft 0.7s forwards;
+  -o-animation: enterLeft 0.7s forwards;
   max-width: 100%;
   width: auto;
   height: auto;
@@ -128,11 +130,11 @@ body,
 
 .enterFromRight {
   display: initial;
-  animation: enterRight 1s forwards;
-  -webkit-animation: enterRight 1s forwards;
-  -moz-animation: enterRight 1s forwards;
-  -ms-animation: enterRight 1s forwards;
-  -o-animation: enterRight 1s forwards;
+  animation: enterRight 0.7s forwards;
+  -webkit-animation: enterRight 0.7s forwards;
+  -moz-animation: enterRight 0.7s forwards;
+  -ms-animation: enterRight 0.7s forwards;
+  -o-animation: enterRight 0.7s forwards;
   max-width: 100%;
   width: auto;
   height: auto;
@@ -143,11 +145,11 @@ body,
 
 .exitToLeft {
   display: initial;
-  animation: exitLeft 1s forwards;
-  -webkit-animation: exitLeft 1s forwards;
-  -moz-animation: exitLeft 1s forwards;
-  -ms-animation: exitLeft 1s forwards;
-  -o-animation: exitLeft 1s forwards;
+  animation: exitLeft 0.7s forwards;
+  -webkit-animation: exitLeft 0.7s forwards;
+  -moz-animation: exitLeft 0.7s forwards;
+  -ms-animation: exitLeft 0.7s forwards;
+  -o-animation: exitLeft 0.7s forwards;
   max-width: 100%;
   width: auto;
   height: auto;
@@ -158,67 +160,87 @@ body,
 
 .exitToRight {
   display: initial;
-  animation: exitRight 1s forwards;
-  -webkit-animation: exitRight 1s forwards;
-  -moz-animation: exitRight 1s forwards;
-  -ms-animation: exitRight 1s forwards;
-  -o-animation: exitRight 1s forwards;
+  animation: exitRight 0.7s forwards;
+  -webkit-animation: exitRight 0.7s forwards;
+  -moz-animation: exitRight 0.7s forwards;
+  -ms-animation: exitRight 0.7s forwards;
+  -o-animation: exitRight 0.7s forwards;
   max-width: 100%;
   width: auto;
   height: auto;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+} 
+
+@keyframes fadein {
+  from { opacity: 0 }
+  to {opacity: 1 }
+}
+
+@keyframes fadeout {
+  from { opacity: 1 }
+  to {opacity: 0 }
 }
 
 /* enterRight */
 
 @keyframes enterLeft {
   from {
-    left: -100%;
+    transform: translate(-100%, -50%);
+    opacity: 0;
   }
   to {
-    left: 0;
+    transform: translate(0, -50%);
+    opacity: 1;
   }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes enterLeft {
   from {
-    left: -100%;
+    transform: translate(-100%, -50%);
+    opacity: 0;
   }
   to {
-    left: 0;
+    transform: translate(0, -50%);
+    opacity: 1;
   }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes enterLeft {
   from {
-    left: -100%;
+    transform: translate(-100%, -50%);
+    opacity: 0;
   }
   to {
-    left: 0;
+    transform: translate(0, -50%);
+    opacity: 1;
   }
 }
 
 /* Internet Explorer */
 @-ms-keyframes enterLeft {
   from {
-    left: -100%;
+    transform: translate(-100%, -50%);
+    opacity: 0;
   }
   to {
-    left: 0;
+    transform: translate(0, -50%);
+    opacity: 1;
   }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes enterLeft {
   from {
-    left: -100%;
+    transform: translate(-100%, -50%);
+    opacity: 0;
   }
   to {
-    left: 0;
+    transform: translate(0, -50%);
+    opacity: 1;
   }
 }
 
@@ -226,50 +248,60 @@ body,
 
 @keyframes exitRight {
   from {
-    left: 0;
+    transform: translate(0, -50%);
+    opacity: 1;
   }
   to {
-    left: 100%;
+    transform: translate(100%, -50%);
+    opacity: 0;
   }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes exitRight {
   from {
-    left: 0;
+    transform: translate(0, -50%);
+    opacity: 1;
   }
   to {
-    left: 100%;
+    transform: translate(100%, -50%);
+    opacity: 0;
   }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes exitRight {
   from {
-    left: 0;
+    transform: translate(0, -50%);
+    opacity: 1;
   }
   to {
-    left: 100%;
+    transform: translate(100%, -50%);
+    opacity: 0;
   }
 }
 
 /* Internet Explorer */
 @-ms-keyframes exitRight {
   from {
-    left: 0;
+    transform: translate(0, -50%);
+    opacity: 1;
   }
   to {
-    left: 100%;
+    transform: translate(100%, -50%);
+    opacity: 0;
   }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes exitRight {
   from {
-    left: 0;
+    transform: translate(0, -50%);
+    opacity: 1;
   }
   to {
-    left: 100%;
+    transform: translate(100%, -50%);
+    opacity: 0;
   }
 }
 
@@ -277,50 +309,60 @@ body,
 
 @keyframes enterRight {
   from {
-    left: 100%;
+    transform: translate(100%, -50%);
+    opacity: 0;
   }
   to {
-    left: 0;
+    transform: translate(0, -50%);
+    opacity: 1;
   }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes enterRight {
   from {
-    left: 100%;
+    transform: translate(100%, -50%);
+    opacity: 0;
   }
   to {
-    left: 0;
+    transform: translate(0, -50%);
+    opacity: 1;
   }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes enterRight {
   from {
-    left: 100%;
+    transform: translate(100%, -50%);
+    opacity: 0;
   }
   to {
-    left: 0;
+    transform: translate(0, -50%);
+    opacity: 1;
   }
 }
 
 /* Internet Explorer */
 @-ms-keyframes enterRight {
   from {
-    left: 100%;
+    transform: translate(100%, -50%);
+    opacity: 0;
   }
   to {
-    left: 0;
+    transform: translate(0, -50%);
+    opacity: 1;
   }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes enterRight {
   from {
-    left: 100%;
+    transform: translate(100%, -50%);
+    opacity: 0;
   }
   to {
-    left: 0;
+    transform: translate(0, -50%);
+    opacity: 1;
   }
 }
 
@@ -328,49 +370,59 @@ body,
 
 @keyframes exitLeft {
   from {
-    left: 0;
+    transform: translate(0, -50%);
+    opacity: 1;
   }
   to {
-    left: -100%;
+    transform: translate(-100%, -50%);
+    opacity: 0;
   }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes exitLeft {
   from {
-    left: 0;
+    transform: translate(0, -50%);
+    opacity: 1;
   }
   to {
-    left: -100%;
+    transform: translate(-100%, -50%);
+    opacity: 0;
   }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes exitLeft {
   from {
-    left: 0;
+    transform: translate(0, -50%);
+    opacity: 1;
   }
   to {
-    left: -100%;
+    transform: translate(-100%, -50%);
+    opacity: 0;
   }
 }
 
 /* Internet Explorer */
 @-ms-keyframes exitLeft {
   from {
-    left: 0;
+    transform: translate(0, -50%);
+    opacity: 1;
   }
   to {
-    left: -100%;
+    transform: translate(-100%, -50%);
+    opacity: 0;
   }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes exitLeft {
   from {
-    left: 0;
+    transform: translate(0, -50%);
+    opacity: 1;
   }
   to {
-    left: -100%;
+    transform: translate(-100%, -50%);
+    opacity: 0;
   }
 }

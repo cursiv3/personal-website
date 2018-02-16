@@ -58,7 +58,7 @@ class Carousel extends React.Component {
           currentIdx: this.state.nextIdx
         })
       );
-    }, 1000);
+    }, 700);
   }
 
 
