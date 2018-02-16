@@ -7,7 +7,6 @@ import {
   moveToStart,
   moveToEnd
 } from "./slideActions";
-const axios = require('axios');
 
 class Carousel extends React.Component {
   constructor() {

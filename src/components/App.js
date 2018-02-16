@@ -11,8 +11,6 @@ import ResumePage from "./Resume/ResumePage";
 import NavBar from "./NavBar/NavBar";
 import NavMobile from "./NavBar/NavMobile";
 
-const axios = require('axios');
-
 
 class App extends React.Component {
   constructor(props) {

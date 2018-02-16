@@ -1,12 +1,12 @@
 import React from "react";
 import Dots from "./Dots";
-import "./App.css";
+import "./carousel.css";
 
 const PictureFrame = props => {
   let data = props.state;
 
   return (
-    <div className="carouselContainer">
+    <div className="carouselContainer" style={{ height: 'calc(' + window.innerHeight + 'px - 400px)' }}>
       <img
         data-id={"entering-image"}
         className={data.enterMove}

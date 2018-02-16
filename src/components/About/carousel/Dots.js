@@ -1,10 +1,9 @@
 import React from "react";
 
 const Dots = props => {
-  var dotRowWidth = 20 * props.data.imageList.length;
-  var margins = Math.round((props.data.carouselWidth - dotRowWidth) / 2);
+  let rowWidth = props.data.imageList.length * 20 + 10;
   return (
-    <div className="dotsContainer" style={{ left: margins + 'px' }}>
+    <div className="dotsContainer" style={{ width: rowWidth }}>
       {props.data.imageList.map((val, idx) => {
         return idx === props.data.activeDot ? (
           <div
@@ -26,7 +25,7 @@ const Dots = props => {
             />
           );
       })}
-    </div>
+    </div >
   );
 };
 
