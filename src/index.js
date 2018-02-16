@@ -6,11 +6,11 @@ import getMuiTheme from "material-ui/styles/getMuiTheme";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 
 
-const state = require("./stateFile/stateFile");
+const stateFile = require("./stateFile/stateFile");
 
 ReactDOM.render(
   <MuiThemeProvider muiTheme={getMuiTheme()}>
-    <App state={state} />
+    <App stateFile={stateFile} />
   </MuiThemeProvider>,
   document.getElementById("app")
 );

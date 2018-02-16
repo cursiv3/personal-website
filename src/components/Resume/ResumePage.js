@@ -7,7 +7,6 @@ import "./resumeMediaQueries.css";
 
 class ResumePage extends Component {
   render() {
-    const data = this.props.state.resume;
     return (
       <div className="resumeContainer">
         <Skills />

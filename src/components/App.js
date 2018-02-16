@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Route, Switch } from "react-router-dom";
 import injectTapEventPlugin from "react-tap-event-plugin";
 
 import About from "./About/About";
@@ -11,7 +10,9 @@ import Portfolio from "./Portfolio/Portfolio";
 import ResumePage from "./Resume/ResumePage";
 import NavBar from "./NavBar/NavBar";
 import NavMobile from "./NavBar/NavMobile";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
+
+const axios = require('axios');
+
 
 class App extends React.Component {
   constructor(props) {
@@ -129,14 +130,15 @@ class App extends React.Component {
   }
 
   render() {
-    var state = this.props.state;
+    var db = this.props.stateFile;
+    var props = this.props;
     return (
       <div className="appContainer">
-        <Landing state={state} data={this.state} />
+        <Landing db={db} state={this.state} />
         {this.state.size === 60 ? (
-          <NavBar data={this.state} navHandler={this.navClick} />
+          <NavBar data={this.state} navHandler={props.navClick} />
         ) : (
-            <NavMobile navHandler={this.navClick} />
+            <NavMobile navHandler={props.navClick} />
           )}
         <div
           style={{
@@ -146,11 +148,11 @@ class App extends React.Component {
             padding: "0"
           }}
         />
-        <ResumePage ref="resume" state={state} />
-        <Portfolio ref="portfolio" state={state} />
-        <About ref="about" state={state} />
-        <Music ref="music" state={state} />
-        <Contact ref="contact" state={state} />
+        <ResumePage ref="resume" db={db} />
+        <Portfolio ref="portfolio" db={db} />
+        <About ref="about" db={db} />
+        <Music ref="music" db={db} />
+        <Contact ref="contact" db={db} />
       </div>
     );
   }

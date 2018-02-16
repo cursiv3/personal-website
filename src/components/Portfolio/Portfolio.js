@@ -3,7 +3,7 @@ import "./portfolio.css";
 
 class Portfolio extends React.Component {
   render() {
-    const data = this.props.state.portfolio;
+    const data = this.props.db.portfolio;
     return (
       <div className="folioContainer">
         <div className="folioSectionWrap">

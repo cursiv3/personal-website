@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import Carousel from "./carousel/Carousel";
 import "./about.css";
 
 class About extends Component {
   render() {
-    const data = this.props.state.about;
+    const db = this.props.db.about;
 
     return (
       <div className="aboutSectionContainer">
@@ -11,7 +12,7 @@ class About extends Component {
         <div className="aboutSectionWrap">
           <div className="portraitDiv">
             <img
-              src={data.coreyMascotImg}
+              src={db.coreyMascotImg}
               alt={"me"}
               className="aboutPortrait"
             />
@@ -46,14 +47,9 @@ class About extends Component {
           </p>
           <p className="pageText">
             Outside of code I coach and play soccer, I'm certified USSF Soccer referee,
-            guitarist of 18 years, a snowboard, dog lover, and PC gaming enthusiast.
+            guitarist of 18 years, a snowboarder, dog lover, and PC gaming enthusiast.
           </p>
-          <div>
-            <img src={data.coreySoccerImg} alt={"me"} />
-          </div>
-          <div>
-            <img src={data.coreyChewieImg} alt={"me"} />
-          </div>
+          <Carousel />
         </div>
       </div>
     );
