@@ -63,7 +63,6 @@ class Carousel extends React.Component {
 
 
   render() {
-
     return (
       <PictureFrame state={this.state} carouselClick={this.carouselClick} />
     );

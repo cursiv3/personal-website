@@ -4,6 +4,7 @@ import "./App.css";
 
 const PictureFrame = props => {
   let data = props.state;
+
   return (
     <div className="carouselContainer">
       <img
@@ -18,6 +19,8 @@ const PictureFrame = props => {
         src={data.imageList[data.currentIdx]}
         alt="carousel exiting"
       />
+
+      {data.imageList.map((val) => <img src={val} style={{ display: 'none' }} />)}
 
       <Dots data={data} />
 

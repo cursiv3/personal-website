@@ -20,7 +20,7 @@ var imageNames = [
 ]
 
 module.exports = imageNames.map((name) => {
-  return "https://s3-us-west-2.amazonaws.com/cslwebsite/carousel/" + name + ".jpg"
+  return "https:/d3thzr4bekqfnr.cloudfront.net/carousel/" + name + ".jpg"
 });
 
 
