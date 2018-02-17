@@ -110,12 +110,12 @@ class App extends React.Component {
   }
 
   componentWillMount() {
-    this.updateDimensions();
     this.navSticky();
     this.backgroundScroller();
     this.navFadeHandler();
   }
   componentDidMount() {
+    this.updateDimensions();
     window.addEventListener("scroll", this.backgroundScroller);
     window.addEventListener("resize", this.updateDimensions);
     window.addEventListener("scroll", this.navSticky);
