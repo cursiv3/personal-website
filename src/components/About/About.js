@@ -12,7 +12,7 @@ class About extends Component {
         <div className="aboutSectionWrap">
           <div className="portraitDiv">
             <img
-              src={db.coreyMascotImg}
+              src="https://s3-us-west-2.amazonaws.com/cslwebsite/corey2.jpg"
               alt={"me"}
               className="aboutPortrait"
             />

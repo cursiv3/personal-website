@@ -1,10 +1,4 @@
 module.exports = {
-  about: {
-    coreyPortrait: require("../../public/coreyPortraitPNG2.png"),
-    coreySoccerImg: require("../../public/coreysoccer.jpg"),
-    coreyChewieImg: require("../../public/coreychewie.jpg"),
-    coreyMascotImg: require("../../public/corey2.jpg")
-  },
   portfolioIntro: `I began to work through the curriculum at freecodecamp.com 
   in July of 2016. Each section was instruction and algorithm challenges 
   to get you thinking about complex tasks using the different tools available 
@@ -61,10 +55,4 @@ module.exports = {
       title: "Random Quote Generator Challenge"
     }
   ],
-  resume: {
-    resume: require("../../public/coreyResume.jpg"),
-    transflection: require("../../public/transflection.png"),
-    resumeLink:
-      "https://drive.google.com/open?id=13pGe8wGrzIeLA2xtgD3K85Bvjs3AMJtq"
-  }
 };
