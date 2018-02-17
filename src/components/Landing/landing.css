@@ -40,6 +40,56 @@
   float: right;
 }
 
+.landingDownChevronBtn {
+  width: 120px;
+  height: 70px;
+  position: absolute;
+  left: 50%;
+  top: 95%;
+  transform: translate(-50%, -90%);
+  opacity: 0.6;
+}
+
+.landingDownChevronBtn:hover {
+  cursor: pointer;
+  background-color: black;
+  opacity: 0.4;
+}
+
+.landingChevronContainer {
+  position: relative;
+  width: 50%;
+  top: 50%;
+  margin: auto;
+  padding: 0;
+}
+
+.landingChevronLeft {
+  width: 25%;
+  height: 7px;
+  background-color: white;
+  transform: rotate(35deg);
+  display: inline-block;
+  margin: 0 -4px 0 0;
+  padding: 0;
+  position: relative;
+  top: 35%;
+  left: 27%;
+}
+
+.landingChevronRight {
+  width: 25%;
+  height: 7px;
+  background-color: white;
+  transform: rotate(-35deg);
+  display: inline-block;
+  margin: 0 0 0 -4px;
+  padding: 0;
+  position: relative;
+  top: 35%;
+  left: 27%;
+}
+
 @media screen and (max-width: 785px) {
   .landingTextRow {
     top: 15%;
@@ -52,4 +102,38 @@
   .headerName {
     font-size: 3em;
   }
+}
+
+
+.fadingEffect {
+  -moz-animation: showHide 2s ease-in-out  infinite; /* Firefox */
+  -webkit-animation: showHide 2s ease-in-out  infinite; /* Safari and Chrome */
+  -ms-animation: showHide 2s ease-in-out  infinite; /* IE10 */
+  -o-animation: showHide 2s ease-in-out  infinite; /* Opera */
+  animation: showHide 2s ease-in-out  infinite;
+}
+@-webkit-keyframes showHide { /* Chrome, Safari */
+  0% {width:25%; left: 27%; opacity: 0.6 }
+  50% {width:18%; left: 32%; opacity: 0.1 }
+  100% {width:25%; left: 27%; opacity: 0.6 }
+}
+@-moz-keyframes showHide { /* FF */
+  0% {width:25%; left: 27%; opacity: 0.6 }
+  50% {width:18%; left: 32%; opacity: 0.1 }
+  100% {width:25%; left: 27%; opacity: 0.6 }
+}
+@-ms-keyframes showHide { /* IE10 */
+  0% {width:25%; left: 27%; opacity: 0.6 }
+  50% {width:18%; left: 32%; opacity: 0.1 }
+  100% {width:25%; left: 27%; opacity: 0.6 }
+}
+@-o-keyframes showHide { /* Opera */
+  0% {width:25%; left: 27%; opacity: 0.6 }
+  50% {width:18%; left: 32%; opacity: 0.1 }
+  100% {width:25%; left: 27%; opacity: 0.6 }
+}
+@keyframes showHide {
+  0% {width:25%; left: 27%; opacity: 0.6 }
+  50% {width:18%; left: 32%; opacity: 0.1}
+  100% {width:25%; left: 27%; opacity: 0.6 }
 }
