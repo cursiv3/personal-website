@@ -4,7 +4,6 @@ import "./landing.css";
 class Landing extends Component {
 
   render() {
-    var db = this.props.db;
     var state = this.props.state;
     return (
       <div

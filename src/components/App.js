@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import injectTapEventPlugin from "react-tap-event-plugin";
 
 import About from "./About/About";
 import Contact from "./Contact/Contact";
@@ -94,6 +93,8 @@ class App extends React.Component {
       case "contact":
         node = this.refs.contact;
         break;
+      default:
+        break;
     }
     var section = ReactDOM.findDOMNode(node).offsetTop;
     window.scrollTo(0, section);
@@ -129,7 +130,6 @@ class App extends React.Component {
 
   render() {
     var db = this.props.stateFile;
-    var props = this.props;
     return (
       <div className="appContainer">
         <Landing db={db} state={this.state} />

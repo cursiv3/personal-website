@@ -8,7 +8,7 @@ class NavBar extends React.Component {
         className={this.props.data.navStick}
         onClick={evt => this.props.navHandler(evt)}
       >
-        <img className="navIcon" src={require('../../../public/cslLogoNew.ico')} />
+        <img className="navIcon" src={require('../../../public/cslLogoNew.ico')} alt="corey s lewis icon" />
         <p className={"navIconName " + this.props.data.navFadeIn}>corey lewis</p>
         <div data-id="contact" className="navButton">
           contact

@@ -12,17 +12,17 @@ class NavMobile extends Component {
   handleToggle = () => this.setState({ open: !this.state.open });
 
   handleClose = evt => {
-    evt.target.matches(".navButtonMobile") ||
-      evt.target.matches(".menuCloseBtn")
-      ? this.setState({ open: false })
-      : null;
+    if (evt.target.matches(".navButtonMobile") ||
+      evt.target.matches(".menuCloseBtn")) {
+      this.setState({ open: false })
+    }
   };
 
   render() {
     return (
       <div>
         <div className="mobileNavBar" onClick={this.handleToggle}>
-          <img className="mobileNavIcon" src={require('../../../public/cslLogoNew.ico')} />
+          <img className="mobileNavIcon" src={require('../../../public/cslLogoNew.ico')} alt="corey s lewis icon" />
           <p className="mobileIconName">corey s lewis</p>
           <div className="mobileMenuButton">
             <div className="menuClicker" />

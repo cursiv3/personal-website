@@ -4,7 +4,6 @@ import "./about.css";
 
 class About extends Component {
   render() {
-    const db = this.props.db.about;
 
     return (
       <div className="aboutSectionContainer">
