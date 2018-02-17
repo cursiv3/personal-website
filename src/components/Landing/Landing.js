@@ -12,7 +12,7 @@ class Landing extends Component {
         className="landingContainer"
         style={{
           width: "100%",
-          height: "calc(100% - " + state.size + "px)",
+          height: "calc(110% - " + state.size + "px)",
         }}
       >
         <div className="landingBackground" style={{ transform: 'translateY(' + offset * 0.5 + "px)" }} />

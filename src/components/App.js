@@ -46,7 +46,8 @@ class App extends React.Component {
   }
 
   navSticky() {
-    var stop = window.innerHeight - 60;
+    var fullHeight = (window.innerHeight / 100 * 10) + window.innerHeight;
+    var stop = fullHeight - 60;
     if (window.pageYOffset >= stop && window.innerWidth > 845) {
       this.setState(Object.assign({}, this.state, {
         navStick: "navStickTop",
