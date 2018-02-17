@@ -21,7 +21,7 @@ class Portfolio extends React.Component {
               <iframe
                 key={d.id}
                 height="512"
-                width="50%"
+                width="100%"
                 scrolling="no"
                 title={d.title}
                 src={"https:" + d.src}

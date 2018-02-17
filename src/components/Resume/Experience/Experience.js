@@ -7,7 +7,7 @@ const Experience = () => (
     <div className="experienceItemWrap">
       <img
         className="companyLogo"
-        src="https://s3-us-west-2.amazonaws.com/cslwebsite/skillsaiLogo.png"
+        src="https://s3-us-west-2.amazonaws.com/cslwebsite/skillsaiLight.png"
         alt="skillsai logo"
       />
       <div className="positionDateWrap">

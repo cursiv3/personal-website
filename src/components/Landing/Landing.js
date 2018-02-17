@@ -16,7 +16,7 @@ class Landing extends Component {
         }}
       >
         <div className="landingBackground" style={{ transform: 'translateY(' + offset * 0.5 + "px)" }} />
-        <div className="landingTextRow" style={{ transform: "translateY(" + offset * 0.3 + "px)" }}>
+        <div className="landingTextRow" style={{ transform: "translateY(" + offset * 0.7 + "px)" }}>
           <p className="headerName">corey lewis</p>
           <p className="mainHeader">developer</p>
         </div>

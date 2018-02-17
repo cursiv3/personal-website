@@ -9,14 +9,7 @@ class About extends Component {
       <div className="aboutSectionContainer">
         <p className="aboutQuote">I hope to fail often, for that is where growth begins.</p>
         <div className="aboutSectionWrap">
-          <div className="portraitDiv">
-            <img
-              src="https://s3-us-west-2.amazonaws.com/cslwebsite/corey2.jpg"
-              alt={"me"}
-              className="aboutPortrait"
-            />
-          </div>
-          <p className="pageText">
+          <p className="aboutText">
             Hello! My name is Corey. I graduated from Portland State University
             in 2014 with a B.S. in Biological Science. I am a self taught
             programmer currently working as a Junior Web App Developer with{" "}
@@ -36,15 +29,15 @@ class About extends Component {
             >
               {" "}here
             </a>.
-          </p>
-          <p className="pageText">
+            <br />
+            <br />
             I started learning programming in January of 2016 after becoming
             unhappy in Biology field. A friend working as a Senior Developer gave
             me some resources to learn programming, and I began to complete coding
             challenges on sites like HackerRank to gain experience using Python, and
             ended up learning syntax of C++, C#, and Java as well.
-          </p>
-          <p className="pageText">
+            <br />
+            <br />
             Outside of code I coach and play soccer, I'm certified USSF Soccer referee,
             guitarist of 18 years, a snowboarder, dog lover, and PC gaming enthusiast.
           </p>
