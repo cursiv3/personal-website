@@ -1,5 +1,3 @@
-
-
 .dotsContainer {
   position: absolute;
   top: 92%;
@@ -21,7 +19,8 @@
 
 .carouselContainer {
   max-width: 100%;
-  width: 100%;
+  width: 600px;
+  height: 400px;
   position: relative;
   overflow: hidden;
   margin: 100px auto;

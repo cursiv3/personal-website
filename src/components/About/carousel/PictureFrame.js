@@ -6,7 +6,7 @@ const PictureFrame = props => {
   let data = props.state;
 
   return (
-    <div className="carouselContainer" style={{ height: 'calc(' + window.innerHeight + 'px - 400px)' }}>
+    <div className="carouselContainer">
       <img
         data-id={"entering-image"}
         className={data.enterMove}

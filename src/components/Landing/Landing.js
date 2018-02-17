@@ -14,8 +14,8 @@ class Landing extends Component {
           height: "calc(100% - " + state.size + "px)",
         }}
       >
-        <div className="landingBackground" style={{ transform: 'translateY(' + state.scrollDownOffset * 0.1 + "%)" }} />
-        <div className="landingTextRow" style={{ top: "calc(50% + " + state.scrollDownOffset * 0.05 + "%)" }}>
+        <div className="landingBackground" style={{ transform: 'translateY(' + state.scrollDownOffset * 0.5 + "px)" }} />
+        <div className="landingTextRow" style={{ transform: "translateY(" + state.scrollDownOffset * 0.3 + "px)" }}>
           <p className="headerName">corey lewis</p>
           <p className="mainHeader">developer</p>
         </div>

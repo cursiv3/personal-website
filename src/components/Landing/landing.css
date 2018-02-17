@@ -16,6 +16,7 @@
 .landingTextRow {
   position: relative;
   width: 100%;
+  top: 50%;
 }
 
 
@@ -41,9 +42,14 @@
 
 @media screen and (max-width: 785px) {
   .landingTextRow {
-    top: 80%;
-    left: 100%;
-    transform: translate(-100%, -70%);
-    font-size: 0.6em;
+    top: 15%;
+  }
+
+  .mainHeader {
+    font-size: 3em;
+  }
+
+  .headerName {
+    font-size: 3em;
   }
 }

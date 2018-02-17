@@ -100,9 +100,9 @@ class App extends React.Component {
   }
 
   updateDimensions() {
-    if (window.innerWidth < 845) {
+    if (window.innerWidth < 980) {
       this.setState(Object.assign({}, this.state, { size: 0 }));
-    } else if (window.innerWidth > 845) {
+    } else if (window.innerWidth > 980) {
       this.setState(Object.assign({}, this.state, { size: 60 }));
     }
     this.forceUpdate();
@@ -134,9 +134,9 @@ class App extends React.Component {
       <div className="appContainer">
         <Landing db={db} state={this.state} />
         {this.state.size === 60 ? (
-          <NavBar data={this.state} navHandler={props.navClick} />
+          <NavBar data={this.state} navHandler={this.navClick} />
         ) : (
-            <NavMobile navHandler={props.navClick} />
+            <NavMobile navHandler={this.navClick} />
           )}
         <div
           style={{

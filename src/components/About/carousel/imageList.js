@@ -6,7 +6,6 @@ var imageNames = [
   "corey-snowboard3",
   "corey-snowboard2",
   "corey-soccer1",
-  "corey-painting",
   "corey-soccer-goal",
   "corey-team",
   "corey-windsurf",
