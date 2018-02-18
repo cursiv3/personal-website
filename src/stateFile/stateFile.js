@@ -1,9 +1,4 @@
 module.exports = {
-  portfolioIntro: `I began to work through the curriculum at freecodecamp.com 
-  in July of 2016. Each section was instruction and algorithm challenges 
-  to get you thinking about complex tasks using the different tools available 
-  in JavaScript. These challenges were the culmination of each section. The
-  code for this site is `,
   portfolio: [
     {
       id: 8,
@@ -55,4 +50,30 @@ module.exports = {
       title: "Random Quote Generator Challenge"
     }
   ],
+  about: {
+    p1: `
+    I graduated from Portland State University in 2014 with a B.S. in 
+    Biological Science. I started learning to program in January of 2016 
+    because I was unhappy with the field of Biology. A friend working as a 
+    Senior Developer gave me some resources to use, and I began to complete 
+    coding challenges on sites like HackerRank to gain experience using Python, 
+    C++, C#, and Java.
+    `,
+    p2: `
+    I began learning web development when I discovered FreeCodeCamp.  After
+    completing much of their curriculum I was able to land a full stack
+    internship with
+    `,
+    p3: `
+    , a Portland, OR based digital marketing startup. I worked directly under
+     their lead engineer who has written several web development books 
+     published by O'Reilly.  It was a great learning experience and it hooked 
+     me on web development.  It also introduced me to React.js which I used to 
+     build this site. The repo for this site can be found
+     `,
+    p4: `
+    Outside of code I coach and play soccer, I'm certified USSF Soccer referee,
+    guitarist of 18 years, a snowboarder, dog lover, and PC gaming enthusiast.
+    `
+  }
 };
