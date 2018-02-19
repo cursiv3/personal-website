@@ -10,7 +10,6 @@ import ResumePage from "./Resume/ResumePage";
 import NavBar from "./NavBar/NavBar";
 import NavMobile from "./NavBar/NavMobile";
 
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -19,7 +18,7 @@ class App extends React.Component {
       size: 60,
       navStick: "navDivEntry",
       navNameDisplay: "none",
-      navFadeIn: '',
+      navFadeIn: "",
       navStickSpacer: "0",
       scrollDownOffset: 0,
       lastScroll: 0
@@ -34,45 +33,57 @@ class App extends React.Component {
 
   navFadeHandler() {
     var stop = window.innerHeight - 200;
-    if (window.pageYOffset >= stop && window.innerWidth > 845) {
-      this.setState(Object.assign({}, this.state, {
-        navFadeIn: 'navNameFadeIn'
-      }));
+    if (window.pageYOffset >= stop && window.innerWidth > 980) {
+      this.setState(
+        Object.assign({}, this.state, {
+          navFadeIn: "navNameFadeIn"
+        })
+      );
     } else {
-      this.setState(Object.assign({}, this.state, {
-        navFadeIn: 'navNameFadeOut'
-      }));
+      this.setState(
+        Object.assign({}, this.state, {
+          navFadeIn: "navNameFadeOut"
+        })
+      );
     }
   }
 
   navSticky() {
-    var fullHeight = (window.innerHeight / 100 * 10) + window.innerHeight;
+    var fullHeight = window.innerHeight / 100 * 10 + window.innerHeight;
     var stop = fullHeight - 60;
-    if (window.pageYOffset >= stop && window.innerWidth > 845) {
-      this.setState(Object.assign({}, this.state, {
-        navStick: "navStickTop",
-        navStickSpacer: "60px",
-      }));
+    if (window.pageYOffset >= stop && window.innerWidth > 980) {
+      this.setState(
+        Object.assign({}, this.state, {
+          navStick: "navStickTop",
+          navStickSpacer: "60px"
+        })
+      );
     } else {
-      this.setState(Object.assign({}, this.state, {
-        navStick: "navDivEntry",
-        navStickSpacer: "0",
-      }))
+      this.setState(
+        Object.assign({}, this.state, {
+          navStick: "navDivEntry",
+          navStickSpacer: "0"
+        })
+      );
     }
   }
 
   backgroundScroller() {
     var yPos = window.pageYOffset / 5;
     if (this.state.lastScroll > yPos) {
-      this.setState(Object.assign({}, this.state, {
-        scrollDownOffset: this.state.scrollDownOffset * 0 + yPos,
-        lastScroll: yPos
-      }))
+      this.setState(
+        Object.assign({}, this.state, {
+          scrollDownOffset: this.state.scrollDownOffset * 0 + yPos,
+          lastScroll: yPos
+        })
+      );
     } else {
-      this.setState(Object.assign({}, this.state, {
-        scrollDownOffset: this.state.scrollDownOffset * 0 + yPos,
-        lastScroll: yPos
-      }))
+      this.setState(
+        Object.assign({}, this.state, {
+          scrollDownOffset: this.state.scrollDownOffset * 0 + yPos,
+          lastScroll: yPos
+        })
+      );
     }
   }
 
@@ -137,8 +148,8 @@ class App extends React.Component {
         {this.state.size === 60 ? (
           <NavBar data={this.state} navHandler={this.navClick} />
         ) : (
-            <NavMobile navHandler={this.navClick} />
-          )}
+          <NavMobile navHandler={this.navClick} />
+        )}
         <div
           style={{
             width: "100%",
