@@ -31,6 +31,13 @@
   padding: 100px 0 0 0;
 }
 
+.carouselWrap {
+  position: relative;
+  margin: auto;
+  width: 70%;
+  height: 400px;
+}
+
 @media screen and (max-width: 785px) {
   .aboutSectionWrap {
     width: 100%;
@@ -43,5 +50,10 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .carouselWrap {
+    width: 100%;
+    height: 240px;
   }
 }

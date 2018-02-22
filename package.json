@@ -8,6 +8,7 @@
     "react-scripts": "0.9.5"
   },
   "dependencies": {
+    "corousel": "^0.1.8",
     "material-ui": "^0.19.4",
     "react": "^15.6.2",
     "react-dom": "^15.4.2",
