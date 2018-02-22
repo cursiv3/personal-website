@@ -10,7 +10,7 @@ class Portfolio extends React.Component {
           <div className="folioIntroWrap">
             <h1 className="folioSectionHead">portfolio</h1>
             <p>
-              <a href="https://github.com/cursiv3/personal-website">
+              <a href="https://github.com/cursiv3/personal-website" target="_blank">
                 Click here{" "}
               </a>
               for this sites GitHub repo.

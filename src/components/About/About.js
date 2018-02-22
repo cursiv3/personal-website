@@ -68,6 +68,12 @@ class About extends Component {
           </p>
           <div className="carouselWrap">
             <Carousel images={carouselArr} />
+            <p>
+              This is the <a href="https://github.com/cursiv3/corousel" target="_blank">corousel</a> package that I made (get it? it's like "carousel" but
+              my name is Corey... so...).
+              <br />
+              Available on npm!
+          </p>
           </div>
         </div>
       </div>
