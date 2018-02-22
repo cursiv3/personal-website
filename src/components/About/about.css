@@ -34,8 +34,8 @@
 .carouselWrap {
   position: relative;
   margin: auto;
-  width: 70%;
-  height: 400px;
+  width: 60%;
+  height: 375px;
 }
 
 @media screen and (max-width: 785px) {
