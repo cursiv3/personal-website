@@ -13,20 +13,6 @@ class Music extends Component {
             />
           </div>
           <p>Original tune "No More Plans"</p>
-          <div className="videoWrapper">
-            <iframe
-              src="https://www.youtube.com/embed/UKYtxamVuic"
-              allowFullScreen
-            />
-          </div>
-          <p>"7-14" by Andy McKee</p>
-          <div className="videoWrapper">
-            <iframe
-              src="https://www.youtube.com/embed/Oda9Qoh7-4Y"
-              allowFullScreen
-            />
-          </div>
-          <p>"Ebon Coast" by Andy McKee</p>
         </div>
       </div>
     );

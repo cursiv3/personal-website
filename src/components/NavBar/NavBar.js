@@ -13,9 +13,6 @@ class NavBar extends React.Component {
         <div data-id="contact" className="navButton">
           contact
         </div>
-        <div data-id="music" className="navButton">
-          music
-        </div>
         <div data-id="about" className="navButton">
           about
         </div>

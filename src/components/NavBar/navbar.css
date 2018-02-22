@@ -75,11 +75,12 @@
   top: 50%;
   transform: translateY(-50%);
   float: right;
+  transition: color 0.5s ease-in-out;
 }
 
 .navButton:hover {
   cursor: pointer !important;
-  color: skyblue !important;
+  color: red !important;
 }
 
 .navButtonMobile {

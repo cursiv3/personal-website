@@ -88,28 +88,10 @@ class App extends React.Component {
   }
 
   navClick(evt) {
-    var node;
-    switch (evt.target.dataset.id) {
-      case "resume":
-        node = this.refs.resume;
-        break;
-      case "portfolio":
-        node = this.refs.portfolio;
-        break;
-      case "about":
-        node = this.refs.about;
-        break;
-      case "music":
-        node = this.refs.music;
-        break;
-      case "contact":
-        node = this.refs.contact;
-        break;
-      default:
-        break;
-    }
-    var section = ReactDOM.findDOMNode(node).offsetTop;
-    window.scrollTo(0, section);
+
+    var start = window.pageYOffset;
+    var stop = document.getElementById(`${evt.target.dataset.id}`).offsetTop;
+    window.scroll({ top: stop, left: 0, behavior: 'smooth' })
   }
 
   updateDimensions() {
@@ -148,8 +130,8 @@ class App extends React.Component {
         {this.state.size === 60 ? (
           <NavBar data={this.state} navHandler={this.navClick} />
         ) : (
-          <NavMobile navHandler={this.navClick} />
-        )}
+            <NavMobile navHandler={this.navClick} />
+          )}
         <div
           style={{
             width: "100%",
@@ -158,11 +140,21 @@ class App extends React.Component {
             padding: "0"
           }}
         />
-        <ResumePage ref="resume" db={db} />
-        <Portfolio ref="portfolio" db={db} />
-        <About ref="about" db={db} />
-        <Music ref="music" db={db} />
-        <Contact ref="contact" db={db} />
+        <div id="resume">
+          <ResumePage db={db} />
+        </div>
+        <div id="portfolio">
+          <Portfolio db={db} />
+        </div>
+        <div id="about">
+          <About db={db} />
+        </div>
+        <div id="music">
+          <Music db={db} />
+        </div>
+        <div className="contactContainer" id="contact">
+          <Contact db={db} />
+        </div>
       </div>
     );
   }
