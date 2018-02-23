@@ -88,8 +88,8 @@ class LogoDisplay extends React.Component {
     return (
       <image
         style={{
-          width: height + "px",
-          height: height + "px",
+          width: `${height}px`,
+          height: `${height}px`,
         }}
         fill="white"
         href={value}

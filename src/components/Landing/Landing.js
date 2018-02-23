@@ -9,7 +9,7 @@ class Landing extends Component {
   }
 
   chevronClick() {
-    window.scrollTo(0, ((window.innerHeight / 100) * 10 + window.innerHeight));
+    window.scroll({ top: (window.innerHeight / 100) * 10 + window.innerHeight, left: 0, behavior: 'smooth' });
   }
 
   render() {

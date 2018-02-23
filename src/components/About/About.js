@@ -1,10 +1,33 @@
 import React, { Component } from "react";
-import Carousel from "./carousel/Carousel";
+import Carousel from "corousel";
 import "./about.css";
 
+
 class About extends Component {
+
   render() {
     var data = this.props.db.about;
+
+    var imageNames = [
+      "corey-chewie",
+      "corey-george",
+      "corey-soccer2",
+      "corey-hawaii",
+      "corey-snowboard3",
+      "corey-snowboard2",
+      "corey-soccer1",
+      "corey-soccer-goal",
+      "corey-team",
+      "corey-windsurf",
+      "corey-snowboard4",
+      "psu-soccer-coach",
+      "psu-soccer1",
+    ]
+
+    var carouselArr = imageNames.map((name) => {
+      return `https:/d3thzr4bekqfnr.cloudfront.net/carousel/${name}.jpg`
+    });
+
     return (
       <div className="aboutSectionContainer">
         <p className="aboutQuote">
@@ -43,7 +66,15 @@ class About extends Component {
             <br />
             {data.p4}
           </p>
-          <Carousel />
+          <div className="carouselWrap">
+            <Carousel images={carouselArr} />
+            <p>
+              This is the <a href="https://github.com/cursiv3/corousel" target="_blank">corousel</a> package that I made (get it? it's like "carousel" but
+              my name is Corey... so...).
+              <br />
+              Available on npm!
+          </p>
+          </div>
         </div>
       </div>
     );
