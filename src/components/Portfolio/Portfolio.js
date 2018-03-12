@@ -10,17 +10,31 @@ class Portfolio extends React.Component {
           <div className="folioIntroWrap">
             <h1 className="folioSectionHead">portfolio</h1>
             <p>
-              <a href="https://github.com/cursiv3/personal-website" target="_blank">
+              <a
+                href="https://github.com/cursiv3/personal-website"
+                target="_blank"
+              >
                 Click here{" "}
               </a>
               for this sites GitHub repo.
             </p>
           </div>
           <iframe
+            src="https://codesandbox.io/embed/k52jl1y2jr?view=preview"
+            style={{
+              width: "100%",
+              height: "800px",
+              border: "0",
+              borderRadius: "4px",
+              overflow: "hidden"
+            }}
+            sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+          />
+          <iframe
             src="https://codesandbox.io/embed/2oow9n5p7r?view=preview"
             style={{
               width: "100%",
-              height: "512px",
+              height: "800px",
               border: "0",
               borderRadius: "4px",
               overflow: "hidden"
