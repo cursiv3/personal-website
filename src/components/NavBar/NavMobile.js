@@ -12,9 +12,11 @@ class NavMobile extends Component {
   handleToggle = () => this.setState({ open: !this.state.open });
 
   handleClose = evt => {
-    if (evt.target.matches(".navButtonMobile") ||
-      evt.target.matches(".menuCloseBtn")) {
-      this.setState({ open: false })
+    if (
+      evt.target.matches(".navButtonMobile") ||
+      evt.target.matches(".menuCloseBtn")
+    ) {
+      this.setState({ open: false });
     }
   };
 
@@ -22,7 +24,11 @@ class NavMobile extends Component {
     return (
       <div>
         <div className="mobileNavBar" onClick={this.handleToggle}>
-          <img className="mobileNavIcon" src={require('../../../public/cslLogoNew.ico')} alt="corey s lewis icon" />
+          <img
+            className="mobileNavIcon"
+            src={require("../../../public/cslLogoNew.ico")}
+            alt="corey s lewis icon"
+          />
           <p className="mobileIconName">corey lewis</p>
           <div className="mobileMenuButton">
             <div className="menuClicker" />
@@ -54,6 +60,11 @@ class NavMobile extends Component {
             <div data-id="portfolio" className="navButtonMobile">
               portfolio
             </div>
+            <a href="http://www.speakplainly.net" target="_blank">
+              <div data-id="blog" className="navButtonMobile">
+                blog
+              </div>
+            </a>
             <div data-id="about" className="navButtonMobile">
               about
             </div>
