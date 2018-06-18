@@ -38,6 +38,27 @@ class Portfolio extends React.Component {
             functionality could be seen.
           </p>
           <iframe
+            src="https://codesandbox.io/embed/mjn73ozx1y?view=preview"
+            style={{
+              width: "100%",
+              height: "500px",
+              border: "0",
+              borderRadius: "4px",
+              overflow: "hidden"
+            }}
+            sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+          />
+          <p style={{ textAlign: "center" }}>
+            I made this for fun when I discovered data.gov. Using the National
+            Environmental Health Tracking Network API run by the CDC, I
+            retrieved air quality data for Oregon and sorted it by five major
+            counties. I sorted the data by year using merge sort, which is
+            overkill for this tiny data set, but it was faster and easier to
+            find pseduo code for the algorithm and tailor it to what I needed
+            rather than cook up something of my own. It was a fun project and
+            data.gov is an amazing resource!
+          </p>
+          <iframe
             src="https://codesandbox.io/embed/2oow9n5p7r?view=preview"
             style={{
               width: "100%",
