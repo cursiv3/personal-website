@@ -138,7 +138,10 @@ class BarGraph extends React.Component {
               tickLine={false}
             />
             <CartesianGrid strokeDasharray="3 3" />
-            <Tooltip />
+            <Tooltip
+              labelStyle={{ color: "black" }}
+              itemStyle={{ color: "black" }}
+            />
             <Bar dataKey="level" fill="red" animationDuration={1700}>
               <LabelList
                 dataKey="url"

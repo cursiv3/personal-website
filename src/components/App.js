@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
 import About from "./About/About";
 import Contact from "./Contact/Contact";
@@ -49,7 +48,7 @@ class App extends React.Component {
   }
 
   navSticky() {
-    var fullHeight = window.innerHeight / 100 * 10 + window.innerHeight;
+    var fullHeight = (window.innerHeight / 100) * 10 + window.innerHeight;
     var stop = fullHeight - 60;
     if (window.pageYOffset >= stop && window.innerWidth > 980) {
       this.setState(
@@ -88,10 +87,8 @@ class App extends React.Component {
   }
 
   navClick(evt) {
-
-    var start = window.pageYOffset;
     var stop = document.getElementById(`${evt.target.dataset.id}`).offsetTop;
-    window.scroll({ top: stop, left: 0, behavior: 'smooth' })
+    window.scroll({ top: stop, left: 0, behavior: "smooth" });
   }
 
   updateDimensions() {
@@ -130,8 +127,8 @@ class App extends React.Component {
         {this.state.size === 60 ? (
           <NavBar data={this.state} navHandler={this.navClick} />
         ) : (
-            <NavMobile navHandler={this.navClick} />
-          )}
+          <NavMobile navHandler={this.navClick} />
+        )}
         <div
           style={{
             width: "100%",
