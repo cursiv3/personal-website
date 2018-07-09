@@ -31,24 +31,34 @@ const data = [
   },
   {
     name: "react",
-    level: 11,
+    level: 12,
     url:
       "https://raw.githubusercontent.com/rexxars/react-hexagon/HEAD/logo/react-hexagon.png"
   },
   {
     name: "redux",
-    level: 11,
+    level: 12,
     url: "https://s3-us-west-2.amazonaws.com/cslwebsite/reduxLightened.png"
   },
   {
+    name: "git (command line)",
+    level: 12,
+    url: "http://hamwaves.com/cli/images/git.svg"
+  },
+  {
+    name: "linux command line",
+    level: 11,
+    url: "http://pngimg.com/uploads/linux/linux_PNG1.png"
+  },
+  {
     name: "express",
-    level: 8,
+    level: 9,
     url:
       "https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/359/landscape/expressjslogo.png"
   },
   {
     name: "node",
-    level: 8,
+    level: 9,
     url: "https://www.brainvire.com/wp-content/uploads/2017/12/nodejs.png"
   },
   {
@@ -58,10 +68,10 @@ const data = [
       "https://cdn.iconscout.com/public/images/icon/free/png-512/postgresql-logo-3116369c4fbec49e-512x512.png"
   },
   {
-    name: "git",
-    level: 12,
+    name: "docker",
+    level: 8,
     url:
-      "http://hamwaves.com/cli/images/git.svg"
+      "https://quintagroup.com/cms/technology/Images/docker.png/image_preview"
   },
   {
     name: "mongodb",
@@ -70,15 +80,25 @@ const data = [
       "https://static1.squarespace.com/static/513914cde4b0f86e34bbb954/t/58d2c758725e25221a20ed53/1490208601230/mongodb-logo.png"
   },
   {
-    name: "aws",
+    name: "aws (ec2, s3, rds, cloudfront)",
     level: 8,
-    url:
-      "https://s3-us-west-2.amazonaws.com/cslwebsite/awsLighten.png"
+    url: "https://s3-us-west-2.amazonaws.com/cslwebsite/awsLighten.png"
   },
   {
     name: "python",
-    level: 13,
+    level: 8,
     url: "https://www.python.org/static/opengraph-icon-200x200.png"
+  },
+  {
+    name: "php",
+    level: 8,
+    url:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2000px-PHP-logo.svg.png"
+  },
+  {
+    name: "graphql",
+    level: 7,
+    url: "https://montykamath.files.wordpress.com/2018/02/graphql.png"
   }
 ];
 
@@ -89,7 +109,7 @@ class LogoDisplay extends React.Component {
       <image
         style={{
           width: `${height}px`,
-          height: `${height}px`,
+          height: `${height}px`
         }}
         fill="white"
         href={value}
@@ -125,7 +145,12 @@ class BarGraph extends React.Component {
                 content={<LogoDisplay />}
                 position="insideTopRight"
               />
-              <LabelList dataKey="name" fill="white" fontSize="22" style={{ fontWeight: 'bold' }} />
+              <LabelList
+                dataKey="name"
+                fill="white"
+                fontSize="22"
+                style={{ fontWeight: "bold" }}
+              />
             </Bar>
           </BarChart>
         </ResponsiveContainer>
