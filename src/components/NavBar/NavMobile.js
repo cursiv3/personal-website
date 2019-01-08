@@ -26,7 +26,7 @@ class NavMobile extends Component {
         <div className="mobileNavBar" onClick={this.handleToggle}>
           <img
             className="mobileNavIcon"
-            src={require("../../../public/cslLogoNew.ico")}
+            src={require("./cslLogoNew.ico")}
             alt="corey s lewis icon"
           />
           <p className="mobileIconName">corey lewis</p>

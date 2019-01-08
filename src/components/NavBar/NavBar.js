@@ -10,7 +10,7 @@ class NavBar extends React.Component {
       >
         <img
           className="navIcon"
-          src={require("../../../public/cslLogoNew.ico")}
+          src={require("./cslLogoNew.ico")}
           alt="corey s lewis icon"
         />
         <p className={"navIconName " + this.props.data.navFadeIn}>
