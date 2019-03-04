@@ -8,6 +8,8 @@ class Music extends Component {
         <div className="musicSectionWrap">
           <div className="videoWrapper">
             <iframe
+            name="corey youtube video"
+            title="no more plans"
               src="https://www.youtube.com/embed/qqytoS_1OLo"
               allowFullScreen
             />

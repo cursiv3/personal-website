@@ -17,10 +17,19 @@
 }
 
 .folioImgDiv {
+  padding-bottom: 60px;
+}
+
+.folioImgDiv img {
   width: 100%;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
+  box-shadow: 0 0 1px 1px rgba(255,255,255, 0.5);
+  transition: all 250ms ease-in-out;
+}
+
+.folioImgDiv img:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+  opacity: 0.7;
 }
 
 .folioText {

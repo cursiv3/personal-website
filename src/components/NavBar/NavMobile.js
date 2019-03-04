@@ -60,7 +60,7 @@ class NavMobile extends Component {
             <div data-id="portfolio" className="navButtonMobile">
               portfolio
             </div>
-            <a href="http://www.speakplainly.net" target="_blank">
+            <a href="http://www.speakplainly.net" target="_blank" rel="noopener noreferrer">
               <div data-id="blog" className="navButtonMobile">
                 blog
               </div>

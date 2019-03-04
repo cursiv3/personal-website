@@ -46,14 +46,6 @@
     right: 0;
   }
 
-  .companyLogo {
-    width: 15%;
-    margin: auto;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
   .positionDateWrap {
     float: none;
     text-align: center;
@@ -92,8 +84,6 @@
     transform: initial;
   }
 
-
-
   .educationTextRight {
     font-size: 16px;
   }
@@ -109,17 +99,4 @@
     right: 0;
   }
 
-  .companyLogo {
-    width: 50%;
-    margin: auto;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .positionDateWrap {
-    float: none;
-    text-align: center;
-    margin: 10px 0 0 0;
-  }
 }

@@ -13,6 +13,7 @@ class Contact extends Component {
                 href="mailto:contact@coreyslewis.com?subject=Inquiry"
                 target="_blank"
                 className="contactIcon"
+                rel="noopener noreferrer"
               >
                 <i className="icon fa fa-envelope-square" />
               </a>
@@ -21,6 +22,7 @@ class Contact extends Component {
               <a
                 href="https://www.facebook.com/cslewis503"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="contactIcon"
               >
                 <i className="icon fa fa-facebook-square" />
@@ -30,6 +32,7 @@ class Contact extends Component {
               <a
                 href="http://www.linkedin.com/in/lewisc503"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="contactIcon"
               >
                 <i className="icon fa fa-linkedin-square" />
@@ -39,6 +42,7 @@ class Contact extends Component {
               <a
                 href="https://github.com/cursiv3"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="contactIcon"
               >
                 <i className="icon fa fa-github-square" />

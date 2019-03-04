@@ -5,6 +5,17 @@ const Experience = () => (
   <div className="resumeExperienceContainer">
     <h1 className="resumeHeader">experience</h1>
     <div className="experienceItemWrap">
+    <img
+        className="companyLogo"
+        src="https://s3-us-west-2.amazonaws.com/cslwebsite/hwdevs.png"
+        alt="hello world devs logo"
+      />
+      <div className="positionDateWrap">
+        <p className="resumeExperienceDate">july 2018 - Present</p>
+        <p className="resumeExperienceText">web developer</p>
+      </div>
+    </div>
+    <div className="experienceItemWrap">
       <img
         className="companyLogo"
         src="https://s3-us-west-2.amazonaws.com/cslwebsite/skillsaiLight.png"
