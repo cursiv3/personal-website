@@ -37,6 +37,17 @@ const Experience = () => (
         <p className="resumeExperienceText">full stack developer</p>
       </div>
     </div>
+    <div className="experienceItemWrap">
+      <img
+        className="companyLogo"
+        src={require("./cslLogoNew.ico")}
+        alt="CSL designs logo"
+      />
+      <div className="positionDateWrap">
+        <p className="resumeExperienceDate">october 2015 - october 2016</p>
+        <p className="resumeExperienceText">it freelancer</p>
+      </div>
+    </div>
   </div>
 );
 

@@ -7,12 +7,12 @@ module.exports = [
   },
   {
     name: "html",
-    level: 14,
+    level: 15,
     url: "https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png"
   },
   {
     name: "css/sass/scss",
-    level: 14,
+    level: 15,
     url:
       "https://i2.wp.com/www.worldeatingdisordersday.org/wp-content/uploads/2016/03/css-logo.png"
   },
@@ -24,7 +24,7 @@ module.exports = [
   },
   {
     name: "redux",
-    level: 14,
+    level: 15,
     url: "https://s3-us-west-2.amazonaws.com/cslwebsite/reduxLightened.png"
   },
   {
@@ -52,7 +52,17 @@ module.exports = [
     name: "postgresql",
     level: 12,
     url:
-      "https://cdn.iconscout.com/public/images/icon/free/png-512/postgresql-logo-3116369c4fbec49e-512x512.png"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/540px-Postgresql_elephant.svg.png"
+  },
+  {
+    name:"mysql",
+    level: 10,
+    url: "https://i.dlpng.com/static/png/115894_thumb.png"
+  },
+  {
+    name: "drupal",
+    level: 10,
+    url: 'https://www.drupal.org/files/druplicon-small.png'
   },
   {
     name: "docker",

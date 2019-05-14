@@ -5,6 +5,7 @@ class NavBar extends React.Component {
   render() {
     return (
       <div
+        id="nav-bar"
         className={`navBarShared ${this.props.data.navStick}`}
         onClick={evt => this.props.navHandler(evt)}
       >

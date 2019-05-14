@@ -20,7 +20,8 @@ class App extends React.Component {
       navFadeIn: "",
       navStickSpacer: "0",
       scrollDownOffset: 0,
-      lastScroll: 0
+      lastScroll: 0,
+      fullHeight: (window.innerHeight / 100) * 10 + window.innerHeight,
     };
 
     this.updateDimensions = this.updateDimensions.bind(this);
@@ -33,37 +34,31 @@ class App extends React.Component {
   navFadeHandler() {
     var stop = window.innerHeight - 200;
     if (window.pageYOffset >= stop && window.innerWidth > 980) {
-      this.setState(
-        Object.assign({}, this.state, {
+      this.setState({
           navFadeIn: "navNameFadeIn"
-        })
-      );
-    } else {
-      this.setState(
-        Object.assign({}, this.state, {
+        });
+      } else {
+      this.setState({
           navFadeIn: "navNameFadeOut"
-        })
-      );
+        });
     }
   }
 
   navSticky() {
-    var fullHeight = (window.innerHeight / 100) * 10 + window.innerHeight;
-    var stop = fullHeight - 60;
-    if (window.pageYOffset >= stop && window.innerWidth > 980) {
+    var stop = this.state.fullHeight - 60;
+    
+    if (window.scrollY >= stop && window.innerWidth > 980) {
       this.setState(
-        Object.assign({}, this.state, {
+        {
           navStick: "navStickTop",
           navStickSpacer: "60px"
-        })
-      );
+        });
     } else {
       this.setState(
-        Object.assign({}, this.state, {
+        {
           navStick: "navDivEntry",
           navStickSpacer: "0"
-        })
-      );
+        });
     }
   }
 
@@ -71,18 +66,16 @@ class App extends React.Component {
     var yPos = window.pageYOffset / 5;
     if (this.state.lastScroll > yPos) {
       this.setState(
-        Object.assign({}, this.state, {
+        {
           scrollDownOffset: this.state.scrollDownOffset * 0 + yPos,
           lastScroll: yPos
-        })
-      );
+        });
     } else {
       this.setState(
-        Object.assign({}, this.state, {
+        {
           scrollDownOffset: this.state.scrollDownOffset * 0 + yPos,
           lastScroll: yPos
-        })
-      );
+        });
     }
   }
 
@@ -93,9 +86,9 @@ class App extends React.Component {
 
   updateDimensions() {
     if (window.innerWidth < 980) {
-      this.setState(Object.assign({}, this.state, { size: 0 }));
+      this.setState({ size: 0 });
     } else if (window.innerWidth > 980) {
-      this.setState(Object.assign({}, this.state, { size: 60 }));
+      this.setState({ size: 60 });
     }
     this.forceUpdate();
   }
@@ -134,7 +127,7 @@ class App extends React.Component {
             width: "100%",
             height: this.state.navStickSpacer,
             margin: "0",
-            padding: "0"
+            padding: "0",
           }}
         />
         <div id="resume">
